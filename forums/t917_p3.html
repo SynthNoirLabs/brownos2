@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[WeChall] Some notes [WeChall]-&gt;Challenge: The BrownOS</title>
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Hackit, Challenge, Problem, Riddle, WeChall, Global, Hacker, Website,  Ranking"/>
+	<meta name="description" content="Overview of hacking challenge and problem solving sites. - wechall"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta property="og:image" content="https://wechall.net/tpl/wc4/img/logo_wc4_large.png"/>
+	
+	<meta name="generator" content="GWFv3.04-2012.Jul.01" />
+	<link rel="stylesheet" type="text/css" href="/tpl/default/css/gwf3.css?v=57" />
+	<link rel="stylesheet" type="text/css" href="/tpl/wc4/css/wechall4.css?v=58" />
+	<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/js/php.js?v=57"></script>
+	<script type="text/javascript" src="/js/php.js?v=57"></script>
+	<script type="text/javascript" src="/js/gwf3.js?v=57"></script>
+	<script type="text/javascript" src="/js/gwf3bb.js?v=57"></script>
+	<script type="text/javascript" src="/js/module/Heart/hb.js"></script><script type="text/javascript" src="/js/module/WeChall/wc.js?v=5.1"></script><script type="text/javascript" src="/js/module/Forum/gwf_forum.js"></script><script type="text/javascript">var GWF_WEB_ROOT = '/'; var GWF_DOMAIN = 'wechall.net';
+; $(document).ready(function(){ setTimeout("gwf_heartbeat(29000);", 29000);wcjsInit();; });</script>
+	<link rel="shortcut icon" type="img/x-icon" href="/favicon.ico"/>
+	
+</head>
+
+<body>
+	<div id="page_wrap">
+		
+		<nav id="wc_menu"><ul><li id="wc_lang_sel"><select name="lang_switch" onchange="window.location = 'https://www.wechall.net/'+this.value+'/forum-t917/Some_notes-p3.html'; return true;">
+<option value="en" selected="selected">English</option>
+<option value="de">German</option>
+<option value="fr">French</option>
+<option value="es">Spanish</option>
+<option value="sq">Albanian</option>
+<option value="ar">Arabic</option>
+<option value="nl">Dutch</option>
+<option value="bs">Bosnian</option>
+<option value="sr">Serbian</option>
+<option value="tr">Turkish</option>
+<option value="cs">Czech</option>
+<option value="fi">Finnish</option>
+<option value="hu">Hungarian</option>
+<option value="it">Italian</option>
+<option value="pl">Polish</option>
+<option value="ru">Russian</option>
+<option value="et">Estonian</option>
+<option value="ur">Urdu</option>
+</select>
+</li>
+
+<li><a href="/news">News</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/active_sites">Sites</a></li>
+<li><a class="wc_menu_sel" href="/forum">Forum</a></li>
+<li><a href="/ranking">Ranking</a></li>
+<li><a href="/challs">Challenges</a></li>
+
+
+<li><a href="/downloads">Downloads</a></li>
+
+
+<li><a href="/register">Register</a></li>
+</ul></nav><div class="cl"></div>
+		<header id="wc_head">
+<a href="/about_wechall" id="wc_logo" title="WeChall"></a>
+<div id="wc_head_stats">
+<div class="wc_head_bigbox"><div class="wc_head_title"><a href="/active_sites">New Sites</a></div><div class="wc_head_box"><a class="siteanchor" href="https://hack.arrrg.de/" title="Ranked">Hack The Web</a><a class="siteanchor" href="https://hackmyvm.eu/" title="Ranked">HackMyVM</a><a class="siteanchor" href="https://pwn.college/" title="Ranked">pwn.college</a><a class="siteanchor" href="https://pwn.tn" title="Ranked">PWN.TN</a></div><div class="wc_head_box"><a class="siteanchor" href="https://promptriddle.com" title="Ranked">PromptRiddle</a><a class="siteanchor" href="https://pydefis.callicode.fr" title="Ranked">PyDéfis</a><a class="siteanchor" href="https://cryptohack.org" title="Ranked">CryptoHack</a><a class="siteanchor" href="https://247ctf.com" title="Ranked">247CTF</a></div></div>
+<div class="wc_head_bigbox"><div class="wc_head_title"><a href="/users/with/All/by/user_regdate/DESC/page-1">New Users</a></div><div class="wc_head_box"><a href="/profile/pentestMage" title="Totalscore: 1">pentestMage</a><a href="/profile/Atlax" title="Totalscore: 2215">Atlax</a><a href="/profile/segfault123" title="Totalscore: 97">segfault123</a><a href="/profile/p4ul_o" title="Totalscore: 3266">p4ul_o</a></div><div class="wc_head_box"><a href="/profile/Soji" title="Totalscore: 674">Soji</a><a href="/profile/N63LU" title="Totalscore: 496">N63LU</a><a href="/profile/sugarsnake" title="Totalscore: 873">sugarsnake</a><a href="/profile/whitehosre" title="Totalscore: 1">whitehosre</a></div></div>
+<div class="wc_head_bigbox" style="float:none;"><div class="wc_head_title"><a href="/users/with/All/by/user_lastactivity/DESC/page-1">44 Online</a></div><div class="wc_head_online"><a href="/profile/Guest" title="Totalscore: 0">Guest(x35)</a>, <a href="/profile/datotoda" title="Totalscore: 9132">datotoda</a>, <a href="/profile/DEADMAN" title="Totalscore: 0">DEADMAN</a>, <a href="/profile/gamer666" title="Totalscore: 0">gamer666</a>, <a href="/profile/hackerman123" title="Totalscore: 0">hackerman123</a>, <a href="/profile/hisoka_1123" title="Totalscore: 4588">hisoka_1123</a>, <a href="/profile/hubayb" title="Totalscore: 21635">hubayb</a>, <a href="/profile/kom0d0" title="Totalscore: 0">kom0d0</a>, <a href="/profile/wekito" title="Totalscore: 236260">wekito</a></div></div>
+
+</div>
+</header>
+<div class="cb"></div>
+
+		<div id="wc_banner_space"></div>
+		<div id="wc_sidebar">
+<div class="wc_side_box">
+<div class="wc_side_title">Signup<span class=""><a class="gwf_button" href="/index.php?mo=WeChall&amp;me=Sidebar2&amp;rightpanel=0" title="Hide Sidebar"><span class="gwf_btn_delete"><b>Hide Sidebar</b></span></a></span></div>
+<div class="wc_side_content">
+<form action="/login" method="post" id="wc_toplogin">
+<div><img src="/tpl/wc4/img/icon_user.gif" title="Username" alt="Username:" />&nbsp;<input type="text" name="username" value="" /></div>
+<div><img src="/tpl/wc4/img/icon_pass.gif" title="Password" alt="Password:" />&nbsp;<input type="password" name="password" value="" /></div>
+<div class="le">Restrict session to IP&nbsp;<input type="checkbox" name="bind_ip" checked="checked" /></div>
+<div class="le"><input type="submit" name="login" value="Login" /></div>
+<div><a href="/register">Register</a>&nbsp;&nbsp;&nbsp;<a href="/recovery">Forgot password</a></div>
+</form>
+
+</div>
+</div>
+<div class="wc_side_box">
+<div class="wc_side_title">Statistics</div>
+<div class="wc_side_content">
+<div><a href="/active_sites">43 Sites</a></div>
+<div><a href="/challs">190 Challs</a></div>
+<div><a href="/forum">9488 Posts</a></div>
+<div><a href="/users">71744 Users</a></div>
+<div><a href="/donations">50 Donations</a></div>
+<div><a href="/shop">1 Shop</a></div>
+
+</div>
+</div>
+<div class="wc_side_box">
+<div class="wc_side_title">43 Active Sites</div>
+<div class="wc_side_content">
+<div><a class="siteanchor" href="https://wow.sinfocol.org/" title="Ranked">World of Wargame</a></div>
+<div><a class="siteanchor" href="http://www.wechall.net/" title="Ranked">WeChall</a></div>
+<div><a class="siteanchor" href="http://www.bright-shadows.net" title="Ranked">TheBlackSheep</a></div>
+<div><a class="siteanchor" href="https://www.rankk.org" title="Ranked">Rankk</a></div>
+<div><a class="siteanchor" href="http://www.caesum.com/game" title="Ranked">Electrica</a></div>
+<div><a class="siteanchor" href="https://www.newbiecontest.org" title="Ranked">NewbieContest</a></div>
+<div><a class="siteanchor" href="https://www.brainquest.sk" title="Ranked">BrainQuest</a></div>
+<div><a class="siteanchor" href="http://www.net-force.nl" title="Ranked">Net-Force</a></div>
+<div><a class="siteanchor" href="https://www.hackthissite.org" title="Ranked">HackThisSite</a></div>
+<div><a class="siteanchor" href="http://warzone.elhacker.net" title="Ranked">elhacker.net</a></div>
+<div><a class="siteanchor" href="http://www.trythis0ne.com" title="Ranked">TryThis0ne</a></div>
+<div><a class="siteanchor" href="https://www.tdhack.com" title="Ranked">TDHack</a></div>
+<div><a class="siteanchor" href="http://3564020356.org" title="Ranked">+Ma's Reversing</a></div>
+<div><a class="siteanchor" href="https://www.hacker.org" title="Ranked">Hacker.org</a></div>
+<div><a class="siteanchor" href="http://hackbbs.org" title="Ranked">HackBBS</a></div>
+<div><a class="siteanchor" href="https://www.root-me.org" title="Ranked">Root-Me</a></div>
+<div><a class="siteanchor" href="https://www.spoj.com" title="Ranked">SPOJ</a></div>
+<div><a class="siteanchor" href="https://www.revolutionelite.co.uk" title="Ranked">Revolution Elite</a></div>
+<div><a class="siteanchor" href="https://w3challs.com/" title="Ranked">W3Challs</a></div>
+<div><a class="siteanchor" href="https://gekko.csokavar.hu" title="Ranked">Gekko</a></div>
+<div><a class="siteanchor" href="https://webhacking.kr" title="Ranked">Webhacking.kr</a></div>
+<div><a class="siteanchor" href="http://reversing.kr" title="Ranked">Reversing.Kr</a></div>
+<div><a class="siteanchor" href="http://suninatas.com" title="Ranked">SuNiNaTaS</a></div>
+<div><a class="siteanchor" href="http://www.hacking-challenges.de" title="Ranked">Hacking-Challenges</a></div>
+<div><a class="siteanchor" href="https://www.overthewire.org/wargames/" title="Ranked">OverTheWire.org</a></div>
+<div><a class="siteanchor" href="https://redtiger.labs.overthewire.org/" title="Ranked">RedTigers Hackit</a></div>
+<div><a class="siteanchor" href="https://ae27ff.com/" title="Ranked">ae27ff</a></div>
+<div><a class="siteanchor" href="http://pwnable.kr/" title="Ranked">pwnable.kr</a></div>
+<div><a class="siteanchor" href="https://ringzer0team.com" title="Ranked">RingZer0 Team Online CTF</a></div>
+<div><a class="siteanchor" href="https://pwnable.tw" title="Ranked">pwnable.tw</a></div>
+<div><a class="siteanchor" href="https://www.hackthebox.eu" title="Ranked">Hack The Box</a></div>
+<div><a class="siteanchor" href="https://www.trytodecrypt.com" title="Ranked">try to decrypt</a></div>
+<div><a class="siteanchor" href="https://mysterytwister.org/" title="Ranked">MysteryTwister</a></div>
+<div><a class="siteanchor" href="https://los.rubiya.kr/" title="Ranked">LordofSQLi</a></div>
+<div><a class="siteanchor" href="https://enigmes-a-thematiques.fr" title="Ranked">Énigmes À Thématiques</a></div>
+<div><a class="siteanchor" href="https://247ctf.com" title="Ranked">247CTF</a></div>
+<div><a class="siteanchor" href="https://cryptohack.org" title="Ranked">CryptoHack</a></div>
+<div><a class="siteanchor" href="https://pydefis.callicode.fr" title="Ranked">PyDéfis</a></div>
+<div><a class="siteanchor" href="https://promptriddle.com" title="Ranked">PromptRiddle</a></div>
+<div><a class="siteanchor" href="https://pwn.tn" title="Ranked">PWN.TN</a></div>
+<div><a class="siteanchor" href="https://pwn.college/" title="Ranked">pwn.college</a></div>
+<div><a class="siteanchor" href="https://hackmyvm.eu/" title="Ranked">HackMyVM</a></div>
+<div><a class="siteanchor" href="https://hack.arrrg.de/" title="Ranked">Hack The Web</a></div>
+
+</div>
+</div>
+<div class="wc_side_box">
+<div class="wc_side_title">Top 10 Players</div>
+<div class="wc_side_content">
+<div><a href="/profile/benito255" title="Totalscore: 787606">benito255</a></div>
+<div><a href="/profile/dloser" title="Totalscore: 753598">dloser</a></div>
+<div><a href="/profile/jusb3" title="Totalscore: 705615">jusb3</a></div>
+<div><a href="/profile/Caesum" title="Totalscore: 590403">Caesum</a></div>
+<div><a href="/profile/ytbjplh" title="Totalscore: 578494">ytbjplh</a></div>
+<div><a href="/profile/tehron" title="Totalscore: 575707">tehron</a></div>
+<div><a href="/profile/Xaav" title="Totalscore: 529432">Xaav</a></div>
+<div><a href="/profile/tenflo" title="Totalscore: 515373">tenflo</a></div>
+<div><a href="/profile/lordOric" title="Totalscore: 513272">lordOric</a></div>
+<div><a href="/profile/rayaseiren" title="Totalscore: 508016">rayaseiren</a></div>
+
+</div>
+</div>
+<div class="wc_side_box">
+<div class="wc_side_title">Last 20 Activities</div>
+<div class="wc_side_content">
+<div><a href="/profile/kom0d0" title="kom0d0 reached 0% on WeChall">kom0d0</a></div><div><a href="/profile/datotoda" title="datotoda reached 51.13% on Hack The Web">datotoda</a></div><div><a href="/profile/JustinSegg" title="JustinSegg reached 5.85% on OverTheWire.org">JustinSegg</a></div><div><a href="/profile/swfool_" title="swfool_ reached 0% on WeChall">swfool_</a></div><div><a href="/profile/hubayb" title="hubayb reached 16.77% on pwn.college">hubayb</a></div><div><a href="/profile/iniM0n" title="iniM0n reached 3.96% on CryptoHack">iniM0n</a></div><div><a href="/profile/obeid2" title="obeid2 reached 52.37% on Hack The Web">obeid2</a></div><div><a href="/profile/DEADMAN" title="DEADMAN reached 0% on WeChall">DEADMAN</a></div><div><a href="/profile/ForkBombCat" title="ForkBombCat reached 0% on WeChall">ForkBombCat</a></div><div><a href="/profile/AACDAI" title="AACDAI reached 90.53% on Net-Force">AACDAI</a></div><div><a href="/profile/wekito" title="wekito reached 38.78% on pwn.college">wekito</a></div><div><a href="/profile/gamer666" title="gamer666 reached 0% on WeChall">gamer666</a></div><div><a href="/profile/violetapdp" title="violetapdp reached 0% on WeChall">violetapdp</a></div><div><a href="/profile/Sony4Random" title="Sony4Random reached 15.2% on OverTheWire.org">Sony4Random</a></div><div><a href="/profile/inselaffe03" title="inselaffe03 reached 31.26% on Hack The Web">inselaffe03</a></div><div><a href="/profile/jusb3" title="jusb3 reached 100% on Gekko">jusb3</a></div><div><a href="/profile/SanskariWolf" title="SanskariWolf reached 0.13% on pwn.college">SanskariWolf</a></div><div><a href="/profile/p4ul_o" title="p4ul_o reached 26.9% on OverTheWire.org">p4ul_o</a></div><div><a href="/profile/Atlax" title="Atlax reached 21.05% on OverTheWire.org">Atlax</a></div><div><a href="/profile/x64" title="x64 reached 87.96% on pwn.college">x64</a></div>
+</div>
+</div>
+<div class="wc_side_box">
+<div class="wc_side_title">Online within 1d</div>
+<div class="wc_side_content">
+<div><a href="/users/with/All/by/user_lastactivity/DESC/page-1">46 Users</a></div><div><a href="/profile/DEADMAN">DEADMAN</a></div><div><a href="/profile/hisoka_1123">hisoka_1123</a></div><div><a href="/profile/kom0d0">kom0d0</a></div><div><a href="/profile/datotoda">datotoda</a></div><div><a href="/profile/gamer666">gamer666</a></div><div><a href="/profile/wekito">wekito</a></div><div><a href="/profile/hubayb">hubayb</a></div><div><a href="/profile/hackerman123">hackerman123</a></div><div><a href="/profile/otkroi_okno_w">otkroi_okno_w</a></div><div><a href="/profile/gizmore">gizmore</a></div><div><a href="/profile/swfool_">swfool_</a></div><div><a href="/profile/obeid2">obeid2</a></div><div><a href="/profile/SamDeva">SamDeva</a></div><div><a href="/profile/tomato12xs">tomato12xs</a></div><div><a href="/profile/Soji">Soji</a></div><div><a href="/profile/ForkBombCat">ForkBombCat</a></div><div><a href="/profile/violetapdp">violetapdp</a></div><div><a href="/profile/x64">x64</a></div><div><a href="/profile/kismet">kismet</a></div><div><a href="/profile/kilakila">kilakila</a></div><div><a href="/users/with/All/by/user_lastactivity/DESC/page-1">more</a></div>
+</div>
+</div>
+</div>
+
+		<div id="page">
+
+
+
+	<div class="gwf_board_quicktree"><a href="/forum-b1/WeChall.html">WeChall</a>-><a href="/forum-b2/Challenges.html">Challenges</a>-><a href="/forum-b321/Challenge_The_BrownOS.html">Challenge: The BrownOS</a></div>
+
+
+
+<div class="gwf_thread">
+
+<h1>Some notes&nbsp;&nbsp;<a class="gwf_button" href="/challenge/dloser/brownos/index.php" title="Go to the The BrownOS challenge"><span class="gwf_btn_forward"><b>Go to the The BrownOS challenge</b></span></a></h1><div class="gwf_buttons_outer"><div class="gwf_buttons ">
+<a class="gwf_button" href="/forum-t1352/New_syscall_enabled.html" title="New syscall enabled"><span class="gwf_btn_prev"><b>New syscall enabled</b></span></a><a class="gwf_button" href="/forum-t1575/Disappointment_Thread.html" title="Disappointment Thread"><span class="gwf_btn_next"><b>Disappointment Thread</b></span></a></div></div>
+<div class="gwf_pagemenu">
+<span>
+	<a  href="/forum-t917/Some_notes-p1.html">1</a>
+	<a  href="/forum-t917/Some_notes-p2.html">2</a>
+	<a class="gwf_pagemenu_sel" >3</a>
+
+</span>
+</div>
+<div class="gwf_posts">
+<div class="gwf_post" id="post7020">
+
+	<div class="gwf_post_uinfo gwf_tr_1">
+		<div><span><img src="/img/default/country/0" class="flag" title="__Unknown Country" alt="__Unknown Country" /><a href="/profile/dloser">dloser</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;2</div>
+						<div>Totalscore:&nbsp;753598</div>
+				<div>Posts:&nbsp;438</div>
+		<div>Thanks:&nbsp;499</div>
+		<div>UpVotes:&nbsp;476</div>
+		<div>Registered:&nbsp;16y 171d</div>
+		<div></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="dloser solved 88.13% on WeChall" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/2?0" title="dloser solved 86.22% on HackQuest" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/4?0" title="dloser solved 75.55% on Rankk" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/5?0" title="dloser solved 73.39% on TheBlackSheep" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/6?0" title="dloser solved 100% on Electrica" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/9?0" title="dloser solved 74.86% on Happy-Security" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/11?0" title="dloser solved 73.54% on DareYourMind" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/12?0" title="dloser solved 41.08% on LOST-Chall" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/13?0" title="dloser solved 31.67% on Yashira" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/14?0" title="dloser solved 42.54% on infomirmo" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/15?0" title="dloser solved 25.19% on BrainQuest" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/16?0" title="dloser solved 89.47% on Net-Force" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/17?0" title="dloser solved 84.62% on Hispabyte" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/18?0" title="dloser solved 100% on HackThisSite" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/19?6" title="dloser solved 100% on ThisisLegal.com" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/21?0" title="dloser solved 97.68% on TryThis0ne" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/23?0" title="dloser solved 69.23% on MiBs Challenges" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/24?0" title="dloser solved 60.71% on +Ma's Reversing" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/26?0" title="dloser solved 62.96% on thebackupbox" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/30?0" title="dloser solved 100% on hax.tor.hu" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/32?0" title="dloser solved 62.67% on Hacker.org" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/33?0" title="dloser solved 37.02% on Black Zero" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/35?0" title="dloser solved 95.83% on osix" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/36?9" title="dloser solved 28.51% on RoseCode" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/37?0" title="dloser solved 97.98% on CSTutoringCenter" alt="dloser" style="width: 28px; height:28px; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/38?0" title="dloser solved 60.56% on listbrain.tk" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/39?0" title="dloser solved 63.46% on Astalavista" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/42?0" title="dloser solved 8.92% on THC Hack Challenges" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="dloser solved 97.92% on Security Traps" alt="dloser" style="width: 28px; height:28px; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/46?6" title="dloser solved 13.71% on Root-Me" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/48?1" title="dloser solved 44.46% on W3Challs" alt="dloser" style="width: 16px; height:16px; padding: 6px;" />
+<img class="wc_logo" src="/dbimg/logo/49?1" title="dloser solved 94.44% on Revolution Elite" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/50?2" title="dloser solved 61.54% on Gekko" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/51?2" title="dloser solved 70.38% on Webhacking.kr" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/52?3" title="dloser solved 39.2% on µContest" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/53?3" title="dloser solved 64.75% on EnigmaGroup" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/54?2" title="dloser solved 31.79% on Hack-Me" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/55?14" title="dloser solved 42.04% on Right-Answer" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/56?5" title="dloser solved 39.94% on wargame.kr" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/57?2" title="dloser solved 100% on Security Override" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/58?1" title="dloser solved 90.93% on Valhalla" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/60?1" title="dloser solved 12.3% on Reversing.Kr" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<img class="wc_logo" src="/dbimg/logo/61?1" title="dloser solved 100% on RedTigers Hackit" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/62?2" title="dloser solved 44.1% on SuNiNaTaS" alt="dloser" style="width: 16px; height:16px; padding: 6px;" />
+<img class="wc_logo" src="/dbimg/logo/63?1" title="dloser solved 91.84% on Yoire" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/64?1" title="dloser solved 74.01% on wixxerd.com" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/65?1" title="dloser solved 77.24% on CanYouHack.It" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/66?1" title="dloser solved 58.62% on Hacking-Challenges" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/70?1" title="dloser solved 84.21% on OverTheWire.org" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/73?2" title="dloser solved 100% on Tasteless" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/74?1" title="dloser solved 100% on IRISSCON 2012 Lost Challenges" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/76?3" title="dloser solved 100% on Defend the Web" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/78?1" title="dloser solved 88.89% on Mod-X" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/79?1" title="dloser solved 73.55% on Omega Project" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/80?1" title="dloser solved 100% on Disavowed.net" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/81?9" title="dloser solved 77.66% on Stereotyped Challenges" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/82?1" title="dloser solved 47.92% on ae27ff" alt="dloser" style="width: 16px; height:16px; padding: 6px;" />
+<img class="wc_logo" src="/dbimg/logo/84?1" title="dloser solved 58.09% on Challengeland" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/85?1" title="dloser solved 32.77% on RingZer0 Team Online CTF" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/86?7" title="dloser solved 28.04% on SolveMe" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/87?1" title="dloser solved 39.13% on Hacker Gateway" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/94?3" title="dloser solved 12% on CanHackMe" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<img class="wc_logo" src="/dbimg/logo/98?6" title="dloser solved 34.27% on 247CTF" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+		
+		<div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_1">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">May 23, 2018 - 14:16:48 (7y 236d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7020); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7020">1</span><a class="gwf_button" href="/forum/thanks/for/post/7020/RE_Some_notes" onclick="gwfForumThanks(7020); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7020">1</span><a class="gwf_button" href="/forum/vote/up/post/7020/RE_Some_notes" onclick="gwfForumVote(7020, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7020">0</span><a class="gwf_button" href="/forum/vote/down/post/7020/RE_Some_notes" onclick="gwfForumVote(7020, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7020">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7020"><blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from Gizmore</span><div class="gwf_date">May 22, 2018 - 22:31:12</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 17, 2018 - 21:26:16</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 17, 2018 - 21:01:05</div></div><br />
+If the server replies immediately with no results (port closes, no data from server), does that indicate an error?<br />
+</blockquote><br />
+No.<br />
+</blockquote><br />
+Does it means BrownOS just segfaults on errors?<br />
+</blockquote><br />
+No, only on valid inputs.</div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7021">
+
+	<div class="gwf_post_uinfo gwf_tr_0">
+		<div><span><img src="/img/default/country/0" class="flag" title="__Unknown Country" alt="__Unknown Country" /><a href="/profile/l3st3r">l3st3r</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;829</div>
+						<div>Totalscore:&nbsp;32123</div>
+				<div>Posts:&nbsp;74</div>
+		<div>Thanks:&nbsp;38</div>
+		<div>UpVotes:&nbsp;49</div>
+		<div>Registered:&nbsp;7y 344d</div>
+		<div></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="l3st3r solved 86.69% on WeChall" alt="l3st3r" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="l3st3r solved 64.58% on Security Traps" alt="l3st3r" style="width: 20px; height:20px; padding: 4px;" />
+		
+		<div><div>Last Seen: 4y 208d</div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_0">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">May 23, 2018 - 17:27:16 (7y 236d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7021); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7021">1</span><a class="gwf_button" href="/forum/thanks/for/post/7021/RE_Some_notes" onclick="gwfForumThanks(7021); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7021">1</span><a class="gwf_button" href="/forum/vote/up/post/7021/RE_Some_notes" onclick="gwfForumVote(7021, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7021">0</span><a class="gwf_button" href="/forum/vote/down/post/7021/RE_Some_notes" onclick="gwfForumVote(7021, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7021">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7021"><blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from Gizmore</span><div class="gwf_date">May 22, 2018 - 22:31:12</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 17, 2018 - 21:26:16</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 17, 2018 - 21:01:05</div></div><br />
+If the server replies immediately with no results (port closes, no data from server), does that indicate an error?<br />
+</blockquote><br />
+No.<br />
+</blockquote><br />
+Does it means BrownOS just segfaults on errors?<br />
+</blockquote><br />
+I haven't seen any mush come back that looks &quot;segfault&quot;-ish in nature, have you? <br />
+But I have seen a lot of &quot;nothing&quot; come back.  Port closes, boom, thank you very much.  Hmm, what could it mean?</div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7022">
+
+	<div class="gwf_post_uinfo gwf_tr_1">
+		<div><span><img src="/img/default/country/0" class="flag" title="__Unknown Country" alt="__Unknown Country" /><a href="/profile/l3st3r">l3st3r</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;829</div>
+						<div>Totalscore:&nbsp;32123</div>
+				<div>Posts:&nbsp;74</div>
+		<div>Thanks:&nbsp;38</div>
+		<div>UpVotes:&nbsp;49</div>
+		<div>Registered:&nbsp;7y 344d</div>
+		<div></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="l3st3r solved 86.69% on WeChall" alt="l3st3r" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="l3st3r solved 64.58% on Security Traps" alt="l3st3r" style="width: 20px; height:20px; padding: 4px;" />
+		
+		<div><div>Last Seen: 4y 208d</div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_1">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">May 23, 2018 - 17:35:46 (7y 236d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7022); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7022">1</span><a class="gwf_button" href="/forum/thanks/for/post/7022/RE_Some_notes" onclick="gwfForumThanks(7022); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7022">1</span><a class="gwf_button" href="/forum/vote/up/post/7022/RE_Some_notes" onclick="gwfForumVote(7022, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7022">0</span><a class="gwf_button" href="/forum/vote/down/post/7022/RE_Some_notes" onclick="gwfForumVote(7022, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7022">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7022"><blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 23, 2018 - 14:16:48</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from Gizmore</span><div class="gwf_date">May 22, 2018 - 22:31:12</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 17, 2018 - 21:26:16</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 17, 2018 - 21:01:05</div></div><br />
+If the server replies immediately with no results (port closes, no data from server), does that indicate an error?<br />
+</blockquote><br />
+No.<br />
+</blockquote><br />
+Does it means BrownOS just segfaults on errors?<br />
+</blockquote><br />
+No, only on valid inputs.<br />
+</blockquote><br />
+BrownOS segfaults only on valid inputs??? <img src="/img/default/smile/ssmile.png" title="Smile" alt="Smile" />   I have to rethink everything!</div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited">Last edited by l3st3r - May 23, 2018 - 18:17:50</div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7171">
+
+	<div class="gwf_post_uinfo gwf_tr_0">
+		<div><span><img src="/img/default/country/17" class="flag" title="Germany" alt="Germany" /><a href="/profile/space">space</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;562</div>
+						<div>Totalscore:&nbsp;46314</div>
+				<div>Posts:&nbsp;232</div>
+		<div>Thanks:&nbsp;224</div>
+		<div>UpVotes:&nbsp;237</div>
+		<div>Registered:&nbsp;15y 29d</div>
+		<div><img src="/dbimg/avatar/4593?v=4" alt="space`s Avatar" title="space`s Avatar" /></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="space solved 93.34% on WeChall" alt="space" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/23?0" title="space solved 41.67% on MiBs Challenges" alt="space" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/32?0" title="space solved 18.49% on Hacker.org" alt="space" style="width: 10px; height:10px; padding: 9px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="space solved 75% on Security Traps" alt="space" style="width: 22px; height:22px; padding: 3px;" />
+		
+		<div></div>
+		<div>The User is Offline</div>
+<div class="gwf_buttons_outer"><div class="gwf_buttons"><a class="gwf_button" href="/send/email/to/space" title="1"><span class="gwf_btn_mail"><b>1</b></span></a></div></div>	</div>
+	<div class="gwf_post_body gwf_tr_0">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">Sep 10, 2018 - 23:48:18 (7y 126d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7171); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7171">1</span><a class="gwf_button" href="/forum/thanks/for/post/7171/RE_Some_notes" onclick="gwfForumThanks(7171); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7171">1</span><a class="gwf_button" href="/forum/vote/up/post/7171/RE_Some_notes" onclick="gwfForumVote(7171, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7171">0</span><a class="gwf_button" href="/forum/vote/down/post/7171/RE_Some_notes" onclick="gwfForumVote(7171, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7171">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7171"><blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 23, 2018 - 17:35:46</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 23, 2018 - 14:16:48</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from Gizmore</span><div class="gwf_date">May 22, 2018 - 22:31:12</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 17, 2018 - 21:26:16</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 17, 2018 - 21:01:05</div></div><br />
+If the server replies immediately with no results (port closes, no data from server), does that indicate an error?<br />
+</blockquote><br />
+No.<br />
+</blockquote><br />
+Does it means BrownOS just segfaults on errors?<br />
+</blockquote><br />
+No, only on valid inputs.<br />
+</blockquote><br />
+BrownOS segfaults only on valid inputs??? <img src="/img/default/smile/ssmile.png" title="Smile" alt="Smile" />   I have to rethink everything!<br />
+</blockquote><br />
+This is sarcasm.</div><div class="gwf_forum_sig"><div class="gwf_signature">Contact only via c3BhY2VAd2VjaGFsbC5uZXQ= or PM...<br />
+Windows can be secure... but only if you don't use it <img src="/img/default/smile/shappy.png" title="Happy" alt="Happy" /></div></div>
+		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7172">
+
+	<div class="gwf_post_uinfo gwf_tr_1">
+		<div><span><img src="/img/default/country/0" class="flag" title="__Unknown Country" alt="__Unknown Country" /><a href="/profile/l3st3r">l3st3r</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;829</div>
+						<div>Totalscore:&nbsp;32123</div>
+				<div>Posts:&nbsp;74</div>
+		<div>Thanks:&nbsp;38</div>
+		<div>UpVotes:&nbsp;49</div>
+		<div>Registered:&nbsp;7y 344d</div>
+		<div></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="l3st3r solved 86.69% on WeChall" alt="l3st3r" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="l3st3r solved 64.58% on Security Traps" alt="l3st3r" style="width: 20px; height:20px; padding: 4px;" />
+		
+		<div><div>Last Seen: 4y 208d</div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_1">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">Sep 11, 2018 - 00:42:36 (7y 126d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7172); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7172">1</span><a class="gwf_button" href="/forum/thanks/for/post/7172/RE_Some_notes" onclick="gwfForumThanks(7172); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7172">1</span><a class="gwf_button" href="/forum/vote/up/post/7172/RE_Some_notes" onclick="gwfForumVote(7172, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7172">0</span><a class="gwf_button" href="/forum/vote/down/post/7172/RE_Some_notes" onclick="gwfForumVote(7172, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7172">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7172"><blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 17, 2018 - 21:26:16</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 17, 2018 - 21:01:05</div></div><br />
+If the server replies immediately with no results (port closes, no data from server), does that indicate an error?<br />
+</blockquote><br />
+No.<br />
+</blockquote><br />
+<br />
+Does it indicate success?</div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7174">
+
+	<div class="gwf_post_uinfo gwf_tr_0">
+		<div><span><img src="/img/default/country/0" class="flag" title="__Unknown Country" alt="__Unknown Country" /><a href="/profile/dloser">dloser</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;2</div>
+						<div>Totalscore:&nbsp;753598</div>
+				<div>Posts:&nbsp;438</div>
+		<div>Thanks:&nbsp;499</div>
+		<div>UpVotes:&nbsp;476</div>
+		<div>Registered:&nbsp;16y 171d</div>
+		<div></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="dloser solved 88.13% on WeChall" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/2?0" title="dloser solved 86.22% on HackQuest" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/4?0" title="dloser solved 75.55% on Rankk" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/5?0" title="dloser solved 73.39% on TheBlackSheep" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/6?0" title="dloser solved 100% on Electrica" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/9?0" title="dloser solved 74.86% on Happy-Security" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/11?0" title="dloser solved 73.54% on DareYourMind" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/12?0" title="dloser solved 41.08% on LOST-Chall" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/13?0" title="dloser solved 31.67% on Yashira" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/14?0" title="dloser solved 42.54% on infomirmo" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/15?0" title="dloser solved 25.19% on BrainQuest" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/16?0" title="dloser solved 89.47% on Net-Force" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/17?0" title="dloser solved 84.62% on Hispabyte" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/18?0" title="dloser solved 100% on HackThisSite" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/19?6" title="dloser solved 100% on ThisisLegal.com" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/21?0" title="dloser solved 97.68% on TryThis0ne" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/23?0" title="dloser solved 69.23% on MiBs Challenges" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/24?0" title="dloser solved 60.71% on +Ma's Reversing" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/26?0" title="dloser solved 62.96% on thebackupbox" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/30?0" title="dloser solved 100% on hax.tor.hu" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/32?0" title="dloser solved 62.67% on Hacker.org" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/33?0" title="dloser solved 37.02% on Black Zero" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/35?0" title="dloser solved 95.83% on osix" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/36?9" title="dloser solved 28.51% on RoseCode" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/37?0" title="dloser solved 97.98% on CSTutoringCenter" alt="dloser" style="width: 28px; height:28px; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/38?0" title="dloser solved 60.56% on listbrain.tk" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/39?0" title="dloser solved 63.46% on Astalavista" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/42?0" title="dloser solved 8.92% on THC Hack Challenges" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="dloser solved 97.92% on Security Traps" alt="dloser" style="width: 28px; height:28px; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/46?6" title="dloser solved 13.71% on Root-Me" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/48?1" title="dloser solved 44.46% on W3Challs" alt="dloser" style="width: 16px; height:16px; padding: 6px;" />
+<img class="wc_logo" src="/dbimg/logo/49?1" title="dloser solved 94.44% on Revolution Elite" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/50?2" title="dloser solved 61.54% on Gekko" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/51?2" title="dloser solved 70.38% on Webhacking.kr" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/52?3" title="dloser solved 39.2% on µContest" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/53?3" title="dloser solved 64.75% on EnigmaGroup" alt="dloser" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/54?2" title="dloser solved 31.79% on Hack-Me" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/55?14" title="dloser solved 42.04% on Right-Answer" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/56?5" title="dloser solved 39.94% on wargame.kr" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/57?2" title="dloser solved 100% on Security Override" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/58?1" title="dloser solved 90.93% on Valhalla" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/60?1" title="dloser solved 12.3% on Reversing.Kr" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<img class="wc_logo" src="/dbimg/logo/61?1" title="dloser solved 100% on RedTigers Hackit" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/62?2" title="dloser solved 44.1% on SuNiNaTaS" alt="dloser" style="width: 16px; height:16px; padding: 6px;" />
+<img class="wc_logo" src="/dbimg/logo/63?1" title="dloser solved 91.84% on Yoire" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/64?1" title="dloser solved 74.01% on wixxerd.com" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/65?1" title="dloser solved 77.24% on CanYouHack.It" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/66?1" title="dloser solved 58.62% on Hacking-Challenges" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/70?1" title="dloser solved 84.21% on OverTheWire.org" alt="dloser" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/73?2" title="dloser solved 100% on Tasteless" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/74?1" title="dloser solved 100% on IRISSCON 2012 Lost Challenges" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/76?3" title="dloser solved 100% on Defend the Web" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/78?1" title="dloser solved 88.89% on Mod-X" alt="dloser" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/79?1" title="dloser solved 73.55% on Omega Project" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/80?1" title="dloser solved 100% on Disavowed.net" alt="dloser" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/81?9" title="dloser solved 77.66% on Stereotyped Challenges" alt="dloser" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/82?1" title="dloser solved 47.92% on ae27ff" alt="dloser" style="width: 16px; height:16px; padding: 6px;" />
+<img class="wc_logo" src="/dbimg/logo/84?1" title="dloser solved 58.09% on Challengeland" alt="dloser" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/85?1" title="dloser solved 32.77% on RingZer0 Team Online CTF" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/86?7" title="dloser solved 28.04% on SolveMe" alt="dloser" style="width: 12px; height:12px; padding: 8px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/87?1" title="dloser solved 39.13% on Hacker Gateway" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/94?3" title="dloser solved 12% on CanHackMe" alt="dloser" style="width: 8px; height:8px; padding: 10px;" />
+<img class="wc_logo" src="/dbimg/logo/98?6" title="dloser solved 34.27% on 247CTF" alt="dloser" style="width: 14px; height:14px; padding: 7px;" />
+		
+		<div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_0">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">Sep 11, 2018 - 14:57:58 (7y 125d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7174); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7174">1</span><a class="gwf_button" href="/forum/thanks/for/post/7174/RE_Some_notes" onclick="gwfForumThanks(7174); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7174">2</span><a class="gwf_button" href="/forum/vote/up/post/7174/RE_Some_notes" onclick="gwfForumVote(7174, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7174">0</span><a class="gwf_button" href="/forum/vote/down/post/7174/RE_Some_notes" onclick="gwfForumVote(7174, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7174">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7174"><blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from space</span><div class="gwf_date">Sep 10, 2018 - 23:48:18</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 23, 2018 - 17:35:46</div></div><br />
+...<br />
+</blockquote><br />
+This is sarcasm.<br />
+</blockquote><br />
+No, you are.<br />
+<br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">Sep 11, 2018 - 00:42:36</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from dloser</span><div class="gwf_date">May 17, 2018 - 21:26:16</div></div><br />
+<blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from l3st3r</span><div class="gwf_date">May 17, 2018 - 21:01:05</div></div><br />
+If the server replies immediately with no results (port closes, no data from server), does that indicate an error?<br />
+</blockquote><br />
+No.<br />
+</blockquote><br />
+<br />
+Does it indicate success?<br />
+</blockquote><br />
+If you didn't want it to return anything, yes.</div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7314">
+
+	<div class="gwf_post_uinfo gwf_tr_1">
+		<div><span><img src="/img/default/country/0" class="flag" title="__Unknown Country" alt="__Unknown Country" /><a href="/profile/mk_modrzew">mk_modrzew</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;24168</div>
+						<div>Totalscore:&nbsp;7</div>
+				<div>Posts:&nbsp;1</div>
+		<div>Thanks:&nbsp;1</div>
+		<div>UpVotes:&nbsp;1</div>
+		<div>Registered:&nbsp;8y 8d</div>
+		<div></div>
+				
+		<div><div>Last Seen: 6y 192d</div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_1">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">Jan 05, 2019 - 16:09:40 (7y 9d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7314); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7314">1</span><a class="gwf_button" href="/forum/thanks/for/post/7314/RE_Some_notes" onclick="gwfForumThanks(7314); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7314">1</span><a class="gwf_button" href="/forum/vote/up/post/7314/RE_Some_notes" onclick="gwfForumVote(7314, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7314">0</span><a class="gwf_button" href="/forum/vote/down/post/7314/RE_Some_notes" onclick="gwfForumVote(7314, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7314">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7314">Is service on port 61221 still online?</div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7315">
+
+	<div class="gwf_post_uinfo gwf_tr_0">
+		<div><span><img src="/img/default/country/17" class="flag" title="Germany" alt="Germany" /><a href="/profile/space">space</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;562</div>
+						<div>Totalscore:&nbsp;46314</div>
+				<div>Posts:&nbsp;232</div>
+		<div>Thanks:&nbsp;224</div>
+		<div>UpVotes:&nbsp;237</div>
+		<div>Registered:&nbsp;15y 29d</div>
+		<div><img src="/dbimg/avatar/4593?v=4" alt="space`s Avatar" title="space`s Avatar" /></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="space solved 93.34% on WeChall" alt="space" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/23?0" title="space solved 41.67% on MiBs Challenges" alt="space" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/32?0" title="space solved 18.49% on Hacker.org" alt="space" style="width: 10px; height:10px; padding: 9px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="space solved 75% on Security Traps" alt="space" style="width: 22px; height:22px; padding: 3px;" />
+		
+		<div></div>
+		<div>The User is Offline</div>
+<div class="gwf_buttons_outer"><div class="gwf_buttons"><a class="gwf_button" href="/send/email/to/space" title="1"><span class="gwf_btn_mail"><b>1</b></span></a></div></div>	</div>
+	<div class="gwf_post_body gwf_tr_0">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">Jan 05, 2019 - 16:17:02 (7y 9d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7315); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7315">2</span><a class="gwf_button" href="/forum/thanks/for/post/7315/RE_Some_notes" onclick="gwfForumThanks(7315); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7315">1</span><a class="gwf_button" href="/forum/vote/up/post/7315/RE_Some_notes" onclick="gwfForumVote(7315, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7315">0</span><a class="gwf_button" href="/forum/vote/down/post/7315/RE_Some_notes" onclick="gwfForumVote(7315, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7315">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7315">Yes</div><div class="gwf_forum_sig"><div class="gwf_signature">Contact only via c3BhY2VAd2VjaGFsbC5uZXQ= or PM...<br />
+Windows can be secure... but only if you don't use it <img src="/img/default/smile/shappy.png" title="Happy" alt="Happy" /></div></div>
+		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7807">
+
+	<div class="gwf_post_uinfo gwf_tr_1">
+		<div><span><img src="/img/default/country/50" class="flag" title="Vietnam" alt="Vietnam" /><a href="/profile/quangntenemy">quangntenemy</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;61</div>
+						<div>Totalscore:&nbsp;255406</div>
+				<div>Posts:&nbsp;180</div>
+		<div>Thanks:&nbsp;170</div>
+		<div>UpVotes:&nbsp;206</div>
+		<div>Registered:&nbsp;17y 332d</div>
+		<div></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="quangntenemy solved 66.43% on WeChall" alt="quangntenemy" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/2?0" title="quangntenemy solved 91.44% on HackQuest" alt="quangntenemy" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/4?0" title="quangntenemy solved 71.91% on Rankk" alt="quangntenemy" style="width: 22px; height:22px; padding: 3px;" />
+<img class="wc_logo" src="/dbimg/logo/5?0" title="quangntenemy solved 89.47% on TheBlackSheep" alt="quangntenemy" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/6?0" title="quangntenemy solved 59.09% on Electrica" alt="quangntenemy" style="width: 18px; height:18px; padding: 5px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/9?0" title="quangntenemy solved 37.7% on Happy-Security" alt="quangntenemy" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/10?0" title="quangntenemy solved 8.28% on NewbieContest" alt="quangntenemy" style="width: 8px; height:8px; padding: 10px;" />
+<img class="wc_logo" src="/dbimg/logo/11?0" title="quangntenemy solved 55.61% on DareYourMind" alt="quangntenemy" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/12?0" title="quangntenemy solved 26.84% on LOST-Chall" alt="quangntenemy" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/14?0" title="quangntenemy solved 9.06% on infomirmo" alt="quangntenemy" style="width: 8px; height:8px; padding: 10px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/16?0" title="quangntenemy solved 85.26% on Net-Force" alt="quangntenemy" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/18?0" title="quangntenemy solved 100% on HackThisSite" alt="quangntenemy" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/21?0" title="quangntenemy solved 27.8% on TryThis0ne" alt="quangntenemy" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/23?0" title="quangntenemy solved 17.31% on MiBs Challenges" alt="quangntenemy" style="width: 10px; height:10px; padding: 9px;" />
+<img class="wc_logo" src="/dbimg/logo/24?0" title="quangntenemy solved 53.57% on +Ma's Reversing" alt="quangntenemy" style="width: 18px; height:18px; padding: 5px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/26?0" title="quangntenemy solved 22.22% on thebackupbox" alt="quangntenemy" style="width: 10px; height:10px; padding: 9px;" />
+<img class="wc_logo" src="/dbimg/logo/30?0" title="quangntenemy solved 60% on hax.tor.hu" alt="quangntenemy" style="width: 18px; height:18px; padding: 5px;" />
+<img class="wc_logo" src="/dbimg/logo/32?0" title="quangntenemy solved 41.1% on Hacker.org" alt="quangntenemy" style="width: 14px; height:14px; padding: 7px;" />
+<img class="wc_logo" src="/dbimg/logo/35?0" title="quangntenemy solved 65.4% on osix" alt="quangntenemy" style="width: 20px; height:20px; padding: 4px;" />
+<img class="wc_logo" src="/dbimg/logo/49?1" title="quangntenemy solved 9.6% on Revolution Elite" alt="quangntenemy" style="width: 8px; height:8px; padding: 10px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/61?1" title="quangntenemy solved 100% on RedTigers Hackit" alt="quangntenemy" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/70?1" title="quangntenemy solved 23.39% on OverTheWire.org" alt="quangntenemy" style="width: 10px; height:10px; padding: 9px;" />
+<img class="wc_logo" src="/dbimg/logo/74?1" title="quangntenemy solved 100% on IRISSCON 2012 Lost Challenges" alt="quangntenemy" style="width: 22px; height:22px; border: 3px groove #FE0; padding: 0px;" />
+<img class="wc_logo" src="/dbimg/logo/76?3" title="quangntenemy solved 31% on Defend the Web" alt="quangntenemy" style="width: 12px; height:12px; padding: 8px;" />
+<img class="wc_logo" src="/dbimg/logo/78?1" title="quangntenemy solved 77.78% on Mod-X" alt="quangntenemy" style="width: 22px; height:22px; padding: 3px;" />
+<br/>
+<img class="wc_logo" src="/dbimg/logo/87?1" title="quangntenemy solved 91.3% on Hacker Gateway" alt="quangntenemy" style="width: 26px; height:26px; padding: 1px;" />
+<img class="wc_logo" src="/dbimg/logo/98?6" title="quangntenemy solved 16.86% on 247CTF" alt="quangntenemy" style="width: 10px; height:10px; padding: 9px;" />
+<img class="wc_logo" src="/dbimg/logo/99?1" title="quangntenemy solved 30.38% on CryptoHack" alt="quangntenemy" style="width: 12px; height:12px; padding: 8px;" />
+		
+		<div><div>Last Seen: 12d 5h</div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_1">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">May 01, 2020 - 13:51:12 (5y 257d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7807); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7807">1</span><a class="gwf_button" href="/forum/thanks/for/post/7807/RE_Some_notes" onclick="gwfForumThanks(7807); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7807">1</span><a class="gwf_button" href="/forum/vote/up/post/7807/RE_Some_notes" onclick="gwfForumVote(7807, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7807">0</span><a class="gwf_button" href="/forum/vote/down/post/7807/RE_Some_notes" onclick="gwfForumVote(7807, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p3.html#post7807">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7807">How many people actually tried this one lol? The fact that all solvers (except the author) gave it a difficulty of 10 is throwing me off, either it's too hard or too much work (or both) <img src="/img/default/smile/sdrool.png" title="Drool" alt="Drool" /></div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+<div class="gwf_post" id="post7809">
+
+	<div class="gwf_post_uinfo gwf_tr_0">
+		<div><span><img src="/img/default/country/0" class="flag" title="__Unknown Country" alt="__Unknown Country" /><a href="/profile/l3st3r">l3st3r</a></span></div>
+		<div></div>
+				<div>Global Rank:&nbsp;829</div>
+						<div>Totalscore:&nbsp;32123</div>
+				<div>Posts:&nbsp;74</div>
+		<div>Thanks:&nbsp;38</div>
+		<div>UpVotes:&nbsp;49</div>
+		<div>Registered:&nbsp;7y 344d</div>
+		<div></div>
+		<img class="wc_logo" src="/dbimg/logo/1?0" title="l3st3r solved 86.69% on WeChall" alt="l3st3r" style="width: 24px; height:24px; padding: 2px;" />
+<img class="wc_logo" src="/dbimg/logo/45?2" title="l3st3r solved 64.58% on Security Traps" alt="l3st3r" style="width: 20px; height:20px; padding: 4px;" />
+		
+		<div><div>Last Seen: 4y 208d</div></div>
+		<div>The User is Offline</div>
+	</div>
+	<div class="gwf_post_body gwf_tr_0">
+		<div class="gwf_post_head">
+			<div>
+				<span class="ib">
+					<span class="gwf_post_title">RE: Some notes</span>
+					<br/>
+					<span class="gwf_date gwf_post_date">May 01, 2020 - 22:21:43 (5y 257d)</span>
+				</span>
+								<span class="gwf_post_toolbar">
+					<span class="gwf_post_apps gwf_buttons"><a class="gwf_button" href="#" onclick="gwfForumTrans(7809); return false;" title="Google/translate"><span class="gwf_btn_translate"><b>Google/translate</b></span></a><span id="gwf_post_thx_7809">1</span><a class="gwf_button" href="/forum/thanks/for/post/7809/RE_Some_notes" onclick="gwfForumThanks(7809); return false;" title="Thank You!"><span class="gwf_btn_thanks"><b>Thank You!</b></span></a><span id="gwf_post_up_7809">1</span><a class="gwf_button" href="/forum/vote/up/post/7809/RE_Some_notes" onclick="gwfForumVote(7809, 1); return false;" title="Good Post!"><span class="gwf_btn_thumbsup"><b>Good Post!</b></span></a><span id="gwf_post_down_7809">0</span><a class="gwf_button" href="/forum/vote/down/post/7809/RE_Some_notes" onclick="gwfForumVote(7809, 0); return false;" title="Bad Post!"><span class="gwf_btn_thumbsdown"><b>Bad Post!</b></span></a></span>
+					<span class="gwf_post_perma"><a href="/forum-t917/Some_notes-p4.html#post7809">link</a></span>
+				</span>
+								<div class="cb"></div>
+			</div>
+		</div>
+		
+		
+		<div class="gwf_post_msg">
+			<div id="gwf_forum_post_7809"><blockquote class="gwf_bb_quote"><div class="gwf_bb_quote_top"><span>Quote from quangntenemy</span><div class="gwf_date">May 01, 2020 - 13:51:12</div></div><br />
+How many people actually tried this one lol? The fact that all solvers (except the author) gave it a difficulty of 10 is throwing me off, either it's too hard or too much work (or both) <img src="/img/default/smile/sdrool.png" title="Drool" alt="Drool" /><br />
+</blockquote><br />
+It's hard. It's work.  How much is &quot;too&quot; much? You'll have to decide.</div>		</div>
+
+				<div class="gwf_post_foot"><div class="gwf_post_edited"></div>
+<div class="gwf_buttons"></div>
+</div>
+	</div>
+</div>
+
+<div class="cl"></div>
+</div>
+<div class="gwf_pagemenu">
+<span>
+	<a  href="/forum-t917/Some_notes-p1.html">1</a>
+	<a  href="/forum-t917/Some_notes-p2.html">2</a>
+	<a class="gwf_pagemenu_sel" >3</a>
+
+</span>
+</div>
+
+<div class="box box_c">
+<a href="/profile/DrOptix">DrOptix</a>, <a href="/profile/macplox">macplox</a>, <a href="/profile/l3st3r">l3st3r</a>, <a href="/profile/UnQuaiz">UnQuaiz</a>, <a href="/profile/Donlon">Donlon</a>, <a href="/profile/dloser">dloser</a>, <a href="/profile/Redknee">Redknee</a>, <a href="/profile/ckclark">ckclark</a>, <a href="/profile/silenttrack">silenttrack</a>, <a href="/profile/n0tHappy">n0tHappy</a>, <a href="/profile/nonfungiblesecurity">nonfungiblesecurity</a>, <a href="/profile/quangntenemy">quangntenemy</a>, <a href="/profile/TheHiveMind">TheHiveMind</a>, <a href="/profile/Z">Z</a>, <a href="/profile/balicocat">balicocat</a>, <a href="/profile/Ge0">Ge0</a>, <a href="/profile/arraez">arraez</a>, <a href="/profile/jcquinterov">jcquinterov</a>, <a href="/profile/hophuocthinh">hophuocthinh</a>, <a href="/profile/alfamen2">alfamen2</a>, <a href="/profile/burhanudinn123">burhanudinn123</a>, <a href="/profile/Ben_Dover">Ben_Dover</a>, <a href="/profile/stephanduran89">stephanduran89</a>, <a href="/profile/braddie0">braddie0</a>, <a href="/profile/fpombal">fpombal</a>, <a href="/profile/csuquvq">csuquvq</a> have subscribed to this thread and receive emails on new posts.<br/>
+1 people are watching the thread at the moment.
+<br/>
+This thread has been viewed 707541 times.
+</div>
+</div>
+		</div>
+		<div id="page_footer_space"></div>
+	</div>
+	<footer id="gwf_footer"><nav id="gwf_foot_menu">
+<a href="/news">News</a>
+| <a href="https://github.com/gizmore/gwf3/commits/master">Changes</a>
+| <a href="/about_wechall">About Us</a>
+| <a href="/join_us">Join Us</a>
+| <a href="/links">Links</a>
+| <a href="/active_sites">Sites</a>
+| <a href="/forum">Forum</a>
+| <a href="/ranking">Ranking</a>
+| <a href="/challs">Challenges</a>
+| <a href="/lounge">Chat</a>
+| <a href="/contact">Contact</a>
+</nav>
+<div id="foot_boxes" class="cf">
+<div class="foot_box">©2008-2026 by wechall.net; <a href="https://github.com/gizmore/gwf3">All code</a> runs under the terms of the <a href="/wechall_license">WeChall Public License</a>; You can <a href="/contact">contact us here</a>.</div>
+<div class="foot_box">77 users were online at Jan 24, 2021 - 23:32:34<br/>2110705964 pages have been served until now</div>
+<div class="foot_box"><div>191 Queries (9 writes) in 0.1731s - PHP Time: 0.0246s - Total Time: 0.1977s. Memory: 6.00MB<br/>Modules loaded: <a href="#" title="Account, Heart, WeChall, Forum">4</a></div></div>
+</div>
+</footer>
+
+	<div id="wc_profile_slide" ></div>
+</body>
+
+</html>
