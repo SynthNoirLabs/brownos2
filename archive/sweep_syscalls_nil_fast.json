@@ -1,0 +1,1520 @@
+[
+  {
+    "detail": "",
+    "kind": "silent",
+    "raw_hex": "",
+    "syscall": 0
+  },
+  {
+    "detail": "Right(2)",
+    "kind": "either_right",
+    "raw_hex": "000200fdfefefefefefefefefefdfefeff",
+    "syscall": 1
+  },
+  {
+    "detail": "Lam(body=Lam(body=Var(i=1)))",
+    "kind": "non_either",
+    "raw_hex": "01fefeff",
+    "syscall": 2
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 3
+  },
+  {
+    "detail": "Left(bytes:4:'\\x00\ufffd\ufffd\ufffd')",
+    "kind": "either_left",
+    "raw_hex": "010100fefefefefefefefefefd010807060504030200fdfdfdfdfdfdfdfefefefefefefefefefd010807060504030200fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefeff",
+    "syscall": 4
+  },
+  {
+    "detail": "Right(2)",
+    "kind": "either_right",
+    "raw_hex": "000200fdfefefefefefefefefefdfefeff",
+    "syscall": 5
+  },
+  {
+    "detail": "Right(2)",
+    "kind": "either_right",
+    "raw_hex": "000200fdfefefefefefefefefefdfefeff",
+    "syscall": 6
+  },
+  {
+    "detail": "Right(2)",
+    "kind": "either_right",
+    "raw_hex": "000200fdfefefefefefefefefefdfefeff",
+    "syscall": 7
+  },
+  {
+    "detail": "Right(6)",
+    "kind": "either_right",
+    "raw_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "syscall": 8
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 9
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 10
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 11
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 12
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 13
+  },
+  {
+    "detail": "Left(bytes:0:'')",
+    "kind": "either_left",
+    "raw_hex": "0100fefefdfefeff",
+    "syscall": 14
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 15
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 16
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 17
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 18
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 19
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 20
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 21
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 22
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 23
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 24
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 25
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 26
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 27
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 28
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 29
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 30
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 31
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 32
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 33
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 34
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 35
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 36
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 37
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 38
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 39
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 40
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 41
+  },
+  {
+    "detail": "Left(bytes:24:'Oh, go choke on a towel!')",
+    "kind": "either_left",
+    "raw_hex": "0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff",
+    "syscall": 42
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 43
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 44
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 45
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 46
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 47
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 48
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 49
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 50
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 51
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 52
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 53
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 54
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 55
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 56
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 57
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 58
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 59
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 60
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 61
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 62
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 63
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 64
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 65
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 66
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 67
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 68
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 69
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 70
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 71
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 72
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 73
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 74
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 75
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 76
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 77
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 78
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 79
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 80
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 81
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 82
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 83
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 84
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 85
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 86
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 87
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 88
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 89
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 90
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 91
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 92
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 93
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 94
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 95
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 96
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 97
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 98
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 99
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 100
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 101
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 102
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 103
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 104
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 105
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 106
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 107
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 108
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 109
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 110
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 111
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 112
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 113
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 114
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 115
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 116
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 117
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 118
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 119
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 120
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 121
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 122
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 123
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 124
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 125
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 126
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 127
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 128
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 129
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 130
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 131
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 132
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 133
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 134
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 135
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 136
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 137
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 138
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 139
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 140
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 141
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 142
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 143
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 144
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 145
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 146
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 147
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 148
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 149
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 150
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 151
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 152
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 153
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 154
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 155
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 156
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 157
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 158
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 159
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 160
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 161
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 162
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 163
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 164
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 165
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 166
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 167
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 168
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 169
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 170
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 171
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 172
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 173
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 174
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 175
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 176
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 177
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 178
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 179
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 180
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 181
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 182
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 183
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 184
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 185
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 186
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 187
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 188
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 189
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 190
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 191
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 192
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 193
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 194
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 195
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 196
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 197
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 198
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 199
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 200
+  },
+  {
+    "detail": "Left(<non-bytes>)",
+    "kind": "either_left",
+    "raw_hex": "01010000fdfefefd0100fdfefefdfefefdfefeff",
+    "syscall": 201
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 202
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 203
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 204
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 205
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 206
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 207
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 208
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 209
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 210
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 211
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 212
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 213
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 214
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 215
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 216
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 217
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 218
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 219
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 220
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 221
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 222
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 223
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 224
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 225
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 226
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 227
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 228
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 229
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 230
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 231
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 232
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 233
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 234
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 235
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 236
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 237
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 238
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 239
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 240
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 241
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 242
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 243
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 244
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 245
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 246
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 247
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 248
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 249
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 250
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 251
+  },
+  {
+    "detail": "Right(1)",
+    "kind": "either_right",
+    "raw_hex": "000100fdfefefefefefefefefefdfefeff",
+    "syscall": 252
+  }
+]

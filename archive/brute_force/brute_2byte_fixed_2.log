@@ -1,0 +1,10 @@
+=== BrownOS Answer Hash Brute Force (C, fixed) ===
+Target:     9252ed65ffac2aa763adb21ef72c0178f1d83286
+Iterations: 56154
+Byte length: 2
+Threads:    16
+Candidates: 65536
+
+Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)Thread progress: 2048/4096 (50.0%)
+=== RESULT ===
+No match for 2-byte candidates

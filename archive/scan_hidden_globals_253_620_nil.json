@@ -1,0 +1,2949 @@
+{
+  "interesting": [],
+  "results": [
+    {
+      "base": 251,
+      "code": 1,
+      "g": 253,
+      "kind": "Right(1)",
+      "lifts": 1,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 255,
+      "kind": "Right(1)",
+      "lifts": 2,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 257,
+      "kind": "Right(1)",
+      "lifts": 3,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 259,
+      "kind": "Right(1)",
+      "lifts": 4,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 261,
+      "kind": "Right(1)",
+      "lifts": 5,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 263,
+      "kind": "Right(1)",
+      "lifts": 6,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 265,
+      "kind": "Right(1)",
+      "lifts": 7,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 267,
+      "kind": "Right(1)",
+      "lifts": 8,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 269,
+      "kind": "Right(1)",
+      "lifts": 9,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 271,
+      "kind": "Right(1)",
+      "lifts": 10,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 273,
+      "kind": "Right(1)",
+      "lifts": 11,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 275,
+      "kind": "Right(1)",
+      "lifts": 12,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 277,
+      "kind": "Right(1)",
+      "lifts": 13,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 279,
+      "kind": "Right(1)",
+      "lifts": 14,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 281,
+      "kind": "Right(1)",
+      "lifts": 15,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 283,
+      "kind": "Right(1)",
+      "lifts": 16,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 285,
+      "kind": "Right(1)",
+      "lifts": 17,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 287,
+      "kind": "Right(1)",
+      "lifts": 18,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 289,
+      "kind": "Right(1)",
+      "lifts": 19,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 291,
+      "kind": "Right(1)",
+      "lifts": 20,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 293,
+      "kind": "Right(1)",
+      "lifts": 21,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 295,
+      "kind": "Right(1)",
+      "lifts": 22,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 297,
+      "kind": "Right(1)",
+      "lifts": 23,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 299,
+      "kind": "Right(1)",
+      "lifts": 24,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 301,
+      "kind": "Right(1)",
+      "lifts": 25,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 303,
+      "kind": "Right(1)",
+      "lifts": 26,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 305,
+      "kind": "Right(1)",
+      "lifts": 27,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 307,
+      "kind": "Right(1)",
+      "lifts": 28,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 309,
+      "kind": "Right(1)",
+      "lifts": 29,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 311,
+      "kind": "Right(1)",
+      "lifts": 30,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 313,
+      "kind": "Right(1)",
+      "lifts": 31,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 315,
+      "kind": "Right(1)",
+      "lifts": 32,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 317,
+      "kind": "Right(1)",
+      "lifts": 33,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 319,
+      "kind": "Right(1)",
+      "lifts": 34,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 321,
+      "kind": "Right(1)",
+      "lifts": 35,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 323,
+      "kind": "Right(1)",
+      "lifts": 36,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 325,
+      "kind": "Right(1)",
+      "lifts": 37,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 327,
+      "kind": "Right(1)",
+      "lifts": 38,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 329,
+      "kind": "Right(1)",
+      "lifts": 39,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 331,
+      "kind": "Right(1)",
+      "lifts": 40,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 333,
+      "kind": "Right(1)",
+      "lifts": 41,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 335,
+      "kind": "Right(1)",
+      "lifts": 42,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 337,
+      "kind": "Right(1)",
+      "lifts": 43,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 339,
+      "kind": "Right(1)",
+      "lifts": 44,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 341,
+      "kind": "Right(1)",
+      "lifts": 45,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 343,
+      "kind": "Right(1)",
+      "lifts": 46,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 345,
+      "kind": "Right(1)",
+      "lifts": 47,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 347,
+      "kind": "Right(1)",
+      "lifts": 48,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 349,
+      "kind": "Right(1)",
+      "lifts": 49,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 351,
+      "kind": "Right(1)",
+      "lifts": 50,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 353,
+      "kind": "Right(1)",
+      "lifts": 51,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 355,
+      "kind": "Right(1)",
+      "lifts": 52,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 357,
+      "kind": "Right(1)",
+      "lifts": 53,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 359,
+      "kind": "Right(1)",
+      "lifts": 54,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 361,
+      "kind": "Right(1)",
+      "lifts": 55,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 363,
+      "kind": "Right(1)",
+      "lifts": 56,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 365,
+      "kind": "Right(1)",
+      "lifts": 57,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 367,
+      "kind": "Right(1)",
+      "lifts": 58,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 369,
+      "kind": "Right(1)",
+      "lifts": 59,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 371,
+      "kind": "Right(1)",
+      "lifts": 60,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 373,
+      "kind": "Right(1)",
+      "lifts": 61,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 375,
+      "kind": "Right(1)",
+      "lifts": 62,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 377,
+      "kind": "Right(1)",
+      "lifts": 63,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 379,
+      "kind": "Right(1)",
+      "lifts": 64,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 381,
+      "kind": "Right(1)",
+      "lifts": 65,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 383,
+      "kind": "Right(1)",
+      "lifts": 66,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 385,
+      "kind": "Right(1)",
+      "lifts": 67,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 387,
+      "kind": "Right(1)",
+      "lifts": 68,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 389,
+      "kind": "Right(1)",
+      "lifts": 69,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 391,
+      "kind": "Right(1)",
+      "lifts": 70,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 393,
+      "kind": "Right(1)",
+      "lifts": 71,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 395,
+      "kind": "Right(1)",
+      "lifts": 72,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 397,
+      "kind": "Right(1)",
+      "lifts": 73,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 399,
+      "kind": "Right(1)",
+      "lifts": 74,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 401,
+      "kind": "Right(1)",
+      "lifts": 75,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 403,
+      "kind": "Right(1)",
+      "lifts": 76,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 405,
+      "kind": "Right(1)",
+      "lifts": 77,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 407,
+      "kind": "Right(1)",
+      "lifts": 78,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 409,
+      "kind": "Right(1)",
+      "lifts": 79,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 411,
+      "kind": "Right(1)",
+      "lifts": 80,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 413,
+      "kind": "Right(1)",
+      "lifts": 81,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 415,
+      "kind": "Right(1)",
+      "lifts": 82,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 417,
+      "kind": "Right(1)",
+      "lifts": 83,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 419,
+      "kind": "Right(1)",
+      "lifts": 84,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 421,
+      "kind": "Right(1)",
+      "lifts": 85,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 423,
+      "kind": "Right(1)",
+      "lifts": 86,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 425,
+      "kind": "Right(1)",
+      "lifts": 87,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 427,
+      "kind": "Right(1)",
+      "lifts": 88,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 429,
+      "kind": "Right(1)",
+      "lifts": 89,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 431,
+      "kind": "Right(1)",
+      "lifts": 90,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 433,
+      "kind": "Right(1)",
+      "lifts": 91,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 435,
+      "kind": "Right(1)",
+      "lifts": 92,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 437,
+      "kind": "Right(1)",
+      "lifts": 93,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 439,
+      "kind": "Right(1)",
+      "lifts": 94,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 441,
+      "kind": "Right(1)",
+      "lifts": 95,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 443,
+      "kind": "Right(1)",
+      "lifts": 96,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 445,
+      "kind": "Right(1)",
+      "lifts": 97,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 447,
+      "kind": "Right(1)",
+      "lifts": 98,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 449,
+      "kind": "Right(1)",
+      "lifts": 99,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 451,
+      "kind": "Right(1)",
+      "lifts": 100,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 453,
+      "kind": "Right(1)",
+      "lifts": 101,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 455,
+      "kind": "Right(1)",
+      "lifts": 102,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 457,
+      "kind": "Right(1)",
+      "lifts": 103,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 459,
+      "kind": "Right(1)",
+      "lifts": 104,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 461,
+      "kind": "Right(1)",
+      "lifts": 105,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 463,
+      "kind": "Right(1)",
+      "lifts": 106,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 465,
+      "kind": "Right(1)",
+      "lifts": 107,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 467,
+      "kind": "Right(1)",
+      "lifts": 108,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 469,
+      "kind": "Right(1)",
+      "lifts": 109,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 471,
+      "kind": "Right(1)",
+      "lifts": 110,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 473,
+      "kind": "Right(1)",
+      "lifts": 111,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 475,
+      "kind": "Right(1)",
+      "lifts": 112,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 477,
+      "kind": "Right(1)",
+      "lifts": 113,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 479,
+      "kind": "Right(1)",
+      "lifts": 114,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 481,
+      "kind": "Right(1)",
+      "lifts": 115,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 483,
+      "kind": "Right(1)",
+      "lifts": 116,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 485,
+      "kind": "Right(1)",
+      "lifts": 117,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 487,
+      "kind": "Right(1)",
+      "lifts": 118,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 489,
+      "kind": "Right(1)",
+      "lifts": 119,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 491,
+      "kind": "Right(1)",
+      "lifts": 120,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 493,
+      "kind": "Right(1)",
+      "lifts": 121,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 495,
+      "kind": "Right(1)",
+      "lifts": 122,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 497,
+      "kind": "Right(1)",
+      "lifts": 123,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 499,
+      "kind": "Right(1)",
+      "lifts": 124,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 501,
+      "kind": "Right(1)",
+      "lifts": 125,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 503,
+      "kind": "Right(1)",
+      "lifts": 126,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 505,
+      "kind": "Right(1)",
+      "lifts": 127,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 507,
+      "kind": "Right(1)",
+      "lifts": 128,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 509,
+      "kind": "Right(1)",
+      "lifts": 129,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 511,
+      "kind": "Right(1)",
+      "lifts": 130,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 513,
+      "kind": "Right(1)",
+      "lifts": 131,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 515,
+      "kind": "Right(1)",
+      "lifts": 132,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 517,
+      "kind": "Right(1)",
+      "lifts": 133,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 519,
+      "kind": "Right(1)",
+      "lifts": 134,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 521,
+      "kind": "Right(1)",
+      "lifts": 135,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 523,
+      "kind": "Right(1)",
+      "lifts": 136,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 525,
+      "kind": "Right(1)",
+      "lifts": 137,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 527,
+      "kind": "Right(1)",
+      "lifts": 138,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 529,
+      "kind": "Right(1)",
+      "lifts": 139,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 531,
+      "kind": "Right(1)",
+      "lifts": 140,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 533,
+      "kind": "Right(1)",
+      "lifts": 141,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 535,
+      "kind": "Right(1)",
+      "lifts": 142,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 537,
+      "kind": "Right(1)",
+      "lifts": 143,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 539,
+      "kind": "Right(1)",
+      "lifts": 144,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 541,
+      "kind": "Right(1)",
+      "lifts": 145,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 543,
+      "kind": "Right(1)",
+      "lifts": 146,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 545,
+      "kind": "Right(1)",
+      "lifts": 147,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 547,
+      "kind": "Right(1)",
+      "lifts": 148,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 549,
+      "kind": "Right(1)",
+      "lifts": 149,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 551,
+      "kind": "Right(1)",
+      "lifts": 150,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 553,
+      "kind": "Right(1)",
+      "lifts": 151,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 555,
+      "kind": "Right(1)",
+      "lifts": 152,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 557,
+      "kind": "Right(1)",
+      "lifts": 153,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 559,
+      "kind": "Right(1)",
+      "lifts": 154,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 561,
+      "kind": "Right(1)",
+      "lifts": 155,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 563,
+      "kind": "Right(1)",
+      "lifts": 156,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 565,
+      "kind": "Right(1)",
+      "lifts": 157,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 567,
+      "kind": "Right(1)",
+      "lifts": 158,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 569,
+      "kind": "Right(1)",
+      "lifts": 159,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 571,
+      "kind": "Right(1)",
+      "lifts": 160,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 573,
+      "kind": "Right(1)",
+      "lifts": 161,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 575,
+      "kind": "Right(1)",
+      "lifts": 162,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 577,
+      "kind": "Right(1)",
+      "lifts": 163,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 579,
+      "kind": "Right(1)",
+      "lifts": 164,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 581,
+      "kind": "Right(1)",
+      "lifts": 165,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 583,
+      "kind": "Right(1)",
+      "lifts": 166,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 585,
+      "kind": "Right(1)",
+      "lifts": 167,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 587,
+      "kind": "Right(1)",
+      "lifts": 168,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 589,
+      "kind": "Right(1)",
+      "lifts": 169,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 591,
+      "kind": "Right(1)",
+      "lifts": 170,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 593,
+      "kind": "Right(1)",
+      "lifts": 171,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 595,
+      "kind": "Right(1)",
+      "lifts": 172,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 597,
+      "kind": "Right(1)",
+      "lifts": 173,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 599,
+      "kind": "Right(1)",
+      "lifts": 174,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 601,
+      "kind": "Right(1)",
+      "lifts": 175,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 603,
+      "kind": "Right(1)",
+      "lifts": 176,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 605,
+      "kind": "Right(1)",
+      "lifts": 177,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 607,
+      "kind": "Right(1)",
+      "lifts": 178,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 609,
+      "kind": "Right(1)",
+      "lifts": 179,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 611,
+      "kind": "Right(1)",
+      "lifts": 180,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 613,
+      "kind": "Right(1)",
+      "lifts": 181,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 615,
+      "kind": "Right(1)",
+      "lifts": 182,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 617,
+      "kind": "Right(1)",
+      "lifts": 183,
+      "tag": "Right"
+    },
+    {
+      "base": 251,
+      "code": 1,
+      "g": 619,
+      "kind": "Right(1)",
+      "lifts": 184,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 254,
+      "kind": "Right(1)",
+      "lifts": 1,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 256,
+      "kind": "Right(1)",
+      "lifts": 2,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 258,
+      "kind": "Right(1)",
+      "lifts": 3,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 260,
+      "kind": "Right(1)",
+      "lifts": 4,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 262,
+      "kind": "Right(1)",
+      "lifts": 5,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 264,
+      "kind": "Right(1)",
+      "lifts": 6,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 266,
+      "kind": "Right(1)",
+      "lifts": 7,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 268,
+      "kind": "Right(1)",
+      "lifts": 8,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 270,
+      "kind": "Right(1)",
+      "lifts": 9,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 272,
+      "kind": "Right(1)",
+      "lifts": 10,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 274,
+      "kind": "Right(1)",
+      "lifts": 11,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 276,
+      "kind": "Right(1)",
+      "lifts": 12,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 278,
+      "kind": "Right(1)",
+      "lifts": 13,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 280,
+      "kind": "Right(1)",
+      "lifts": 14,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 282,
+      "kind": "Right(1)",
+      "lifts": 15,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 284,
+      "kind": "Right(1)",
+      "lifts": 16,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 286,
+      "kind": "Right(1)",
+      "lifts": 17,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 288,
+      "kind": "Right(1)",
+      "lifts": 18,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 290,
+      "kind": "Right(1)",
+      "lifts": 19,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 292,
+      "kind": "Right(1)",
+      "lifts": 20,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 294,
+      "kind": "Right(1)",
+      "lifts": 21,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 296,
+      "kind": "Right(1)",
+      "lifts": 22,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 298,
+      "kind": "Right(1)",
+      "lifts": 23,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 300,
+      "kind": "Right(1)",
+      "lifts": 24,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 302,
+      "kind": "Right(1)",
+      "lifts": 25,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 304,
+      "kind": "Right(1)",
+      "lifts": 26,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 306,
+      "kind": "Right(1)",
+      "lifts": 27,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 308,
+      "kind": "Right(1)",
+      "lifts": 28,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 310,
+      "kind": "Right(1)",
+      "lifts": 29,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 312,
+      "kind": "Right(1)",
+      "lifts": 30,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 314,
+      "kind": "Right(1)",
+      "lifts": 31,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 316,
+      "kind": "Right(1)",
+      "lifts": 32,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 318,
+      "kind": "Right(1)",
+      "lifts": 33,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 320,
+      "kind": "Right(1)",
+      "lifts": 34,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 322,
+      "kind": "Right(1)",
+      "lifts": 35,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 324,
+      "kind": "Right(1)",
+      "lifts": 36,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 326,
+      "kind": "Right(1)",
+      "lifts": 37,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 328,
+      "kind": "Right(1)",
+      "lifts": 38,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 330,
+      "kind": "Right(1)",
+      "lifts": 39,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 332,
+      "kind": "Right(1)",
+      "lifts": 40,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 334,
+      "kind": "Right(1)",
+      "lifts": 41,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 336,
+      "kind": "Right(1)",
+      "lifts": 42,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 338,
+      "kind": "Right(1)",
+      "lifts": 43,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 340,
+      "kind": "Right(1)",
+      "lifts": 44,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 342,
+      "kind": "Right(1)",
+      "lifts": 45,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 344,
+      "kind": "Right(1)",
+      "lifts": 46,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 346,
+      "kind": "Right(1)",
+      "lifts": 47,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 348,
+      "kind": "Right(1)",
+      "lifts": 48,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 350,
+      "kind": "Right(1)",
+      "lifts": 49,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 352,
+      "kind": "Right(1)",
+      "lifts": 50,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 354,
+      "kind": "Right(1)",
+      "lifts": 51,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 356,
+      "kind": "Right(1)",
+      "lifts": 52,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 358,
+      "kind": "Right(1)",
+      "lifts": 53,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 360,
+      "kind": "Right(1)",
+      "lifts": 54,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 362,
+      "kind": "Right(1)",
+      "lifts": 55,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 364,
+      "kind": "Right(1)",
+      "lifts": 56,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 366,
+      "kind": "Right(1)",
+      "lifts": 57,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 368,
+      "kind": "Right(1)",
+      "lifts": 58,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 370,
+      "kind": "Right(1)",
+      "lifts": 59,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 372,
+      "kind": "Right(1)",
+      "lifts": 60,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 374,
+      "kind": "Right(1)",
+      "lifts": 61,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 376,
+      "kind": "Right(1)",
+      "lifts": 62,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 378,
+      "kind": "Right(1)",
+      "lifts": 63,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 380,
+      "kind": "Right(1)",
+      "lifts": 64,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 382,
+      "kind": "Right(1)",
+      "lifts": 65,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 384,
+      "kind": "Right(1)",
+      "lifts": 66,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 386,
+      "kind": "Right(1)",
+      "lifts": 67,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 388,
+      "kind": "Right(1)",
+      "lifts": 68,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 390,
+      "kind": "Right(1)",
+      "lifts": 69,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 392,
+      "kind": "Right(1)",
+      "lifts": 70,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 394,
+      "kind": "Right(1)",
+      "lifts": 71,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 396,
+      "kind": "Right(1)",
+      "lifts": 72,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 398,
+      "kind": "Right(1)",
+      "lifts": 73,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 400,
+      "kind": "Right(1)",
+      "lifts": 74,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 402,
+      "kind": "Right(1)",
+      "lifts": 75,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 404,
+      "kind": "Right(1)",
+      "lifts": 76,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 406,
+      "kind": "Right(1)",
+      "lifts": 77,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 408,
+      "kind": "Right(1)",
+      "lifts": 78,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 410,
+      "kind": "Right(1)",
+      "lifts": 79,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 412,
+      "kind": "Right(1)",
+      "lifts": 80,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 414,
+      "kind": "Right(1)",
+      "lifts": 81,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 416,
+      "kind": "Right(1)",
+      "lifts": 82,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 418,
+      "kind": "Right(1)",
+      "lifts": 83,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 420,
+      "kind": "Right(1)",
+      "lifts": 84,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 422,
+      "kind": "Right(1)",
+      "lifts": 85,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 424,
+      "kind": "Right(1)",
+      "lifts": 86,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 426,
+      "kind": "Right(1)",
+      "lifts": 87,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 428,
+      "kind": "Right(1)",
+      "lifts": 88,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 430,
+      "kind": "Right(1)",
+      "lifts": 89,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 432,
+      "kind": "Right(1)",
+      "lifts": 90,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 434,
+      "kind": "Right(1)",
+      "lifts": 91,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 436,
+      "kind": "Right(1)",
+      "lifts": 92,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 438,
+      "kind": "Right(1)",
+      "lifts": 93,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 440,
+      "kind": "Right(1)",
+      "lifts": 94,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 442,
+      "kind": "Right(1)",
+      "lifts": 95,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 444,
+      "kind": "Right(1)",
+      "lifts": 96,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 446,
+      "kind": "Right(1)",
+      "lifts": 97,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 448,
+      "kind": "Right(1)",
+      "lifts": 98,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 450,
+      "kind": "Right(1)",
+      "lifts": 99,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 452,
+      "kind": "Right(1)",
+      "lifts": 100,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 454,
+      "kind": "Right(1)",
+      "lifts": 101,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 456,
+      "kind": "Right(1)",
+      "lifts": 102,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 458,
+      "kind": "Right(1)",
+      "lifts": 103,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 460,
+      "kind": "Right(1)",
+      "lifts": 104,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 462,
+      "kind": "Right(1)",
+      "lifts": 105,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 464,
+      "kind": "Right(1)",
+      "lifts": 106,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 466,
+      "kind": "Right(1)",
+      "lifts": 107,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 468,
+      "kind": "Right(1)",
+      "lifts": 108,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 470,
+      "kind": "Right(1)",
+      "lifts": 109,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 472,
+      "kind": "Right(1)",
+      "lifts": 110,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 474,
+      "kind": "Right(1)",
+      "lifts": 111,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 476,
+      "kind": "Right(1)",
+      "lifts": 112,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 478,
+      "kind": "Right(1)",
+      "lifts": 113,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 480,
+      "kind": "Right(1)",
+      "lifts": 114,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 482,
+      "kind": "Right(1)",
+      "lifts": 115,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 484,
+      "kind": "Right(1)",
+      "lifts": 116,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 486,
+      "kind": "Right(1)",
+      "lifts": 117,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 488,
+      "kind": "Right(1)",
+      "lifts": 118,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 490,
+      "kind": "Right(1)",
+      "lifts": 119,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 492,
+      "kind": "Right(1)",
+      "lifts": 120,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 494,
+      "kind": "Right(1)",
+      "lifts": 121,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 496,
+      "kind": "Right(1)",
+      "lifts": 122,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 498,
+      "kind": "Right(1)",
+      "lifts": 123,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 500,
+      "kind": "Right(1)",
+      "lifts": 124,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 502,
+      "kind": "Right(1)",
+      "lifts": 125,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 504,
+      "kind": "Right(1)",
+      "lifts": 126,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 506,
+      "kind": "Right(1)",
+      "lifts": 127,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 508,
+      "kind": "Right(1)",
+      "lifts": 128,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 510,
+      "kind": "Right(1)",
+      "lifts": 129,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 512,
+      "kind": "Right(1)",
+      "lifts": 130,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 514,
+      "kind": "Right(1)",
+      "lifts": 131,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 516,
+      "kind": "Right(1)",
+      "lifts": 132,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 518,
+      "kind": "Right(1)",
+      "lifts": 133,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 520,
+      "kind": "Right(1)",
+      "lifts": 134,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 522,
+      "kind": "Right(1)",
+      "lifts": 135,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 524,
+      "kind": "Right(1)",
+      "lifts": 136,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 526,
+      "kind": "Right(1)",
+      "lifts": 137,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 528,
+      "kind": "Right(1)",
+      "lifts": 138,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 530,
+      "kind": "Right(1)",
+      "lifts": 139,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 532,
+      "kind": "Right(1)",
+      "lifts": 140,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 534,
+      "kind": "Right(1)",
+      "lifts": 141,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 536,
+      "kind": "Right(1)",
+      "lifts": 142,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 538,
+      "kind": "Right(1)",
+      "lifts": 143,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 540,
+      "kind": "Right(1)",
+      "lifts": 144,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 542,
+      "kind": "Right(1)",
+      "lifts": 145,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 544,
+      "kind": "Right(1)",
+      "lifts": 146,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 546,
+      "kind": "Right(1)",
+      "lifts": 147,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 548,
+      "kind": "Right(1)",
+      "lifts": 148,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 550,
+      "kind": "Right(1)",
+      "lifts": 149,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 552,
+      "kind": "Right(1)",
+      "lifts": 150,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 554,
+      "kind": "Right(1)",
+      "lifts": 151,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 556,
+      "kind": "Right(1)",
+      "lifts": 152,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 558,
+      "kind": "Right(1)",
+      "lifts": 153,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 560,
+      "kind": "Right(1)",
+      "lifts": 154,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 562,
+      "kind": "Right(1)",
+      "lifts": 155,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 564,
+      "kind": "Right(1)",
+      "lifts": 156,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 566,
+      "kind": "Right(1)",
+      "lifts": 157,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 568,
+      "kind": "Right(1)",
+      "lifts": 158,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 570,
+      "kind": "Right(1)",
+      "lifts": 159,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 572,
+      "kind": "Right(1)",
+      "lifts": 160,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 574,
+      "kind": "Right(1)",
+      "lifts": 161,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 576,
+      "kind": "Right(1)",
+      "lifts": 162,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 578,
+      "kind": "Right(1)",
+      "lifts": 163,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 580,
+      "kind": "Right(1)",
+      "lifts": 164,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 582,
+      "kind": "Right(1)",
+      "lifts": 165,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 584,
+      "kind": "Right(1)",
+      "lifts": 166,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 586,
+      "kind": "Right(1)",
+      "lifts": 167,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 588,
+      "kind": "Right(1)",
+      "lifts": 168,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 590,
+      "kind": "Right(1)",
+      "lifts": 169,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 592,
+      "kind": "Right(1)",
+      "lifts": 170,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 594,
+      "kind": "Right(1)",
+      "lifts": 171,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 596,
+      "kind": "Right(1)",
+      "lifts": 172,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 598,
+      "kind": "Right(1)",
+      "lifts": 173,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 600,
+      "kind": "Right(1)",
+      "lifts": 174,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 602,
+      "kind": "Right(1)",
+      "lifts": 175,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 604,
+      "kind": "Right(1)",
+      "lifts": 176,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 606,
+      "kind": "Right(1)",
+      "lifts": 177,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 608,
+      "kind": "Right(1)",
+      "lifts": 178,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 610,
+      "kind": "Right(1)",
+      "lifts": 179,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 612,
+      "kind": "Right(1)",
+      "lifts": 180,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 614,
+      "kind": "Right(1)",
+      "lifts": 181,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 616,
+      "kind": "Right(1)",
+      "lifts": 182,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 618,
+      "kind": "Right(1)",
+      "lifts": 183,
+      "tag": "Right"
+    },
+    {
+      "base": 252,
+      "code": 1,
+      "g": 620,
+      "kind": "Right(1)",
+      "lifts": 184,
+      "tag": "Right"
+    }
+  ]
+}

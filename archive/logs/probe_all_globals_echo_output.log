@@ -1,0 +1,30 @@
+============================================================
+COMPREHENSIVE GLOBAL SCAN VIA ECHO AND QUOTE
+============================================================
+
+--- echo(g(N)) for N=0..252 ---
+Expected: Left(Var(N+2)) for all. Looking for deviations.
+
+  echo(g(251)): ENCODING FAILED  *** ANOMALY ***
+  echo(g(252)): ENCODING FAILED  *** ANOMALY ***
+
+--- Echo anomalies summary (2 found) ---
+  g(251): ENCODING_FAILED
+  g(252): ENCODING_FAILED
+
+
+--- quote(g(N)) for anomalous globals ---
+  quote(g(  0)): opaque Var(0)
+  quote(g(  1)): opaque Var(1)
+  quote(g(  2)): opaque Var(2)
+  quote(g(  4)): opaque Var(4)
+  quote(g(  8)): opaque Var(8)
+  quote(g( 14)): opaque Var(14)
+  quote(g( 42)): opaque Var(42)
+  quote(g(201)): opaque Var(201)
+  quote(g(251)): opaque Var(251)
+  quote(g(252)): opaque Var(252)
+
+============================================================
+SCAN COMPLETE
+============================================================

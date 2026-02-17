@@ -1,0 +1,72 @@
+================================================================================
+TESTING SYSCALL 8 WITH DIFFERENT CONTINUATIONS
+================================================================================
+
+[TEST 1] sys8(backdoor_output)(Church 0)
+================================================================================
+Payload: sys8(backdoor_common)(00 FE FE)
+Bytecode: 08000200fdfefefefefefefefefefdfefefd00fefefdff
+Length: 23 bytes
+
+Response (0 bytes): 
+⚠️  EMPTY or TIMEOUT
+
+[TEST 2] sys8(backdoor_output)(Church N) for N=0..5
+================================================================================
+
+Church 0: 00fefe
+Payload: 08000200fdfefefefefefefefefefdfefefd00fefefdff
+Response (0 bytes): 
+
+Church 1: 0100fdfefe
+Payload: 08000200fdfefefefefefefefefefdfefefd0100fdfefefdff
+Response (0 bytes): 
+
+Church 2: 010100fdfdfefe
+Payload: 08000200fdfefefefefefefefefefdfefefd010100fdfdfefefdff
+Response (0 bytes): 
+
+Church 3: 01010100fdfdfdfefe
+Payload: 08000200fdfefefefefefefefefefdfefefd01010100fdfdfdfefefdff
+Response (0 bytes): 
+
+Church 4: 0101010100fdfdfdfdfefe
+Payload: 08000200fdfefefefefefefefefefdfefefd0101010100fdfdfdfdfefefdff
+Response (0 bytes): 
+
+Church 5: 010101010100fdfdfdfdfdfefe
+Payload: 08000200fdfefefefefefefefefefdfefefd010101010100fdfdfdfdfdfefefdff
+Response (0 bytes): 
+
+[TEST 3] sys8(backdoor_output) WITH NO CONTINUATION
+================================================================================
+Payload: 08000200fdfefefefefefefefefefdfefefdff
+Response (0 bytes): 
+
+[TEST 4] sys8(Church 0)(backdoor_output) - REVERSED!
+================================================================================
+Payload: 0800fefefd000200fdfefefefefefefefefefdfefefdff
+Response (0 bytes): 
+
+[TEST 5] sys8(backdoor(Church 0))(QD) - CHAINED!
+================================================================================
+Payload: 0801010000fdfefefd0100fdfefefdfefefdfefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (19 bytes): 00030200fdfdfefefefefefefefefefdfefeff
+⚠️  NOT error 6! Different response!
+
+[TEST 6] sys8(backdoor_output)(IDENTITY)
+================================================================================
+Payload: 08000200fdfefefefefefefefefefdfefefd00fefdff
+Response (0 bytes): 
+
+================================================================================
+ANALYSIS
+================================================================================
+
+Looking for responses that are NOT:
+  - Empty (timeout/hang)
+  - Right(6) = permission denied
+  - Same as QD continuation
+
+If we get DIFFERENT output, the continuation matters!
+

@@ -1,0 +1,100 @@
+================================================================================
+probe_kernel_arg_chain.py
+Inline chain: backdoor runtime values -> sys8 arg/continuation
+================================================================================
+
+CTRL: g(8)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.486s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+E1: backdoor -> sys8(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.503s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+E2: backdoor -> sys8(A)(OBS)
+  payload_len: 257
+  elapsed: 0.532s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+E3: backdoor -> sys8(B)(OBS)
+  payload_len: 257
+  elapsed: 0.516s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+E4: backdoor -> sys8(A(B))(OBS)
+  payload_len: 267
+  elapsed: 0.497s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+E5: backdoor -> sys8(B(A))(OBS)
+  payload_len: 267
+  elapsed: 0.503s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+F1: backdoor -> sys8(nil)(pair)
+  payload_len: 88
+  elapsed: 0.475s
+  bucket: EMPTY
+  raw_hex: (empty)
+  text: ''
+
+F2: backdoor -> sys8(nil)(A)
+  payload_len: 96
+  elapsed: 0.501s
+  bucket: EMPTY
+  raw_hex: (empty)
+  text: ''
+
+F3: backdoor -> sys8(nil)(B)
+  payload_len: 96
+  elapsed: 0.494s
+  bucket: EMPTY
+  raw_hex: (empty)
+  text: ''
+
+G1: backdoor -> sys8(ilikephp)(OBS)
+  payload_len: 431
+  elapsed: 0.502s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+G2: backdoor -> sys8(pair(ilikephp))(OBS)
+  payload_len: 433
+  elapsed: 0.489s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+================================================================================
+SUMMARY
+================================================================================
+LABEL                                         BUCKET           TIME
+--------------------------------------------------------------------------------
+CTRL: g(8)(nil)(OBS)                          RIGHT_6         0.486
+E1: backdoor -> sys8(pair)(OBS)               RIGHT_6         0.503
+E2: backdoor -> sys8(A)(OBS)                  RIGHT_6         0.532
+E3: backdoor -> sys8(B)(OBS)                  RIGHT_6         0.516
+E4: backdoor -> sys8(A(B))(OBS)               RIGHT_6         0.497
+E5: backdoor -> sys8(B(A))(OBS)               RIGHT_6         0.503
+F1: backdoor -> sys8(nil)(pair)               EMPTY           0.475
+F2: backdoor -> sys8(nil)(A)                  EMPTY           0.501
+F3: backdoor -> sys8(nil)(B)                  EMPTY           0.494
+G1: backdoor -> sys8(ilikephp)(OBS)           RIGHT_6         0.502
+G2: backdoor -> sys8(pair(ilikephp))(OBS)     RIGHT_6         0.489
+
+No behavioral change detected (no LEFT/RIGHT_OTHER).

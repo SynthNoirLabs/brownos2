@@ -1,0 +1,12 @@
+================================================================================
+DECODING SYSCALL 8 RESPONSE WITH REFERENCE DECODER
+================================================================================
+
+Full response: 00030200fdfdfefefefefefefefefefdfefeff
+First byte: 00 (should be 00 = Left)
+
+Parsed term type: <class '__main__.Lam'>
+Either body: App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=3), x=App(f=Var(i=2), x=Var(i=0)))))))))))))
+
+This is Right(error)
+Error: Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=3), x=App(f=Var(i=2), x=Var(i=0))))))))))))

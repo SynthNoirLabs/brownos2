@@ -1,0 +1,372 @@
+[
+  {
+    "file": "forums/b321.html",
+    "title": "[WeChall] Challenge: The BrownOS",
+    "posts": []
+  },
+  {
+    "file": "forums/t1300.html",
+    "title": "[WeChall] Pm me to collaborate! [WeChall]->Challenge: The BrownOS",
+    "posts": [
+      {
+        "post_id": "post6905",
+        "author": "macplox",
+        "date": "Feb 24, 2018 - 12:00:04 (7y 325d)",
+        "title": "Pm me to collaborate!",
+        "text": "I’d like to share and discuss my findings with a partner or two. Message me if you’d like to team up with me and exchange our findings. The differences in our findings/theories/analyses should point us in the right direction."
+      }
+    ]
+  },
+  {
+    "file": "forums/t1352.html",
+    "title": "[WeChall] New syscall enabled [WeChall]->Challenge: The BrownOS",
+    "posts": [
+      {
+        "post_id": "post7163",
+        "author": "dloser",
+        "date": "Sep 08, 2018 - 17:46:17 (7y 128d)",
+        "title": "New syscall enabled",
+        "text": "Have you heard? There is a new version of BrownOS out!\nIt has a whole new syscall, but I haven't been able to figure out its purpose yet. Seems pretty useless so far..."
+      },
+      {
+        "post_id": "post7166",
+        "author": "gizmore",
+        "date": "Sep 10, 2018 - 18:09:02 (7y 126d)",
+        "title": "RE: New syscall enabled",
+        "text": "I still cant figure out that something might be the cmd to interrupt and transfer my parameters to the kernel\nmaybe someone can code something up?.\nThe geeks shall inherit the properties and methods of object earth."
+      },
+      {
+        "post_id": "post7167",
+        "author": "tehron",
+        "date": "Sep 10, 2018 - 18:27:59 (7y 126d)",
+        "title": "RE: New syscall enabled",
+        "text": "Wait... there is a kernel!?"
+      },
+      {
+        "post_id": "post7168",
+        "author": "space",
+        "date": "Sep 10, 2018 - 19:06:11 (7y 126d)",
+        "title": "RE: New syscall enabled",
+        "text": "Quote from Gizmore\nSep 10, 2018 - 18:09:02\nI still cant figure out that something might be the cmd to interrupt and transfer my parameters to the kernel\nmaybe someone can code something up?.\nYou wanted come CLI script which easily sends data to the service?!\nHere is one:\nGeSHi\n`ed Python code for\nbrownos.py\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\nimport\nre\nimport\ntime\nimport\nsocket\nsock\n=\nsocket\n.\nsocket\n(\nsocket\n.\nAF_INET\n,\nsocket\n.\nSOCK_STREAM\n)\nsock.\nconnect\n(\n(\n'wc3.wechall.net'\n,\n61221\n)\n)\nwhile\nTrue\n:\n        data\n=\nraw_input\n(\n'Cmd?:'\n)\ndata\n=\nre\n.\nsub\n(\n'[^A-Za-z0-9]'\n,\n''\n,\ndata\n)\ndata\n=\nre\n.\nfindall\n(\n'..'\n,\ndata\n)\ndata\n=\n''\n.\njoin\n(\n[\nchr\n(\nint\n(\nx\n,\n16\n)\n)\nfor\nx\nin\ndata\n]\n)\nprint\n(\n'Sending: %r'\n%\n(\ndata\n,\n)\n)\nnow\n=\ntime\n.\ntime\n(\n)\nsock.\nsend\n(\ndata\n)\nprint\n(\n'Received: %r'\n%\n(\nsock.\nrecv\n(\n10000\n)\n,\n)\n)\nprint\n(\n'Execution took: %.2f seconds'\n%\n(\ntime\n.\ntime\n(\n)\n- now\n)\n)\nGeSHi\n`ed Plaintext code\n1\n2\n3\n4\n5\nCmd?:05 00 FD 00 05 00 FD 03 FD FE FD 02 FD FE FD FE\nSending: '\\x05\\x00\\xfd\\x00\\x05\\x00\\xfd\\x03\\xfd\\xfe\\xfd\\x02\\xfd\\xfe\\xfd\\xfe'\nReceived: ''\nExecution took: 18.26 seconds\nCmd?:\nContact only via c3BhY2VAd2VjaGFsbC5uZXQ= or PM...\nWindows can be secure... but only if you don't use it"
+      },
+      {
+        "post_id": "post7169",
+        "author": "dloser",
+        "date": "Sep 10, 2018 - 19:12:14 (7y 126d)",
+        "title": "RE: New syscall enabled",
+        "text": "SPOILER ALERT"
+      },
+      {
+        "post_id": "post7170",
+        "author": "l3st3r",
+        "date": "Sep 10, 2018 - 21:26:52 (7y 126d)",
+        "title": "RE: New syscall enabled",
+        "text": "Quote from Gizmore\nSep 10, 2018 - 18:09:02\nI still cant figure out that something might be the cmd to interrupt and transfer my parameters to the kernel\nmaybe someone can code something up?.\nClick for spoiler\nIn Bash:\necho 00 01 02 03 ... | xxd -r -p | nc wc3.wechall.net 61221 | xxd\nThe spoiler being that the service takes binary input.  But that has been devulged elsewhere, so not much of a spoiler.\nHint: If you give it good input, you get good stuff back...  Now, what is good input? ;)"
+      }
+    ]
+  },
+  {
+    "file": "forums/t1575.html",
+    "title": "[WeChall] Disappointment Thread [WeChall]->Challenge: The BrownOS",
+    "posts": [
+      {
+        "post_id": "post8056",
+        "author": "tehron",
+        "date": "Jan 27, 2021 - 21:26:21 (4y 351d)",
+        "title": "Disappointment Thread",
+        "text": "A place for dloser to express his disappointment."
+      },
+      {
+        "post_id": "post8058",
+        "author": "dloser",
+        "date": "Jan 27, 2021 - 22:21:00 (4y 351d)",
+        "title": "RE: Disappointment Thread",
+        "text": "Thank you."
+      },
+      {
+        "post_id": "post8417",
+        "author": "tehron",
+        "date": "Jul 30, 2022 - 19:00:21 (3y 167d)",
+        "title": "RE: Disappointment Thread",
+        "text": "hm"
+      },
+      {
+        "post_id": "post8418",
+        "author": "gizmore",
+        "date": "Jul 30, 2022 - 22:03:33 (3y 167d)",
+        "title": "RE: Disappointment Thread",
+        "text": "The ancients tell a story from young challengers who collaborate on this\nThe geeks shall inherit the properties and methods of object earth."
+      },
+      {
+        "post_id": "post8851",
+        "author": "tehron",
+        "date": "Dec 09, 2023 - 16:44:30 (2y 35d)",
+        "title": "RE: Disappointment Thread",
+        "text": "hrm"
+      },
+      {
+        "post_id": "post8852",
+        "author": "gizmore",
+        "date": "Dec 10, 2023 - 13:57:25 (2y 34d)",
+        "title": "RE: Disappointment Thread",
+        "text": "So sad...\nSeems like the ancient stories are not true\nAnd it is sooo sad that you won't get a prize for the 100% WeChallChallenges...\nHere is photo to motivate you.\nYou will also get an autograph and a cert that it's the real bag!\nThe geeks shall inherit the properties and methods of object earth."
+      },
+      {
+        "post_id": "post8871",
+        "author": "tehron",
+        "date": "Jan 02, 2024 - 15:40:19 (2y 11d)",
+        "title": "RE: Disappointment Thread",
+        "text": "It's official now - no solve in 2023!\nHow disappointing"
+      },
+      {
+        "post_id": "post9542",
+        "author": "space",
+        "date": "Nov 17, 2025 - 02:09:52 (57d 9h)",
+        "title": "RE: Disappointment Thread",
+        "text": "Folks, you should try it again! It's fun! I just found my old stuff on a legacy hard drive.Don't give up.\nContact only via c3BhY2VAd2VjaGFsbC5uZXQ= or PM...\nWindows can be secure... but only if you don't use it"
+      },
+      {
+        "post_id": "post9543",
+        "author": "tehron",
+        "date": "Nov 17, 2025 - 16:47:34 (56d 18h)",
+        "title": "RE: Disappointment Thread",
+        "text": "hm"
+      },
+      {
+        "post_id": "post9570",
+        "author": "tehron",
+        "date": "Dec 31, 2025 - 12:04:13 (12d 23h)",
+        "title": "RE: Disappointment Thread",
+        "text": "Be the first solver in the last minutes of 2025. Clock's ticking!"
+      }
+    ]
+  },
+  {
+    "file": "forums/t917_p1.html",
+    "title": "[WeChall] Some notes [WeChall]->Challenge: The BrownOS",
+    "posts": [
+      {
+        "post_id": "post5399",
+        "author": "dloser",
+        "date": "May 25, 2014 - 17:02:53 (11y 235d)",
+        "title": "Some notes",
+        "text": "The service has some restrictions on input size, memory and execution time. They should be more than fair for what you need, but if for some reason you think they are too restrictive, let me know and we'll have a look.\nFor those who are wondering what QD means, perhaps you should move your nose off the screen. :p It's right there, ffs! Some people make challenges out of anything and nothing... ;)\nThe only thing I'm not sure about is how hard it is to understand what is going on exactly. You should be able to deduce a few things, but perhaps it is not enough to power your light bulb. When you have deduced a fair number of things and can't make any more sense of it, feel free to contact me. If needed, I'll extend the cheat sheet a bit."
+      },
+      {
+        "post_id": "post6307",
+        "author": "dloser",
+        "date": "May 25, 2016 - 17:45:29 (9y 234d)",
+        "title": "RE: Some notes",
+        "text": "So.. two years and still no solvers. There are no words to express my disappointment in all of you. ;)\nAt least some of you have found a little bit of information, but I haven't heard of anyone figuring out the meaning of the input codes. Figuring out that part is probably the most important thing to do, if only because it is essential to eventually getting the solution. The outputs should help a lot in figuring this out, as well as just trying out various inputs.\nHere are two little hints for those who want it:\nClick for spoiler\nThe second example in the cheat sheet, besides providing a way to get some easy outputs, is also useful in figuring out some crucial properties of the codes.\nClick for spoiler\nThe different outputs betray some core structures. This should give you some substructures that might be helpful elsewhere.\nOne final thing: just like with QD, don't be too literal with the ??s. :)"
+      },
+      {
+        "post_id": "post6322",
+        "author": "dloser",
+        "date": "Jun 15, 2016 - 22:16:25 (9y 213d)",
+        "title": "RE: Some notes",
+        "text": "Just made a fix after jjk found some unusual behaviour. Normal inputs were fine, but certain inputs that didn't confirm to expectations resulted in odd behaviour.\nI doubt this threw people off too much, but if it did you are eligible for one (1) apology."
+      },
+      {
+        "post_id": "post6856",
+        "author": "FranzT",
+        "date": "Jan 11, 2018 - 10:03:20 (8y 4d)",
+        "title": "RE: Some notes",
+        "text": "Is it the expected behaviour to receive some output\nonly\nif the syntax is wrong?"
+      },
+      {
+        "post_id": "post6858",
+        "author": "dloser",
+        "date": "Jan 11, 2018 - 15:28:11 (8y 3d)",
+        "title": "RE: Some notes",
+        "text": "Quote from FranzT\nJan 11, 2018 - 10:03:20\nIs it the expected behaviour to receive some output\nonly\nif the syntax is wrong?\nNo."
+      },
+      {
+        "post_id": "post6910",
+        "author": "dp_1",
+        "date": "Mar 05, 2018 - 17:02:41 (7y 315d)",
+        "title": "RE: Some notes",
+        "text": "It seems like all I can get is \"Invalid term!\", is there meant to be another message?"
+      },
+      {
+        "post_id": "post6911",
+        "author": "dloser",
+        "date": "Mar 05, 2018 - 17:12:26 (7y 315d)",
+        "title": "RE: Some notes",
+        "text": "Quote from dp_1\nMar 05, 2018 - 17:02:41\nIt seems like all I can get is \"Invalid term!\", is there meant to be another message?\nYes.\nPerhaps you are sending ASCII instead of bytes?"
+      },
+      {
+        "post_id": "post6912",
+        "author": "dp_1",
+        "date": "Mar 05, 2018 - 17:30:30 (7y 315d)",
+        "title": "RE: Some notes",
+        "text": "I got some better output, at first I was sending the 'BrownOS[' and ']' as well"
+      },
+      {
+        "post_id": "post6913",
+        "author": "gizmore",
+        "date": "Mar 05, 2018 - 20:38:08 (7y 315d)",
+        "title": "RE: Some notes",
+        "text": "I get absolutely no response, although netcat connection works...\nI guess it is a binary protocol?\nCan someone write a client?\nWhere is my cheatsheet?!\nThe geeks shall inherit the properties and methods of object earth."
+      },
+      {
+        "post_id": "post6917",
+        "author": "dp_1",
+        "date": "Mar 06, 2018 - 17:58:18 (7y 314d)",
+        "title": "RE: Some notes",
+        "text": "Definitely a binary protocol, also don't forget the 0xFF at the end"
+      }
+    ]
+  },
+  {
+    "file": "forums/t917_p2.html",
+    "title": "[WeChall] Some notes [WeChall]->Challenge: The BrownOS",
+    "posts": [
+      {
+        "post_id": "post6931",
+        "author": "macplox",
+        "date": "Mar 13, 2018 - 11:27:52 (7y 308d)",
+        "title": "RE: Some notes",
+        "text": "I'm able to get the \"Invalid term!\" message if i echo anything with 0xFF bytes in it. Wireshark, amap and amapcrap were entertaining at best in terms of fuzzing it. Anyone try talking to the service with Scapy yet? I'm just starting to read up on it...\nI'm curious if this has anything to do with things like eBPF"
+      },
+      {
+        "post_id": "post6932",
+        "author": "dloser",
+        "date": "Mar 13, 2018 - 17:02:25 (7y 307d)",
+        "title": "RE: Some notes",
+        "text": "The example from the cheat sheet should be a good start to not get that message..."
+      },
+      {
+        "post_id": "post7008",
+        "author": "l3st3r",
+        "date": "May 09, 2018 - 23:47:11 (7y 250d)",
+        "title": "RE: Some notes",
+        "text": "I can make it return ...\n\"a towel!\"\nand\n\"O\"\n\" towel!\"\n(two consecutive reads)\n...using the exact same input data. Granted, I had to send a bad QD.\nAnd yes, it is a binary protocol."
+      },
+      {
+        "post_id": "post7009",
+        "author": "l3st3r",
+        "date": "May 10, 2018 - 03:29:22 (7y 250d)",
+        "title": "RE: Some notes",
+        "text": "Ouch!  My program was buggy.  I was truncating stuff.  Fixed program and now I get some interesting output.  Still trying to figure out what the codes mean though."
+      },
+      {
+        "post_id": "post7010",
+        "author": "macplox",
+        "date": "May 10, 2018 - 03:34:16 (7y 250d)",
+        "title": "RE: Some notes",
+        "text": "Quote from l3st3r\nMay 10, 2018 - 03:29:22\nOuch!  My program was buggy.  I was truncating stuff.  Fixed program and now I get some interesting output.  Still trying to figure out what the codes mean though.\nGreat work! i'm curious to know your approach to interaction with this."
+      },
+      {
+        "post_id": "post7011",
+        "author": "l3st3r",
+        "date": "May 10, 2018 - 15:24:09 (7y 249d)",
+        "title": "RE: Some notes",
+        "text": "Quote from macplox\nMay 10, 2018 - 03:34:16\nQuote from l3st3r\nMay 10, 2018 - 03:29:22\nOuch!  My program was buggy.  I was truncating stuff.  Fixed program and now I get some interesting output.  Still trying to figure out what the codes mean though.\nGreat work! i'm curious to know your approach to interaction with this.\nI'm using C and sockets to send and recv."
+      },
+      {
+        "post_id": "post7012",
+        "author": "l3st3r",
+        "date": "May 13, 2018 - 19:47:45 (7y 246d)",
+        "title": "RE: Some notes",
+        "text": "Quote from dloser\nMar 05, 2018 - 17:12:26\nQuote from dp_1\nMar 05, 2018 - 17:02:41\nIt seems like all I can get is \"Invalid term!\", is there meant to be another message?\nYes.\nPerhaps you are sending ASCII instead of bytes?\nVery tricky! ;)"
+      },
+      {
+        "post_id": "post7015",
+        "author": "l3st3r",
+        "date": "May 17, 2018 - 21:01:05 (7y 242d)",
+        "title": "RE: Some notes",
+        "text": "If the server replies immediately with no results (port closes, no data from server), does that indicate an error?"
+      },
+      {
+        "post_id": "post7016",
+        "author": "dloser",
+        "date": "May 17, 2018 - 21:26:16 (7y 242d)",
+        "title": "RE: Some notes",
+        "text": "Quote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo."
+      },
+      {
+        "post_id": "post7019",
+        "author": "gizmore",
+        "date": "May 22, 2018 - 22:31:12 (7y 237d)",
+        "title": "RE: Some notes",
+        "text": "Quote from dloser\nMay 17, 2018 - 21:26:16\nQuote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo.\nDoes it means BrownOS just segfaults on errors?\nThe geeks shall inherit the properties and methods of object earth."
+      }
+    ]
+  },
+  {
+    "file": "forums/t917_p3.html",
+    "title": "[WeChall] Some notes [WeChall]->Challenge: The BrownOS",
+    "posts": [
+      {
+        "post_id": "post7020",
+        "author": "dloser",
+        "date": "May 23, 2018 - 14:16:48 (7y 236d)",
+        "title": "RE: Some notes",
+        "text": "Quote from Gizmore\nMay 22, 2018 - 22:31:12\nQuote from dloser\nMay 17, 2018 - 21:26:16\nQuote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo.\nDoes it means BrownOS just segfaults on errors?\nNo, only on valid inputs."
+      },
+      {
+        "post_id": "post7021",
+        "author": "l3st3r",
+        "date": "May 23, 2018 - 17:27:16 (7y 236d)",
+        "title": "RE: Some notes",
+        "text": "Quote from Gizmore\nMay 22, 2018 - 22:31:12\nQuote from dloser\nMay 17, 2018 - 21:26:16\nQuote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo.\nDoes it means BrownOS just segfaults on errors?\nI haven't seen any mush come back that looks \"segfault\"-ish in nature, have you?\nBut I have seen a lot of \"nothing\" come back.  Port closes, boom, thank you very much.  Hmm, what could it mean?"
+      },
+      {
+        "post_id": "post7022",
+        "author": "l3st3r",
+        "date": "May 23, 2018 - 17:35:46 (7y 236d)",
+        "title": "RE: Some notes",
+        "text": "Quote from dloser\nMay 23, 2018 - 14:16:48\nQuote from Gizmore\nMay 22, 2018 - 22:31:12\nQuote from dloser\nMay 17, 2018 - 21:26:16\nQuote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo.\nDoes it means BrownOS just segfaults on errors?\nNo, only on valid inputs.\nBrownOS segfaults only on valid inputs???\nI have to rethink everything!"
+      },
+      {
+        "post_id": "post7171",
+        "author": "space",
+        "date": "Sep 10, 2018 - 23:48:18 (7y 126d)",
+        "title": "RE: Some notes",
+        "text": "Quote from l3st3r\nMay 23, 2018 - 17:35:46\nQuote from dloser\nMay 23, 2018 - 14:16:48\nQuote from Gizmore\nMay 22, 2018 - 22:31:12\nQuote from dloser\nMay 17, 2018 - 21:26:16\nQuote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo.\nDoes it means BrownOS just segfaults on errors?\nNo, only on valid inputs.\nBrownOS segfaults only on valid inputs???\nI have to rethink everything!\nThis is sarcasm.\nContact only via c3BhY2VAd2VjaGFsbC5uZXQ= or PM...\nWindows can be secure... but only if you don't use it"
+      },
+      {
+        "post_id": "post7172",
+        "author": "l3st3r",
+        "date": "Sep 11, 2018 - 00:42:36 (7y 126d)",
+        "title": "RE: Some notes",
+        "text": "Quote from dloser\nMay 17, 2018 - 21:26:16\nQuote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo.\nDoes it indicate success?"
+      },
+      {
+        "post_id": "post7174",
+        "author": "dloser",
+        "date": "Sep 11, 2018 - 14:57:58 (7y 125d)",
+        "title": "RE: Some notes",
+        "text": "Quote from space\nSep 10, 2018 - 23:48:18\nQuote from l3st3r\nMay 23, 2018 - 17:35:46\n...\nThis is sarcasm.\nNo, you are.\nQuote from l3st3r\nSep 11, 2018 - 00:42:36\nQuote from dloser\nMay 17, 2018 - 21:26:16\nQuote from l3st3r\nMay 17, 2018 - 21:01:05\nIf the server replies immediately with no results (port closes, no data from server), does that indicate an error?\nNo.\nDoes it indicate success?\nIf you didn't want it to return anything, yes."
+      },
+      {
+        "post_id": "post7314",
+        "author": "mk_modrzew",
+        "date": "Jan 05, 2019 - 16:09:40 (7y 9d)",
+        "title": "RE: Some notes",
+        "text": "Is service on port 61221 still online?"
+      },
+      {
+        "post_id": "post7315",
+        "author": "space",
+        "date": "Jan 05, 2019 - 16:17:02 (7y 9d)",
+        "title": "RE: Some notes",
+        "text": "Yes\nContact only via c3BhY2VAd2VjaGFsbC5uZXQ= or PM...\nWindows can be secure... but only if you don't use it"
+      },
+      {
+        "post_id": "post7807",
+        "author": "quangntenemy",
+        "date": "May 01, 2020 - 13:51:12 (5y 257d)",
+        "title": "RE: Some notes",
+        "text": "How many people actually tried this one lol? The fact that all solvers (except the author) gave it a difficulty of 10 is throwing me off, either it's too hard or too much work (or both)"
+      },
+      {
+        "post_id": "post7809",
+        "author": "l3st3r",
+        "date": "May 01, 2020 - 22:21:43 (5y 257d)",
+        "title": "RE: Some notes",
+        "text": "Quote from quangntenemy\nMay 01, 2020 - 13:51:12\nHow many people actually tried this one lol? The fact that all solvers (except the author) gave it a difficulty of 10 is throwing me off, either it's too hard or too much work (or both)\nIt's hard. It's work.  How much is \"too\" much? You'll have to decide."
+      }
+    ]
+  }
+]

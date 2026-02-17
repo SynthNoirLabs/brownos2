@@ -1,0 +1,56 @@
+================================================================================
+TESTING BACKDOOR (SYSCALL 201)
+================================================================================
+
+[TEST 1] Mail instruction: start with 00 FE FE
+Payload: 0x00 0xFE 0xFE (Var(0) wrapped in 2 lambdas)
+Full bytecode: c900fefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Raw response (20 bytes): 01010000fdfefefd0100fdfefefdfefefdfefeff
+Parsed term: Lam(body=Lam(body=App(f=Var(i=1), x=Lam(body=Lam(body=App(f=App(f=Var(i=1), x=Lam(body=Lam(body=App(f=Var(i=0), x=Var(i=0))))), x=Lam(body=Lam(body=App(f=Var(i=1), x=Var(i=0))))))))))
+
+[TEST 2] Backdoor pair A and B
+A = Lam(body=Lam(body=App(f=Var(i=0), x=Var(i=0))))
+B = Lam(body=Lam(body=App(f=Var(i=1), x=Var(i=0))))
+
+Backdoor(A) bytecode: c90000fdfefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (21 bytes): 0003020100fdfdfdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=3), x=App(f=Var(i=2), x=App(f=Var(i=1), x=Var(i=0))))))))))))))))
+
+Backdoor(B) bytecode: c90100fdfefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (21 bytes): 0003020100fdfdfdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=3), x=App(f=Var(i=2), x=App(f=Var(i=1), x=Var(i=0))))))))))))))))
+
+[TEST 3] Backdoor applied to various globals
+
+Backdoor(g(0)) bytecode: c900fd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (17 bytes): 000200fdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=2), x=Var(i=0))))))))))))))
+
+Backdoor(g(1)) bytecode: c901fd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (17 bytes): 000200fdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=2), x=Var(i=0))))))))))))))
+
+Backdoor(g(8)) bytecode: c908fd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (17 bytes): 000200fdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=2), x=Var(i=0))))))))))))))
+
+Backdoor(g(14)) bytecode: c90efd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (17 bytes): 000200fdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=2), x=Var(i=0))))))))))))))
+
+Backdoor(g(201)) bytecode: c9c9fd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (17 bytes): 000200fdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=2), x=Var(i=0))))))))))))))
+
+Backdoor(g(251)) bytecode: c9fbfd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (17 bytes): 000200fdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=2), x=Var(i=0))))))))))))))
+
+Backdoor(g(252)) bytecode: c9fcfd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (17 bytes): 000200fdfefefefefefefefefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=0), x=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=Lam(body=App(f=Var(i=2), x=Var(i=0))))))))))))))
+
+[TEST 4] Raw bytes 00 FE FE sent to backdoor
+Bytecode: c900fefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Response (20 bytes): 01010000fdfefefd0100fdfefefdfefefdfefeff
+Parsed: Lam(body=Lam(body=App(f=Var(i=1), x=Lam(body=Lam(body=App(f=App(f=Var(i=1), x=Lam(body=Lam(body=App(f=Var(i=0), x=Var(i=0))))), x=Lam(body=Lam(body=App(f=Var(i=1), x=Var(i=0))))))))))

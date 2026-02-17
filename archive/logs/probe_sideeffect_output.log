@@ -1,0 +1,109 @@
+========================================================================
+probe_sideeffect.py — Side-Effect Detection for sys8
+========================================================================
+
+--- State Snapshot: PHASE 1: Baseline (before sys8) ---
+  access.log: 000200fdfefefefefefefefefefdfefeff
+  backdoor: 01010000fdfefefd0100fdfefefdfefefdfefeff
+  rootdir: 000200fdfefefefefefefefefefdfefeff
+  file_7: 000200fdfefefefefefefefefefdfefeff
+  file_8: 000200fdfefefefefefefefefefdfefeff
+  file_10: 000200fdfefefefefefefefefefdfefeff
+  file_12: 000200fdfefefefefefefefefefdfefeff
+  file_13: 000200fdfefefefefefefefefefdfefeff
+
+=== PHASE 2: Minimal sys8 calls ===
+  [P2a: bare sys8 (08 FF)] -> EMPTY
+  [P2b: sys8(nil)] -> EMPTY
+  [P2c: sys8(bd(nil))] -> EMPTY
+  [P2d: nil(sys8)] -> EMPTY
+  [P2e: sys8(sys8)] -> EMPTY
+
+--- State Snapshot: PHASE 3: After minimal sys8 calls ---
+  access.log: 000200fdfefefefefefefefefefdfefeff
+  backdoor: 01010000fdfefefd0100fdfefefdfefefdfefeff
+  rootdir: 000200fdfefefefefefefefefefdfefeff
+  file_7: 000200fdfefefefefefefefefefdfefeff
+  file_8: 000200fdfefefefefefefefefefdfefeff
+  file_10: 000200fdfefefefefefefefefefdfefeff
+  file_12: 000200fdfefefefefefefefefefdfefeff
+  file_13: 000200fdfefefefefefefefefefdfefeff
+
+=== Comparing Phase 1 vs Phase 3 ===
+  No differences between Phase1 and Phase3
+
+=== PHASE 4: Oracle's specific bytecodes ===
+  [P4a: 00 FE FE 00 08 FE FF (multi-stack)] -> INVALID_TERM
+  [P4b: backdoor(sys8)] -> EMPTY
+  [P4c: backdoor(nil)(sys8)] -> EMPTY
+  [P4d: sys8(backdoor)] -> EMPTY
+  [P4e: backdoor(sys8)(nil)] -> EMPTY
+  [P4f: backdoor(sys8)(QD)] -> Right(2) = InvalidArg
+
+--- State Snapshot: PHASE 5: After Oracle bytecodes ---
+  access.log: 000200fdfefefefefefefefefefdfefeff
+  backdoor: 01010000fdfefefd0100fdfefefdfefefdfefeff
+  rootdir: 000200fdfefefefefefefefefefdfefeff
+  file_7: 000200fdfefefefefefefefefefdfefeff
+  file_8: 000200fdfefefefefefefefefefdfefeff
+  file_10: 000200fdfefefefefefefefefefdfefeff
+  file_12: 000200fdfefefefefefefefefefdfefeff
+  file_13: 000200fdfefefefefefefefefefdfefeff
+
+=== Comparing Phase 1 vs Phase 5 ===
+  No differences between Phase1 and Phase5
+
+=== PHASE 6: Scanning file IDs 100-130, 200-210, 250-256 ===
+  *** file 100: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 101: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 102: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 103: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 104: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 105: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 106: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 107: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 108: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 109: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 110: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 111: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 112: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 113: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 114: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 115: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 116: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 117: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 118: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 119: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 120: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 121: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 122: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 123: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 124: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 125: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 126: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 127: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 128: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 129: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 130: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 200: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 201: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 202: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 203: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 204: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 205: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 206: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 207: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 208: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 209: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 210: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 250: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 251: hex=000200fdfefefefefefefefefefdfefeff ***
+  *** file 252: hex=000200fdfefefefefefefefefefdfefeff ***
+  Found 45 interesting file IDs!
+
+========================================================================
+SUMMARY
+========================================================================
+No state changes detected across any phase.
+*** NEW FILES: [(100, '000200fdfefefefefefefefefefdfefeff'), (101, '000200fdfefefefefefefefefefdfefeff'), (102, '000200fdfefefefefefefefefefdfefeff'), (103, '000200fdfefefefefefefefefefdfefeff'), (104, '000200fdfefefefefefefefefefdfefeff'), (105, '000200fdfefefefefefefefefefdfefeff'), (106, '000200fdfefefefefefefefefefdfefeff'), (107, '000200fdfefefefefefefefefefdfefeff'), (108, '000200fdfefefefefefefefefefdfefeff'), (109, '000200fdfefefefefefefefefefdfefeff'), (110, '000200fdfefefefefefefefefefdfefeff'), (111, '000200fdfefefefefefefefefefdfefeff'), (112, '000200fdfefefefefefefefefefdfefeff'), (113, '000200fdfefefefefefefefefefdfefeff'), (114, '000200fdfefefefefefefefefefdfefeff'), (115, '000200fdfefefefefefefefefefdfefeff'), (116, '000200fdfefefefefefefefefefdfefeff'), (117, '000200fdfefefefefefefefefefdfefeff'), (118, '000200fdfefefefefefefefefefdfefeff'), (119, '000200fdfefefefefefefefefefdfefeff'), (120, '000200fdfefefefefefefefefefdfefeff'), (121, '000200fdfefefefefefefefefefdfefeff'), (122, '000200fdfefefefefefefefefefdfefeff'), (123, '000200fdfefefefefefefefefefdfefeff'), (124, '000200fdfefefefefefefefefefdfefeff'), (125, '000200fdfefefefefefefefefefdfefeff'), (126, '000200fdfefefefefefefefefefdfefeff'), (127, '000200fdfefefefefefefefefefdfefeff'), (128, '000200fdfefefefefefefefefefdfefeff'), (129, '000200fdfefefefefefefefefefdfefeff'), (130, '000200fdfefefefefefefefefefdfefeff'), (200, '000200fdfefefefefefefefefefdfefeff'), (201, '000200fdfefefefefefefefefefdfefeff'), (202, '000200fdfefefefefefefefefefdfefeff'), (203, '000200fdfefefefefefefefefefdfefeff'), (204, '000200fdfefefefefefefefefefdfefeff'), (205, '000200fdfefefefefefefefefefdfefeff'), (206, '000200fdfefefefefefefefefefdfefeff'), (207, '000200fdfefefefefefefefefefdfefeff'), (208, '000200fdfefefefefefefefefefdfefeff'), (209, '000200fdfefefefefefefefefefdfefeff'), (210, '000200fdfefefefefefefefefefdfefeff'), (250, '000200fdfefefefefefefefefefdfefeff'), (251, '000200fdfefefefefefefefefefdfefeff'), (252, '000200fdfefefefefefefefefefdfefeff')] ***
+========================================================================

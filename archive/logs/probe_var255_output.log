@@ -1,0 +1,46 @@
+========================================================================
+probe_var255.py — Creating Var(255) = 0xFF via double echo
+========================================================================
+
+--- TEST 1: echo(g251)→unwrap→echo(V253)→unwrap→sys8(V255)(QD) ---
+  Sending T1: double_echo→sys8(V255) (47B)... hex=00030200fdfdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 2: echo→echo→sys8(V255)→errorString→write ---
+  (Using longer timeout=15s in case of freeze)
+  Sending T2: double_echo→sys8(V255) [15s timeout] (47B)... hex=00030200fdfdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 3: echo→echo→extract V255 (no sys8, just observe) ---
+  Sending T3: double_echo→quote(V255)→write (48B)... hex=fbff
+
+--- TEST 4: echo(g250)→echo→sys8(V254) ---
+  Sending T4: double_echo(g250)→sys8(V254) (47B)... hex=00030200fdfdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 5: triple echo(g249)→V251→V253→V255→sys8 ---
+  Sending T5: triple_echo(g249)→sys8(V255) (60B)... hex=00030200fdfdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 6: V255(sys8)(QD) — Var(255) in function position ---
+  Sending T6: V255(sys8)(QD) — V255 as function (47B)... hex=000100fdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 7: V255(nil)(QD) — see what V255 does ---
+  Sending T7: V255(nil)(QD) — V255 applied to nil (49B)... hex=000100fdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 8: V253(sys8)(QD) — Var(253)=FD as function ---
+  Sending T8: V253(sys8)(QD) — V253 as function (34B)... hex=000100fdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 9: V253(nil)(QD) — see what V253 does ---
+  Sending T9: V253(nil)(QD) — V253 applied to nil (36B)... hex=000100fdfefefefefefefefefefdfefeff
+    → Right(...)
+
+--- TEST 10: V253 as potential hidden global (already tested in T9) ---
+  (See T9 result above)
+
+========================================================================
+DONE
+========================================================================

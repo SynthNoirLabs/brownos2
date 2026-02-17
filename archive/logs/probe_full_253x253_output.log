@@ -1,0 +1,527 @@
+======================================================================
+EXHAUSTIVE 253x253 SCAN: ((Var(x) Var(y)) QD)
+======================================================================
+
+--- Phase 1: Quick scan x=0..252, y=0 ---
+  Progress: x=0/252
+  *** x=  1 y=0: ?:000200fdfefefefefefe raw=000200fdfefefefefefefefefefdfefeff
+  *** x=  2 y=0: ?:000200fdfefefefefefe raw=000200fdfefefefefefefefefefdfefeff
+  *** x=  3 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=  4 y=0: ?:010100fefefefefefefe raw=010100fefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfd
+  *** x=  5 y=0: ?:000200fdfefefefefefe raw=000200fdfefefefefefefefefefdfefeff
+  *** x=  6 y=0: ?:000200fdfefefefefefe raw=000200fdfefefefefefefefefefdfefeff
+  *** x=  7 y=0: ?:000200fdfefefefefefe raw=000200fdfefefefefefefefefefdfefeff
+  *** x=  9 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 10 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 11 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 12 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 13 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 14 y=0: ?:0102fdfefeff raw=0102fdfefeff
+  *** x= 15 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 16 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 17 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 18 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 19 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 20 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 21 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 22 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 23 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 24 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 25 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 26 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 27 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 28 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 29 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 30 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 31 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 32 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 33 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 34 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 35 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 36 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 37 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 38 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 39 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 40 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 41 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 42 y=0: ?:0101070403020100fdfd raw=0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfd
+  *** x= 43 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 44 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 45 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 46 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 47 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 48 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 49 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 50 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  Progress: x=50/252
+  *** x= 51 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 52 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 53 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 54 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 55 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 56 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 57 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 58 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 59 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 60 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 61 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 62 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 63 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 64 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 65 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 66 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 67 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 68 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 69 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 70 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 71 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 72 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 73 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 74 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 75 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 76 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 77 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 78 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 79 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 80 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 81 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 82 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 83 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 84 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 85 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 86 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 87 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 88 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 89 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 90 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 91 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 92 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 93 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 94 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 95 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 96 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 97 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 98 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x= 99 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=100 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  Progress: x=100/252
+  *** x=101 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=102 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=103 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=104 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=105 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=106 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=107 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=108 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=109 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=110 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=111 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=112 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=113 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=114 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=115 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=116 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=117 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=118 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=119 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=120 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=121 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=122 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=123 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=124 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=125 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=126 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=127 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=128 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=129 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=130 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=131 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=132 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=133 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=134 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=135 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=136 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=137 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=138 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=139 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=140 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=141 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=142 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=143 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=144 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=145 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=146 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=147 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=148 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=149 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=150 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  Progress: x=150/252
+  *** x=151 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=152 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=153 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=154 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=155 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=156 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=157 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=158 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=159 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=160 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=161 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=162 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=163 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=164 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=165 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=166 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=167 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=168 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=169 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=170 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=171 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=172 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=173 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=174 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=175 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=176 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=177 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=178 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=179 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=180 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=181 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=182 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=183 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=184 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=185 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=186 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=187 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=188 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=189 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=190 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=191 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=192 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=193 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=194 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=195 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=196 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=197 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=198 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=199 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=200 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  Progress: x=200/252
+  *** x=201 y=0: ?:000200fdfefefefefefe raw=000200fdfefefefefefefefefefdfefeff
+  *** x=202 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=203 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=204 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=205 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=206 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=207 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=208 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=209 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=210 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=211 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=212 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=213 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=214 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=215 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=216 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=217 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=218 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=219 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=220 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=221 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=222 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=223 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=224 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=225 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=226 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=227 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=228 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=229 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=230 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=231 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=232 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=233 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=234 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=235 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=236 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=237 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=238 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=239 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=240 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=241 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=242 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=243 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=244 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=245 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=246 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=247 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=248 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=249 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=250 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  Progress: x=250/252
+  *** x=251 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+  *** x=252 y=0: ?:000100fdfefefefefefe raw=000100fdfefefefefefefefefefdfefeff
+
+  Category summary (y=0):
+    ?:000100fdfefefefefefe: 242 globals
+    ?:000200fdfefefefefefe: 6 globals
+    ?:010100fefefefefefefe: 1 globals
+    ?:0101070403020100fdfd: 1 globals
+    ?:0102fdfefeff: 1 globals
+    EMPTY: 1 globals
+    R2: 1 globals
+
+  Active syscalls (not NotImpl, not EMPTY):
+    x=  1: ?:000200fdfefefefefefe
+    x=  2: ?:000200fdfefefefefefe
+    x=  3: ?:000100fdfefefefefefe
+    x=  4: ?:010100fefefefefefefe
+    x=  5: ?:000200fdfefefefefefe
+    x=  6: ?:000200fdfefefefefefe
+    x=  7: ?:000200fdfefefefefefe
+    x=  8: R2
+    x=  9: ?:000100fdfefefefefefe
+    x= 10: ?:000100fdfefefefefefe
+    x= 11: ?:000100fdfefefefefefe
+    x= 12: ?:000100fdfefefefefefe
+    x= 13: ?:000100fdfefefefefefe
+    x= 14: ?:0102fdfefeff
+    x= 15: ?:000100fdfefefefefefe
+    x= 16: ?:000100fdfefefefefefe
+    x= 17: ?:000100fdfefefefefefe
+    x= 18: ?:000100fdfefefefefefe
+    x= 19: ?:000100fdfefefefefefe
+    x= 20: ?:000100fdfefefefefefe
+    x= 21: ?:000100fdfefefefefefe
+    x= 22: ?:000100fdfefefefefefe
+    x= 23: ?:000100fdfefefefefefe
+    x= 24: ?:000100fdfefefefefefe
+    x= 25: ?:000100fdfefefefefefe
+    x= 26: ?:000100fdfefefefefefe
+    x= 27: ?:000100fdfefefefefefe
+    x= 28: ?:000100fdfefefefefefe
+    x= 29: ?:000100fdfefefefefefe
+    x= 30: ?:000100fdfefefefefefe
+    x= 31: ?:000100fdfefefefefefe
+    x= 32: ?:000100fdfefefefefefe
+    x= 33: ?:000100fdfefefefefefe
+    x= 34: ?:000100fdfefefefefefe
+    x= 35: ?:000100fdfefefefefefe
+    x= 36: ?:000100fdfefefefefefe
+    x= 37: ?:000100fdfefefefefefe
+    x= 38: ?:000100fdfefefefefefe
+    x= 39: ?:000100fdfefefefefefe
+    x= 40: ?:000100fdfefefefefefe
+    x= 41: ?:000100fdfefefefefefe
+    x= 42: ?:0101070403020100fdfd
+    x= 43: ?:000100fdfefefefefefe
+    x= 44: ?:000100fdfefefefefefe
+    x= 45: ?:000100fdfefefefefefe
+    x= 46: ?:000100fdfefefefefefe
+    x= 47: ?:000100fdfefefefefefe
+    x= 48: ?:000100fdfefefefefefe
+    x= 49: ?:000100fdfefefefefefe
+    x= 50: ?:000100fdfefefefefefe
+    x= 51: ?:000100fdfefefefefefe
+    x= 52: ?:000100fdfefefefefefe
+    x= 53: ?:000100fdfefefefefefe
+    x= 54: ?:000100fdfefefefefefe
+    x= 55: ?:000100fdfefefefefefe
+    x= 56: ?:000100fdfefefefefefe
+    x= 57: ?:000100fdfefefefefefe
+    x= 58: ?:000100fdfefefefefefe
+    x= 59: ?:000100fdfefefefefefe
+    x= 60: ?:000100fdfefefefefefe
+    x= 61: ?:000100fdfefefefefefe
+    x= 62: ?:000100fdfefefefefefe
+    x= 63: ?:000100fdfefefefefefe
+    x= 64: ?:000100fdfefefefefefe
+    x= 65: ?:000100fdfefefefefefe
+    x= 66: ?:000100fdfefefefefefe
+    x= 67: ?:000100fdfefefefefefe
+    x= 68: ?:000100fdfefefefefefe
+    x= 69: ?:000100fdfefefefefefe
+    x= 70: ?:000100fdfefefefefefe
+    x= 71: ?:000100fdfefefefefefe
+    x= 72: ?:000100fdfefefefefefe
+    x= 73: ?:000100fdfefefefefefe
+    x= 74: ?:000100fdfefefefefefe
+    x= 75: ?:000100fdfefefefefefe
+    x= 76: ?:000100fdfefefefefefe
+    x= 77: ?:000100fdfefefefefefe
+    x= 78: ?:000100fdfefefefefefe
+    x= 79: ?:000100fdfefefefefefe
+    x= 80: ?:000100fdfefefefefefe
+    x= 81: ?:000100fdfefefefefefe
+    x= 82: ?:000100fdfefefefefefe
+    x= 83: ?:000100fdfefefefefefe
+    x= 84: ?:000100fdfefefefefefe
+    x= 85: ?:000100fdfefefefefefe
+    x= 86: ?:000100fdfefefefefefe
+    x= 87: ?:000100fdfefefefefefe
+    x= 88: ?:000100fdfefefefefefe
+    x= 89: ?:000100fdfefefefefefe
+    x= 90: ?:000100fdfefefefefefe
+    x= 91: ?:000100fdfefefefefefe
+    x= 92: ?:000100fdfefefefefefe
+    x= 93: ?:000100fdfefefefefefe
+    x= 94: ?:000100fdfefefefefefe
+    x= 95: ?:000100fdfefefefefefe
+    x= 96: ?:000100fdfefefefefefe
+    x= 97: ?:000100fdfefefefefefe
+    x= 98: ?:000100fdfefefefefefe
+    x= 99: ?:000100fdfefefefefefe
+    x=100: ?:000100fdfefefefefefe
+    x=101: ?:000100fdfefefefefefe
+    x=102: ?:000100fdfefefefefefe
+    x=103: ?:000100fdfefefefefefe
+    x=104: ?:000100fdfefefefefefe
+    x=105: ?:000100fdfefefefefefe
+    x=106: ?:000100fdfefefefefefe
+    x=107: ?:000100fdfefefefefefe
+    x=108: ?:000100fdfefefefefefe
+    x=109: ?:000100fdfefefefefefe
+    x=110: ?:000100fdfefefefefefe
+    x=111: ?:000100fdfefefefefefe
+    x=112: ?:000100fdfefefefefefe
+    x=113: ?:000100fdfefefefefefe
+    x=114: ?:000100fdfefefefefefe
+    x=115: ?:000100fdfefefefefefe
+    x=116: ?:000100fdfefefefefefe
+    x=117: ?:000100fdfefefefefefe
+    x=118: ?:000100fdfefefefefefe
+    x=119: ?:000100fdfefefefefefe
+    x=120: ?:000100fdfefefefefefe
+    x=121: ?:000100fdfefefefefefe
+    x=122: ?:000100fdfefefefefefe
+    x=123: ?:000100fdfefefefefefe
+    x=124: ?:000100fdfefefefefefe
+    x=125: ?:000100fdfefefefefefe
+    x=126: ?:000100fdfefefefefefe
+    x=127: ?:000100fdfefefefefefe
+    x=128: ?:000100fdfefefefefefe
+    x=129: ?:000100fdfefefefefefe
+    x=130: ?:000100fdfefefefefefe
+    x=131: ?:000100fdfefefefefefe
+    x=132: ?:000100fdfefefefefefe
+    x=133: ?:000100fdfefefefefefe
+    x=134: ?:000100fdfefefefefefe
+    x=135: ?:000100fdfefefefefefe
+    x=136: ?:000100fdfefefefefefe
+    x=137: ?:000100fdfefefefefefe
+    x=138: ?:000100fdfefefefefefe
+    x=139: ?:000100fdfefefefefefe
+    x=140: ?:000100fdfefefefefefe
+    x=141: ?:000100fdfefefefefefe
+    x=142: ?:000100fdfefefefefefe
+    x=143: ?:000100fdfefefefefefe
+    x=144: ?:000100fdfefefefefefe
+    x=145: ?:000100fdfefefefefefe
+    x=146: ?:000100fdfefefefefefe
+    x=147: ?:000100fdfefefefefefe
+    x=148: ?:000100fdfefefefefefe
+    x=149: ?:000100fdfefefefefefe
+    x=150: ?:000100fdfefefefefefe
+    x=151: ?:000100fdfefefefefefe
+    x=152: ?:000100fdfefefefefefe
+    x=153: ?:000100fdfefefefefefe
+    x=154: ?:000100fdfefefefefefe
+    x=155: ?:000100fdfefefefefefe
+    x=156: ?:000100fdfefefefefefe
+    x=157: ?:000100fdfefefefefefe
+    x=158: ?:000100fdfefefefefefe
+    x=159: ?:000100fdfefefefefefe
+    x=160: ?:000100fdfefefefefefe
+    x=161: ?:000100fdfefefefefefe
+    x=162: ?:000100fdfefefefefefe
+    x=163: ?:000100fdfefefefefefe
+    x=164: ?:000100fdfefefefefefe
+    x=165: ?:000100fdfefefefefefe
+    x=166: ?:000100fdfefefefefefe
+    x=167: ?:000100fdfefefefefefe
+    x=168: ?:000100fdfefefefefefe
+    x=169: ?:000100fdfefefefefefe
+    x=170: ?:000100fdfefefefefefe
+    x=171: ?:000100fdfefefefefefe
+    x=172: ?:000100fdfefefefefefe
+    x=173: ?:000100fdfefefefefefe
+    x=174: ?:000100fdfefefefefefe
+    x=175: ?:000100fdfefefefefefe
+    x=176: ?:000100fdfefefefefefe
+    x=177: ?:000100fdfefefefefefe
+    x=178: ?:000100fdfefefefefefe
+    x=179: ?:000100fdfefefefefefe
+    x=180: ?:000100fdfefefefefefe
+    x=181: ?:000100fdfefefefefefe
+    x=182: ?:000100fdfefefefefefe
+    x=183: ?:000100fdfefefefefefe
+    x=184: ?:000100fdfefefefefefe
+    x=185: ?:000100fdfefefefefefe
+    x=186: ?:000100fdfefefefefefe
+    x=187: ?:000100fdfefefefefefe
+    x=188: ?:000100fdfefefefefefe
+    x=189: ?:000100fdfefefefefefe
+    x=190: ?:000100fdfefefefefefe
+    x=191: ?:000100fdfefefefefefe
+    x=192: ?:000100fdfefefefefefe
+    x=193: ?:000100fdfefefefefefe
+    x=194: ?:000100fdfefefefefefe
+    x=195: ?:000100fdfefefefefefe
+    x=196: ?:000100fdfefefefefefe
+    x=197: ?:000100fdfefefefefefe
+    x=198: ?:000100fdfefefefefefe
+    x=199: ?:000100fdfefefefefefe
+    x=200: ?:000100fdfefefefefefe
+    x=201: ?:000200fdfefefefefefe
+    x=202: ?:000100fdfefefefefefe
+    x=203: ?:000100fdfefefefefefe
+    x=204: ?:000100fdfefefefefefe
+    x=205: ?:000100fdfefefefefefe
+    x=206: ?:000100fdfefefefefefe
+    x=207: ?:000100fdfefefefefefe
+    x=208: ?:000100fdfefefefefefe
+    x=209: ?:000100fdfefefefefefe
+    x=210: ?:000100fdfefefefefefe
+    x=211: ?:000100fdfefefefefefe
+    x=212: ?:000100fdfefefefefefe
+    x=213: ?:000100fdfefefefefefe
+    x=214: ?:000100fdfefefefefefe
+    x=215: ?:000100fdfefefefefefe
+    x=216: ?:000100fdfefefefefefe
+    x=217: ?:000100fdfefefefefefe
+    x=218: ?:000100fdfefefefefefe
+    x=219: ?:000100fdfefefefefefe
+    x=220: ?:000100fdfefefefefefe
+    x=221: ?:000100fdfefefefefefe
+    x=222: ?:000100fdfefefefefefe
+    x=223: ?:000100fdfefefefefefe
+    x=224: ?:000100fdfefefefefefe
+    x=225: ?:000100fdfefefefefefe
+    x=226: ?:000100fdfefefefefefe
+    x=227: ?:000100fdfefefefefefe
+    x=228: ?:000100fdfefefefefefe
+    x=229: ?:000100fdfefefefefefe
+    x=230: ?:000100fdfefefefefefe
+    x=231: ?:000100fdfefefefefefe
+    x=232: ?:000100fdfefefefefefe
+    x=233: ?:000100fdfefefefefefe
+    x=234: ?:000100fdfefefefefefe
+    x=235: ?:000100fdfefefefefefe
+    x=236: ?:000100fdfefefefefefe
+    x=237: ?:000100fdfefefefefefe
+    x=238: ?:000100fdfefefefefefe
+    x=239: ?:000100fdfefefefefefe
+    x=240: ?:000100fdfefefefefefe
+    x=241: ?:000100fdfefefefefefe
+    x=242: ?:000100fdfefefefefefe
+    x=243: ?:000100fdfefefefefefe
+    x=244: ?:000100fdfefefefefefe
+    x=245: ?:000100fdfefefefefefe
+    x=246: ?:000100fdfefefefefefe
+    x=247: ?:000100fdfefefefefefe
+    x=248: ?:000100fdfefefefefefe
+    x=249: ?:000100fdfefefefefefe
+    x=250: ?:000100fdfefefefefefe
+    x=251: ?:000100fdfefefefefefe
+    x=252: ?:000100fdfefefefefefe
+
+--- Phase 2: Full y-scan for 252 active syscalls ---

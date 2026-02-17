@@ -1,0 +1,48 @@
+{
+  "found": {
+    "0": "/",
+    "1": "bin",
+    "2": "etc",
+    "3": "brownos",
+    "4": "var",
+    "5": "log",
+    "6": "brownos",
+    "9": "sbin",
+    "11": "passwd",
+    "14": "sh",
+    "15": "sudo",
+    "16": "false",
+    "22": "home",
+    "25": "spool",
+    "39": "gizmore",
+    "43": "mail",
+    "46": "access.log",
+    "50": "dloser",
+    "65": ".history",
+    "88": "dloser"
+  },
+  "known": [
+    0
+  ],
+  "unknown": {
+    "1": "bin",
+    "2": "etc",
+    "3": "brownos",
+    "4": "var",
+    "5": "log",
+    "6": "brownos",
+    "9": "sbin",
+    "11": "passwd",
+    "14": "sh",
+    "15": "sudo",
+    "16": "false",
+    "22": "home",
+    "25": "spool",
+    "39": "gizmore",
+    "43": "mail",
+    "46": "access.log",
+    "50": "dloser",
+    "65": ".history",
+    "88": "dloser"
+  }
+}

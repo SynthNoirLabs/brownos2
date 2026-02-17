@@ -1,0 +1,136 @@
+[
+  {
+    "name": "(c9_(0e_08))_QD",
+    "result": "Right(2)",
+    "interesting": true,
+    "hex": "000200fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "(c9_(08_0e))_QD",
+    "result": "Right(2)",
+    "interesting": true,
+    "hex": "000200fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "(0e_(c9_08))_QD",
+    "result": "Not a Scott list node",
+    "interesting": true,
+    "hex": "01cb0afdfdfefeff"
+  },
+  {
+    "name": "(0e_(08_c9))_QD",
+    "result": "Not a Scott list node",
+    "interesting": true,
+    "hex": "010acbfdfdfefeff"
+  },
+  {
+    "name": "(08_(c9_0e))_QD",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "(08_(0e_c9))_QD",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((c9_0e)_08)_QD",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((c9_08)_0e)_QD",
+    "result": "Unexpected Scott list node shape",
+    "interesting": true,
+    "hex": "01000200fdfefefefefefefefefefdfefefdfefeff"
+  },
+  {
+    "name": "((0e_c9)_08)_QD",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((0e_08)_c9)_QD",
+    "result": "Right(2)",
+    "interesting": true,
+    "hex": "000200fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((08_c9)_0e)_QD",
+    "result": "Unexpected Scott list node shape",
+    "interesting": true,
+    "hex": "0100030200fdfdfefefefefefefefefefdfefefdfefeff"
+  },
+  {
+    "name": "((08_0e)_c9)_QD",
+    "result": "Right(2)",
+    "interesting": true,
+    "hex": "000200fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((08_04)_02)_QD_extra",
+    "result": "Right(2)",
+    "interesting": true,
+    "hex": "000200fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((c9_04)_08)_QD_extra",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((0e_04)_08)_QD_extra",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((04_0e)_08)_QD_extra",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "((02_0e)_08)_QD_extra",
+    "result": "Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "lam_((9_15)_202)_QD",
+    "result": "No response",
+    "interesting": false,
+    "hex": ""
+  },
+  {
+    "name": "lam_((202_15)_9)_QD",
+    "result": "No response",
+    "interesting": false,
+    "hex": ""
+  },
+  {
+    "name": "minimal_0",
+    "payload": "080efdc9fd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "result": "Right(2)"
+  },
+  {
+    "name": "minimal_1",
+    "payload": "c90efd08fd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "result": "Right(6)"
+  },
+  {
+    "name": "minimal_2",
+    "payload": "080ec9fdfd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "result": "Right(6)"
+  },
+  {
+    "name": "minimal_3",
+    "payload": "c90e08fdfd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "result": "Right(2)"
+  }
+]

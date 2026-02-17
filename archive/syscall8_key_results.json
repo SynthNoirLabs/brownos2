@@ -1,0 +1,149 @@
+[
+  {
+    "name": "backdoor_syscall8_selector",
+    "desc": "Get backdoor pair, apply syscall 8 as selector: (pair 8)",
+    "result": "silent: No response",
+    "interesting": false,
+    "hex": ""
+  },
+  {
+    "name": "backdoor_of_backdoor_then_8",
+    "desc": "Backdoor -> backdoor(result) -> syscall 8",
+    "result": "other: Unexpected Either shape",
+    "interesting": true,
+    "hex": "0200fdfefefefefefefefefeff"
+  },
+  {
+    "name": "backdoor_A_applied_to_8",
+    "desc": "Backdoor -> get A -> (A syscall8 nil) QD",
+    "result": "silent: No response",
+    "interesting": false,
+    "hex": ""
+  },
+  {
+    "name": "backdoor_applied_to_self",
+    "desc": "Backdoor -> (result result nil) QD - 2 leaves from result",
+    "result": "silent: No response",
+    "interesting": false,
+    "hex": ""
+  },
+  {
+    "name": "readfile_100",
+    "desc": "Try to read file ID 100",
+    "result": "either_right: Right(3)",
+    "interesting": true,
+    "hex": "00020100fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "readfile_128",
+    "desc": "Try to read file ID 128",
+    "result": "either_right: Right(3)",
+    "interesting": true,
+    "hex": "00020100fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "readfile_200",
+    "desc": "Try to read file ID 200",
+    "result": "either_right: Right(3)",
+    "interesting": true,
+    "hex": "00020100fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "readfile_255",
+    "desc": "Try to read file ID 255",
+    "result": "either_right: Right(3)",
+    "interesting": true,
+    "hex": "00020100fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "readfile_257",
+    "desc": "Try to read file ID 257",
+    "result": "either_right: Right(5)",
+    "interesting": true,
+    "hex": "00030100fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "readfile_300",
+    "desc": "Try to read file ID 300",
+    "result": "either_right: Right(3)",
+    "interesting": true,
+    "hex": "00020100fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall8_with_constructed_pair",
+    "desc": "Syscall 8 with manually constructed (A,B) pair",
+    "result": "either_right: Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "echo_constructed_pair_then_8",
+    "desc": "Echo constructed (A,B) pair, then syscall 8",
+    "result": "either_right: Right(6)",
+    "interesting": false,
+    "hex": "00030200fdfdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_00_nil",
+    "desc": "Syscall 0x00 with nil",
+    "result": "silent: No response",
+    "interesting": false,
+    "hex": ""
+  },
+  {
+    "name": "syscall_09_nil",
+    "desc": "Syscall 0x09 with nil",
+    "result": "either_right: Right(1)",
+    "interesting": true,
+    "hex": "000100fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_0a_nil",
+    "desc": "Syscall 0x0A with nil",
+    "result": "either_right: Right(1)",
+    "interesting": true,
+    "hex": "000100fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_0b_nil",
+    "desc": "Syscall 0x0B with nil",
+    "result": "either_right: Right(1)",
+    "interesting": true,
+    "hex": "000100fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_0c_nil",
+    "desc": "Syscall 0x0C with nil",
+    "result": "either_right: Right(1)",
+    "interesting": true,
+    "hex": "000100fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_0d_nil",
+    "desc": "Syscall 0x0D with nil",
+    "result": "either_right: Right(1)",
+    "interesting": true,
+    "hex": "000100fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_0f_nil",
+    "desc": "Syscall 0x0F with nil",
+    "result": "either_right: Right(1)",
+    "interesting": true,
+    "hex": "000100fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_10_nil",
+    "desc": "Syscall 0x10 with nil",
+    "result": "either_right: Right(1)",
+    "interesting": true,
+    "hex": "000100fdfefefefefefefefefefdfefeff"
+  },
+  {
+    "name": "syscall_ff_nil",
+    "desc": "Syscall 0xFF with nil",
+    "result": "invalid: Invalid term!",
+    "interesting": false,
+    "hex": "496e76616c6964207465726d21"
+  }
+]

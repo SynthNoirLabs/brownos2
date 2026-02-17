@@ -1,0 +1,84 @@
+================================================================================
+probe_capability_tag.py
+Capability-tag tests with runtime backdoor values (pair/A/B)
+================================================================================
+
+CTRL1: g(8)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.592s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+CTRL2: g(42)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.548s
+  bucket: LEFT
+  raw_hex: 4c3a
+  text: 'L:'
+
+A1: backdoor -> sys8(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.591s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+A2: backdoor -> sys8(A)(OBS)
+  payload_len: 257
+  elapsed: 0.550s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+A3: backdoor -> sys8(B)(OBS)
+  payload_len: 257
+  elapsed: 0.579s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+B1: backdoor -> pair(g8)(nil)
+  payload_len: 88
+  elapsed: 0.619s
+  bucket: EMPTY
+  raw_hex: (empty)
+  text: ''
+
+B2: backdoor -> pair(\x.g8)(nil)
+  payload_len: 89
+  elapsed: 0.619s
+  bucket: EMPTY
+  raw_hex: (empty)
+  text: ''
+
+C1: backdoor -> sys8(ilikephp)(OBS)
+  payload_len: 431
+  elapsed: 0.619s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+C2: backdoor -> sys8(pair(ilikephp))(OBS)
+  payload_len: 433
+  elapsed: 0.581s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+================================================================================
+SUMMARY
+================================================================================
+LABEL                                         BUCKET           TIME
+--------------------------------------------------------------------------------
+CTRL1: g(8)(nil)(OBS)                         RIGHT_6         0.592
+CTRL2: g(42)(nil)(OBS)                        LEFT            0.548
+A1: backdoor -> sys8(pair)(OBS)               RIGHT_6         0.591
+A2: backdoor -> sys8(A)(OBS)                  RIGHT_6         0.550
+A3: backdoor -> sys8(B)(OBS)                  RIGHT_6         0.579
+B1: backdoor -> pair(g8)(nil)                 EMPTY           0.619
+B2: backdoor -> pair(\x.g8)(nil)              EMPTY           0.619
+C1: backdoor -> sys8(ilikephp)(OBS)           RIGHT_6         0.619
+C2: backdoor -> sys8(pair(ilikephp))(OBS)     RIGHT_6         0.581
+
+No behavioral change detected (no LEFT/RIGHT_OTHER).

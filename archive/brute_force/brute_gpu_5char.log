@@ -1,0 +1,9 @@
+=== BrownOS Answer Hash Brute Force (CUDA) ===
+GPU:        NVIDIA GeForce RTX 3050 Laptop GPU (16 SMs, 128 cores/SM)
+Target:     9252ed65ffac2aa763adb21ef72c0178f1d83286
+Iterations: 56154
+Str length: 5
+Charset:    32-126 (95 printable ASCII chars)
+Candidates: 7737809375
+Grid:       256 blocks x 128 threads = 32768 threads/launch
+

@@ -1,0 +1,312 @@
+[
+  {
+    "name": "baseline_nil",
+    "description": "Syscall 8 with nil argument (baseline)",
+    "payload_hex": "0800fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "baseline_int0",
+    "description": "Syscall 8 with int(0) argument",
+    "payload_hex": "0800fefefefefefefefefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "baseline_password",
+    "description": "Syscall 8 with 'ilikephp' string",
+    "payload_hex": "08010706040100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd010706040100fdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd0107060500fdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060500fdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "echo_v251",
+    "description": "Echo V251 -> Var(253) inside Either, then syscall 8",
+    "payload_hex": "0efbfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "echo_v252",
+    "description": "Echo V252 -> Var(254) inside Either, then syscall 8",
+    "payload_hex": "0efcfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "double_echo_v249",
+    "description": "Double-echo V249 -> Var(253) deep inside, then syscall 8",
+    "payload_hex": "0ef9fd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "double_echo_v250",
+    "description": "Double-echo V250 -> Var(254) deep inside, then syscall 8",
+    "payload_hex": "0efafd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "double_echo_v251",
+    "description": "Double-echo V251 -> Var(255) deep inside, then syscall 8",
+    "payload_hex": "0efbfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_echo_251_252_251",
+    "description": "Echo ((V251 V252) V251), then syscall 8",
+    "payload_hex": "0efbfcfdfbfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_double_echo_251_252_251",
+    "description": "Double-echo ((V251 V252) V251), then syscall 8",
+    "payload_hex": "0efbfcfdfbfdfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_echo_251_251_252",
+    "description": "Echo ((V251 V251) V252), then syscall 8",
+    "payload_hex": "0efbfbfdfcfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_double_echo_251_251_252",
+    "description": "Double-echo ((V251 V251) V252), then syscall 8",
+    "payload_hex": "0efbfbfdfcfdfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_echo_252_251_251",
+    "description": "Echo ((V252 V251) V251), then syscall 8",
+    "payload_hex": "0efcfbfdfbfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_double_echo_252_251_251",
+    "description": "Double-echo ((V252 V251) V251), then syscall 8",
+    "payload_hex": "0efcfbfdfbfdfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_echo_250_251_252",
+    "description": "Echo ((V250 V251) V252), then syscall 8",
+    "payload_hex": "0efafbfdfcfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_double_echo_250_251_252",
+    "description": "Double-echo ((V250 V251) V252), then syscall 8",
+    "payload_hex": "0efafbfdfcfdfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_echo_251_252_250",
+    "description": "Echo ((V251 V252) V250), then syscall 8",
+    "payload_hex": "0efbfcfdfafdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_double_echo_251_252_250",
+    "description": "Double-echo ((V251 V252) V250), then syscall 8",
+    "payload_hex": "0efbfcfdfafdfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_echo_249_250_251",
+    "description": "Echo ((V249 V250) V251), then syscall 8",
+    "payload_hex": "0ef9fafdfbfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_double_echo_249_250_251",
+    "description": "Double-echo ((V249 V250) V251), then syscall 8",
+    "payload_hex": "0ef9fafdfbfdfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "backdoor_direct",
+    "description": "Backdoor result passed directly to syscall 8",
+    "payload_hex": "c900fefefd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "backdoor_head",
+    "description": "Backdoor head (first component) to syscall 8",
+    "payload_hex": "c900fefefd090001fefefd00fefefdfd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "backdoor_tail",
+    "description": "Backdoor tail (second component) to syscall 8",
+    "payload_hex": "c900fefefd090000fefefd00fefefdfd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "backdoor_echoed",
+    "description": "Echo backdoor result, then syscall 8",
+    "payload_hex": "c900fefefd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "direct_v251",
+    "description": "Direct V251 to syscall 8 (no echo)",
+    "payload_hex": "08fbfd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "direct_v252",
+    "description": "Direct V252 to syscall 8 (no echo)",
+    "payload_hex": "08fcfd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "lambda_depth_1",
+    "description": "1-deep lambda wrapping Var(1), then syscall 8",
+    "payload_hex": "0801fefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "lambda_depth_2",
+    "description": "2-deep lambda wrapping Var(2), then syscall 8",
+    "payload_hex": "0802fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "lambda_depth_3",
+    "description": "3-deep lambda wrapping Var(3), then syscall 8",
+    "payload_hex": "0803fefefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "echo_backdoor_omega",
+    "description": "Echo backdoor's omega-like component (\u03bba.\u03bbb. b b)",
+    "payload_hex": "0e0000fdfefefd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "echo_backdoor_flip",
+    "description": "Echo backdoor's flip-like component (\u03bba.\u03bbb. a b)",
+    "payload_hex": "0e0100fdfefefd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  }
+]

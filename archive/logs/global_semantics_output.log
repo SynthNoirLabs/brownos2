@@ -1,0 +1,1040 @@
+========================================================================
+probe_global_semantics.py
+Mapping lambda-term semantics of ALL BrownOS globals (0-252)
+========================================================================
+
+--- PHASE 1: quote(g(a)) for a=0..252 ---
+  This shows the raw bytecode structure of each global.
+
+  [P1] 20/253 done
+  [P1] 40/253 done
+  [P1] 60/253 done
+  [P1] 80/253 done
+  [P1] 100/253 done
+  [P1] 120/253 done
+  [P1] 140/253 done
+  [P1] 160/253 done
+  [P1] 180/253 done
+  [P1] 200/253 done
+  [P1] 220/253 done
+  [P1] 240/253 done
+  [P1] 253/253 done
+
+  Phase 1 complete: 253 globals quoted
+  Unique quote outputs: 253
+
+  Non-trivial quote results (globals with internal structure):
+    010100fefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(0))']
+    01010100fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(1))']
+    01010200fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(2))']
+    0101020100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(3))']
+    01010300fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(4))']
+    0101030100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(5))']
+    0101030200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(6))']
+    010103020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(7))']
+    01010400fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(8))']
+    0101040100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(9))']
+    0101040200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(10))']
+    010104020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(11))']
+    0101040300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(12))']
+    010104030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(13))']
+    010104030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(14))']
+    01010403020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(15))']
+    01010500fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(16))']
+    0101050100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(17))']
+    0101050200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(18))']
+    010105020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(19))']
+    0101050300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(20))']
+    010105030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(21))']
+    010105030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(22))']
+    01010503020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(23))']
+    0101050400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(24))']
+    010105040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(25))']
+    010105040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(26))']
+    01010504020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(27))']
+    010105040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(28))']
+    01010504030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(29))']
+    01010504030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(30))']
+    0101050403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(31))']
+    01010600fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(32))']
+    0101060100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(33))']
+    0101060200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(34))']
+    010106020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(35))']
+    0101060300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(36))']
+    010106030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(37))']
+    010106030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(38))']
+    01010603020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(39))']
+    0101060400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(40))']
+    010106040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(41))']
+    010106040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(42))']
+    01010604020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(43))']
+    010106040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(44))']
+    01010604030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(45))']
+    01010604030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(46))']
+    0101060403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(47))']
+    0101060500fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(48))']
+    010106050100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(49))']
+    010106050200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(50))']
+    01010605020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(51))']
+    010106050300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(52))']
+    01010605030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(53))']
+    01010605030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(54))']
+    0101060503020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(55))']
+    010106050400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(56))']
+    01010605040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(57))']
+    01010605040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(58))']
+    0101060504020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(59))']
+    01010605040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(60))']
+    0101060504030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(61))']
+    0101060504030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(62))']
+    010106050403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(63))']
+    01010700fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(64))']
+    0101070100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(65))']
+    0101070200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(66))']
+    010107020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(67))']
+    0101070300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(68))']
+    010107030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(69))']
+    010107030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(70))']
+    01010703020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(71))']
+    0101070400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(72))']
+    010107040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(73))']
+    010107040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(74))']
+    01010704020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(75))']
+    010107040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(76))']
+    01010704030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(77))']
+    01010704030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(78))']
+    0101070403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(79))']
+    0101070500fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(80))']
+    010107050100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(81))']
+    010107050200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(82))']
+    01010705020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(83))']
+    010107050300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(84))']
+    01010705030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(85))']
+    01010705030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(86))']
+    0101070503020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(87))']
+    010107050400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(88))']
+    01010705040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(89))']
+    01010705040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(90))']
+    0101070504020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(91))']
+    01010705040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(92))']
+    0101070504030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(93))']
+    0101070504030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(94))']
+    010107050403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(95))']
+    0101070600fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(96))']
+    010107060100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(97))']
+    010107060200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(98))']
+    01010706020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(99))']
+    010107060300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(100))']
+    01010706030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(101))']
+    01010706030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(102))']
+    0101070603020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(103))']
+    010107060400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(104))']
+    01010706040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(105))']
+    01010706040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(106))']
+    0101070604020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(107))']
+    01010706040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(108))']
+    0101070604030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(109))']
+    0101070604030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(110))']
+    010107060403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(111))']
+    010107060500fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(112))']
+    01010706050100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(113))']
+    01010706050200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(114))']
+    0101070605020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(115))']
+    01010706050300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(116))']
+    0101070605030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(117))']
+    0101070605030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(118))']
+    010107060503020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(119))']
+    01010706050400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(120))']
+    0101070605040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(121))']
+    0101070605040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(122))']
+    010107060504020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(123))']
+    0101070605040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(124))']
+    010107060504030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(125))']
+    010107060504030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(126))']
+    01010706050403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(127))']
+    01010800fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(128))']
+    0101080100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(129))']
+    0101080200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(130))']
+    010108020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(131))']
+    0101080300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(132))']
+    010108030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(133))']
+    010108030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(134))']
+    01010803020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(135))']
+    0101080400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(136))']
+    010108040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(137))']
+    010108040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(138))']
+    01010804020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(139))']
+    010108040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(140))']
+    01010804030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(141))']
+    01010804030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(142))']
+    0101080403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(143))']
+    0101080500fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(144))']
+    010108050100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(145))']
+    010108050200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(146))']
+    01010805020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(147))']
+    010108050300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(148))']
+    01010805030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(149))']
+    01010805030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(150))']
+    0101080503020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(151))']
+    010108050400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(152))']
+    01010805040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(153))']
+    01010805040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(154))']
+    0101080504020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(155))']
+    01010805040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(156))']
+    0101080504030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(157))']
+    0101080504030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(158))']
+    010108050403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(159))']
+    0101080600fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(160))']
+    010108060100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(161))']
+    010108060200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(162))']
+    01010806020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(163))']
+    010108060300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(164))']
+    01010806030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(165))']
+    01010806030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(166))']
+    0101080603020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(167))']
+    010108060400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(168))']
+    01010806040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(169))']
+    01010806040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(170))']
+    0101080604020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(171))']
+    01010806040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(172))']
+    0101080604030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(173))']
+    0101080604030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(174))']
+    010108060403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(175))']
+    010108060500fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(176))']
+    01010806050100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(177))']
+    01010806050200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(178))']
+    0101080605020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(179))']
+    01010806050300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(180))']
+    0101080605030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(181))']
+    0101080605030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(182))']
+    010108060503020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(183))']
+    01010806050400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(184))']
+    0101080605040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(185))']
+    0101080605040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(186))']
+    010108060504020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(187))']
+    0101080605040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(188))']
+    010108060504030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(189))']
+    010108060504030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(190))']
+    01010806050403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(191))']
+    0101080700fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(192))']
+    010108070100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(193))']
+    010108070200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(194))']
+    01010807020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(195))']
+    010108070300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(196))']
+    01010807030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(197))']
+    01010807030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(198))']
+    0101080703020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(199))']
+    010108070400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(200))']
+    01010807040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(201))']
+    01010807040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(202))']
+    0101080704020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(203))']
+    01010807040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(204))']
+    0101080704030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(205))']
+    0101080704030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(206))']
+    010108070403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(207))']
+    010108070500fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(208))']
+    01010807050100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(209))']
+    01010807050200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(210))']
+    0101080705020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(211))']
+    01010807050300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(212))']
+    0101080705030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(213))']
+    0101080705030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(214))']
+    010108070503020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(215))']
+    01010807050400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(216))']
+    0101080705040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(217))']
+    0101080705040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(218))']
+    010108070504020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(219))']
+    0101080705040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(220))']
+    010108070504030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(221))']
+    010108070504030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(222))']
+    01010807050403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(223))']
+    010108070600fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(224))']
+    01010807060100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(225))']
+    01010807060200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(226))']
+    0101080706020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(227))']
+    01010807060300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(228))']
+    0101080706030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(229))']
+    0101080706030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(230))']
+    010108070603020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(231))']
+    01010807060400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(232))']
+    0101080706040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(233))']
+    0101080706040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(234))']
+    010108070604020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(235))']
+    0101080706040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(236))']
+    010108070604030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(237))']
+    010108070604030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(238))']
+    01010807060403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(239))']
+    01010807060500fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(240))']
+    0101080706050100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(241))']
+    0101080706050200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(242))']
+    010108070605020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(243))']
+    0101080706050300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(244))']
+    010108070605030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(245))']
+    010108070605030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(246))']
+    01010807060503020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(247))']
+    0101080706050400fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(248))']
+    010108070605040100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(249))']
+    010108070605040200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(250))']
+    01010807060504020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(251))']
+    010108070605040300fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff: ['quote(g(252))']
+
+--- PHASE 2: g(a)(nil)(QD) for a=0..252 ---
+  This shows what each global does when applied to nil.
+
+  [P2] 20/253 done
+  [P2] 40/253 done
+  [P2] 60/253 done
+  [P2] 80/253 done
+  [P2] 100/253 done
+  [P2] 120/253 done
+  [P2] 140/253 done
+  [P2] 160/253 done
+  [P2] 180/253 done
+  [P2] 200/253 done
+  [P2] 220/253 done
+  [P2] 240/253 done
+  [P2] 253/253 done
+
+  Phase 2 complete: 253 globals applied to nil
+  Unique outputs: 9
+
+  Behavior clusters (g(a)(nil) output → which globals):
+    [000100fdfefefefefefefefefefdfefeff                          ] (242): 3, 9, 10, 11, 12, 13, 15, 16, 17, 18... +232 more
+    [000200fdfefefefefefefefefefdfefeff                          ] (  4): 1, 5, 6, 7
+    [EMPTY                                                       ] (  1): 0
+    [01fefeff                                                    ] (  1): 2
+    [010100fefefefefefefefefefd010807060504030200fdfdfdfdfdfdfdfe] (  1): 4
+    [00030200fdfdfefefefefefefefefefdfefeff                      ] (  1): 8
+    [0100fefefdfefeff                                            ] (  1): 14
+    [0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfd] (  1): 42
+    [01010000fdfefefd0100fdfefefdfefefdfefeff                    ] (  1): 201
+
+--- PHASE 3: g(a)(g(b))(QD) for strategic pairs ---
+  Testing known syscalls and interesting globals against each other.
+
+  [P3] 20/121 done
+  [P3] 40/121 done
+  [P3] 60/121 done
+  [P3] 80/121 done
+  [P3] 100/121 done
+  [P3] 120/121 done
+  [P3] 121/121 done
+
+  Phase 3 complete: 121 pairs tested
+  Unique outputs: 26
+
+  Pair interaction clusters:
+    [000200fdfefefefefefefefefefdfefeff                          ] ( 66): g(1)(g(0)), g(1)(g(1)), g(1)(g(2)), g(1)(g(4)), g(1)(g(5))... +61 more
+    [EMPTY                                                       ] ( 11): g(0)(g(0)), g(0)(g(1)), g(0)(g(2)), g(0)(g(4)), g(0)(g(5))... +6 more
+    [00030200fdfdfefefefefefefefefefdfefeff                      ] ( 11): g(8)(g(0)), g(8)(g(1)), g(8)(g(2)), g(8)(g(4)), g(8)(g(5))... +6 more
+    [0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfd] ( 11): g(42)(g(0)), g(42)(g(1)), g(42)(g(2)), g(42)(g(4)), g(42)(g(5))... +6 more
+    [010100fefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfd] (  1): g(4)(g(0))
+    [01010100fdfefefefefefefefefefd01080706050403020100fdfdfdfdfd] (  1): g(4)(g(1))
+    [01010200fdfefefefefefefefefefd01080706050403020100fdfdfdfdfd] (  1): g(4)(g(2))
+    [01010300fdfefefefefefefefefefd01080706050403020100fdfdfdfdfd] (  1): g(4)(g(4))
+    [0101030100fdfdfefefefefefefefefefd01080706050403020100fdfdfd] (  1): g(4)(g(5))
+    [0101030200fdfdfefefefefefefefefefd01080706050403020100fdfdfd] (  1): g(4)(g(6))
+    [010103020100fdfdfdfefefefefefefefefefd01080706050403020100fd] (  1): g(4)(g(7))
+    [01010400fdfefefefefefefefefefd01080706050403020100fdfdfdfdfd] (  1): g(4)(g(8))
+    [010104030200fdfdfdfefefefefefefefefefd01080706050403020100fd] (  1): g(4)(g(14))
+    [010106040200fdfdfdfefefefefefefefefefd01080706050403020100fd] (  1): g(4)(g(42))
+    [01010807040100fdfdfdfdfefefefefefefefefefd010807060504030201] (  1): g(4)(g(201))
+    [0102fdfefeff                                                ] (  1): g(14)(g(0))
+    [0103fdfefeff                                                ] (  1): g(14)(g(1))
+    [0104fdfefeff                                                ] (  1): g(14)(g(2))
+    [0106fdfefeff                                                ] (  1): g(14)(g(4))
+    [0107fdfefeff                                                ] (  1): g(14)(g(5))
+    [0108fdfefeff                                                ] (  1): g(14)(g(6))
+    [0109fdfefeff                                                ] (  1): g(14)(g(7))
+    [010afdfefeff                                                ] (  1): g(14)(g(8))
+    [0110fdfefeff                                                ] (  1): g(14)(g(14))
+    [012cfdfefeff                                                ] (  1): g(14)(g(42))
+    [01cbfdfefeff                                                ] (  1): g(14)(g(201))
+
+--- PHASE 4: Combinator identification ---
+  Testing for I, K, True, False patterns.
+
+  [P4] 20/22 done
+  [P4] 22/22 done
+
+  Phase 4 complete: 22 tests
+
+  Reference: quote(g(42)) = 010106040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  Reference: quote(g(201)) = 01010807040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+
+  g(  0): Diverges or no output
+  g(  1): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g(  2): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g(  4): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g(  5): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g(  6): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g(  7): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g(  8): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g( 14): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g( 42): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+  g(201): Other: (000200fdfefefefefefefefefefdfe) vs (0101070403020100fdfdfdfdfdfefe)
+
+========================================================================
+FULL RESULTS DUMP
+========================================================================
+
+--- Phase 1: quote(g(a)) ---
+  g(  0): 010100fefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  1): 01010100fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  2): 01010200fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  3): 0101020100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  4): 01010300fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  5): 0101030100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  6): 0101030200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  7): 010103020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  8): 01010400fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(  9): 0101040100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 10): 0101040200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 11): 010104020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 12): 0101040300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 13): 010104030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 14): 010104030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 15): 01010403020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 16): 01010500fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 17): 0101050100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 18): 0101050200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 19): 010105020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 20): 0101050300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 21): 010105030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 22): 010105030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 23): 01010503020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 24): 0101050400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 25): 010105040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 26): 010105040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 27): 01010504020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 28): 010105040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 29): 01010504030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 30): 01010504030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 31): 0101050403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 32): 01010600fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 33): 0101060100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 34): 0101060200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 35): 010106020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 36): 0101060300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 37): 010106030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 38): 010106030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 39): 01010603020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 40): 0101060400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 41): 010106040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 42): 010106040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 43): 01010604020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 44): 010106040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 45): 01010604030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 46): 01010604030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 47): 0101060403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 48): 0101060500fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 49): 010106050100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 50): 010106050200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 51): 01010605020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 52): 010106050300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 53): 01010605030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 54): 01010605030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 55): 0101060503020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 56): 010106050400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 57): 01010605040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 58): 01010605040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 59): 0101060504020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 60): 01010605040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 61): 0101060504030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 62): 0101060504030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 63): 010106050403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 64): 01010700fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 65): 0101070100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 66): 0101070200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 67): 010107020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 68): 0101070300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 69): 010107030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 70): 010107030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 71): 01010703020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 72): 0101070400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 73): 010107040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 74): 010107040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 75): 01010704020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 76): 010107040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 77): 01010704030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 78): 01010704030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 79): 0101070403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 80): 0101070500fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 81): 010107050100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 82): 010107050200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 83): 01010705020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 84): 010107050300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 85): 01010705030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 86): 01010705030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 87): 0101070503020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 88): 010107050400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 89): 01010705040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 90): 01010705040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 91): 0101070504020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 92): 01010705040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 93): 0101070504030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 94): 0101070504030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 95): 010107050403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 96): 0101070600fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 97): 010107060100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 98): 010107060200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g( 99): 01010706020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(100): 010107060300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(101): 01010706030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(102): 01010706030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(103): 0101070603020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(104): 010107060400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(105): 01010706040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(106): 01010706040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(107): 0101070604020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(108): 01010706040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(109): 0101070604030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(110): 0101070604030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(111): 010107060403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(112): 010107060500fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(113): 01010706050100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(114): 01010706050200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(115): 0101070605020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(116): 01010706050300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(117): 0101070605030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(118): 0101070605030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(119): 010107060503020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(120): 01010706050400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(121): 0101070605040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(122): 0101070605040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(123): 010107060504020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(124): 0101070605040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(125): 010107060504030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(126): 010107060504030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(127): 01010706050403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(128): 01010800fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(129): 0101080100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(130): 0101080200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(131): 010108020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(132): 0101080300fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(133): 010108030100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(134): 010108030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(135): 01010803020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(136): 0101080400fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(137): 010108040100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(138): 010108040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(139): 01010804020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(140): 010108040300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(141): 01010804030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(142): 01010804030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(143): 0101080403020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(144): 0101080500fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(145): 010108050100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(146): 010108050200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(147): 01010805020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(148): 010108050300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(149): 01010805030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(150): 01010805030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(151): 0101080503020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(152): 010108050400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(153): 01010805040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(154): 01010805040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(155): 0101080504020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(156): 01010805040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(157): 0101080504030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(158): 0101080504030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(159): 010108050403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(160): 0101080600fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(161): 010108060100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(162): 010108060200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(163): 01010806020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(164): 010108060300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(165): 01010806030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(166): 01010806030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(167): 0101080603020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(168): 010108060400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(169): 01010806040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(170): 01010806040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(171): 0101080604020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(172): 01010806040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(173): 0101080604030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(174): 0101080604030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(175): 010108060403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(176): 010108060500fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(177): 01010806050100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(178): 01010806050200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(179): 0101080605020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(180): 01010806050300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(181): 0101080605030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(182): 0101080605030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(183): 010108060503020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(184): 01010806050400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(185): 0101080605040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(186): 0101080605040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(187): 010108060504020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(188): 0101080605040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(189): 010108060504030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(190): 010108060504030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(191): 01010806050403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(192): 0101080700fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(193): 010108070100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(194): 010108070200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(195): 01010807020100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(196): 010108070300fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(197): 01010807030100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(198): 01010807030200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(199): 0101080703020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(200): 010108070400fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(201): 01010807040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(202): 01010807040200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(203): 0101080704020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(204): 01010807040300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(205): 0101080704030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(206): 0101080704030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(207): 010108070403020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(208): 010108070500fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(209): 01010807050100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(210): 01010807050200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(211): 0101080705020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(212): 01010807050300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(213): 0101080705030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(214): 0101080705030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(215): 010108070503020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(216): 01010807050400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(217): 0101080705040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(218): 0101080705040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(219): 010108070504020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(220): 0101080705040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(221): 010108070504030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(222): 010108070504030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(223): 01010807050403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(224): 010108070600fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(225): 01010807060100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(226): 01010807060200fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(227): 0101080706020100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(228): 01010807060300fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(229): 0101080706030100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(230): 0101080706030200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(231): 010108070603020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(232): 01010807060400fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(233): 0101080706040100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(234): 0101080706040200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(235): 010108070604020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(236): 0101080706040300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(237): 010108070604030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(238): 010108070604030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(239): 01010807060403020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(240): 01010807060500fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(241): 0101080706050100fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(242): 0101080706050200fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(243): 010108070605020100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(244): 0101080706050300fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(245): 010108070605030100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(246): 010108070605030200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(247): 01010807060503020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(248): 0101080706050400fdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(249): 010108070605040100fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(250): 010108070605040200fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(251): 01010807060504020100fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(252): 010108070605040300fdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+
+--- Phase 2: g(a)(nil) ---
+  g(  0)(nil): EMPTY
+  g(  1)(nil): 000200fdfefefefefefefefefefdfefeff
+  g(  2)(nil): 01fefeff
+  g(  3)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(  4)(nil): 010100fefefefefefefefefefd010807060504030200fdfdfdfdfdfdfdfefefefefefefefefefd010807060504030200fdfdfdfdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefeff
+  g(  5)(nil): 000200fdfefefefefefefefefefdfefeff
+  g(  6)(nil): 000200fdfefefefefefefefefefdfefeff
+  g(  7)(nil): 000200fdfefefefefefefefefefdfefeff
+  g(  8)(nil): 00030200fdfdfefefefefefefefefefdfefeff
+  g(  9)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 10)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 11)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 12)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 13)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 14)(nil): 0100fefefdfefeff
+  g( 15)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 16)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 17)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 18)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 19)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 20)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 21)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 22)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 23)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 24)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 25)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 26)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 27)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 28)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 29)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 30)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 31)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 32)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 33)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 34)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 35)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 36)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 37)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 38)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 39)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 40)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 41)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 42)(nil): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g( 43)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 44)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 45)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 46)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 47)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 48)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 49)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 50)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 51)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 52)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 53)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 54)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 55)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 56)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 57)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 58)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 59)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 60)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 61)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 62)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 63)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 64)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 65)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 66)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 67)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 68)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 69)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 70)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 71)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 72)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 73)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 74)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 75)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 76)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 77)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 78)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 79)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 80)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 81)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 82)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 83)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 84)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 85)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 86)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 87)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 88)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 89)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 90)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 91)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 92)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 93)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 94)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 95)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 96)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 97)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 98)(nil): 000100fdfefefefefefefefefefdfefeff
+  g( 99)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(100)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(101)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(102)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(103)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(104)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(105)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(106)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(107)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(108)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(109)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(110)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(111)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(112)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(113)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(114)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(115)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(116)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(117)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(118)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(119)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(120)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(121)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(122)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(123)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(124)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(125)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(126)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(127)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(128)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(129)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(130)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(131)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(132)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(133)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(134)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(135)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(136)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(137)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(138)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(139)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(140)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(141)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(142)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(143)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(144)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(145)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(146)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(147)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(148)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(149)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(150)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(151)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(152)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(153)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(154)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(155)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(156)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(157)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(158)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(159)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(160)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(161)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(162)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(163)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(164)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(165)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(166)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(167)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(168)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(169)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(170)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(171)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(172)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(173)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(174)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(175)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(176)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(177)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(178)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(179)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(180)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(181)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(182)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(183)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(184)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(185)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(186)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(187)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(188)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(189)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(190)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(191)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(192)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(193)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(194)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(195)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(196)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(197)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(198)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(199)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(200)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(201)(nil): 01010000fdfefefd0100fdfefefdfefefdfefeff
+  g(202)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(203)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(204)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(205)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(206)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(207)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(208)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(209)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(210)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(211)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(212)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(213)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(214)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(215)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(216)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(217)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(218)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(219)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(220)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(221)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(222)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(223)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(224)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(225)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(226)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(227)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(228)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(229)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(230)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(231)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(232)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(233)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(234)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(235)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(236)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(237)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(238)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(239)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(240)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(241)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(242)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(243)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(244)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(245)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(246)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(247)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(248)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(249)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(250)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(251)(nil): 000100fdfefefefefefefefefefdfefeff
+  g(252)(nil): 000100fdfefefefefefefefefefdfefeff
+
+--- Phase 3: g(a)(g(b)) ---
+  g(0)(g(0)): EMPTY
+  g(0)(g(1)): EMPTY
+  g(0)(g(14)): EMPTY
+  g(0)(g(2)): EMPTY
+  g(0)(g(201)): EMPTY
+  g(0)(g(4)): EMPTY
+  g(0)(g(42)): EMPTY
+  g(0)(g(5)): EMPTY
+  g(0)(g(6)): EMPTY
+  g(0)(g(7)): EMPTY
+  g(0)(g(8)): EMPTY
+  g(1)(g(0)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(1)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(14)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(2)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(4)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(42)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(5)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(6)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(7)): 000200fdfefefefefefefefefefdfefeff
+  g(1)(g(8)): 000200fdfefefefefefefefefefdfefeff
+  g(14)(g(0)): 0102fdfefeff
+  g(14)(g(1)): 0103fdfefeff
+  g(14)(g(14)): 0110fdfefeff
+  g(14)(g(2)): 0104fdfefeff
+  g(14)(g(201)): 01cbfdfefeff
+  g(14)(g(4)): 0106fdfefeff
+  g(14)(g(42)): 012cfdfefeff
+  g(14)(g(5)): 0107fdfefeff
+  g(14)(g(6)): 0108fdfefeff
+  g(14)(g(7)): 0109fdfefeff
+  g(14)(g(8)): 010afdfefeff
+  g(2)(g(0)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(1)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(14)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(2)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(4)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(42)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(5)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(6)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(7)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(8)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(0)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(1)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(14)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(2)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(4)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(42)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(5)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(6)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(7)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(8)): 000200fdfefefefefefefefefefdfefeff
+  g(4)(g(0)): 010100fefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(1)): 01010100fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(14)): 010104030200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(2)): 01010200fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(201)): 01010807040100fdfdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(4)): 01010300fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(42)): 010106040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(5)): 0101030100fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(6)): 0101030200fdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(7)): 010103020100fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(4)(g(8)): 01010400fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefefdfefeff
+  g(42)(g(0)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(1)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(14)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(2)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(201)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(4)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(5)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(6)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(7)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(8)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(5)(g(0)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(1)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(14)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(2)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(4)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(42)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(5)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(6)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(7)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(8)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(0)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(1)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(14)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(2)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(4)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(42)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(5)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(6)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(7)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(8)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(0)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(1)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(14)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(2)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(4)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(42)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(5)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(6)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(7)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(8)): 000200fdfefefefefefefefefefdfefeff
+  g(8)(g(0)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(1)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(14)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(2)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(201)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(4)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(42)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(5)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(6)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(7)): 00030200fdfdfefefefefefefefefefdfefeff
+  g(8)(g(8)): 00030200fdfdfefefefefefefefefefdfefeff
+
+--- Phase 4: g(a)(X)(Y) ---
+  g(0)(g(201))(g(42)): EMPTY
+  g(0)(g(42))(g(201)): EMPTY
+  g(1)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(1)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(14)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(14)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(2)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(2)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(201)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(201)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(4)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(4)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(42)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(42)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(5)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(5)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(6)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(6)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(7)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(7)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+  g(8)(g(201))(g(42)): 0101070403020100fdfdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0106040300fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd01070603020100fdfdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706020100fdfdfdfdfefefefefefefefefefd0107060400fdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604020100fdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd01070604030200fdfdfdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd0107060100fdfdfdfefefefefefefefefefd010600fdfefefefefefefefefefd010706050300fdfdfdfdfefefefefefefefefefd0107060403020100fdfdfdfdfdfdfefefefefefefefefefd0107060503020100fdfdfdfdfdfdfefefefefefefefefefd010706030100fdfdfdfdfefefefefefefefefefd010706040300fdfdfdfdfefefefefefefefefefd01060100fdfdfefefefefefefefefefd00fefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefefdfefeff
+  g(8)(g(42))(g(201)): 000200fdfefefefefefefefefefdfefeff
+
+========================================================================
+DONE
+========================================================================

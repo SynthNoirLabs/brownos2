@@ -1,0 +1,173 @@
+================================================================================
+probe_nonsyscall_sweep.py
+Sweep active globals with kernel-minted pair/A/B values
+================================================================================
+
+H1-BASE: g(1)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.610s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H1-PAIR: backdoor->g(1)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.619s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H2-BASE: g(2)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.619s
+  bucket: EMPTY
+  raw_hex: (empty)
+  text: ''
+
+H2-PAIR: backdoor->g(2)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.619s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H4-BASE: g(4)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.517s
+  bucket: LEFT
+  raw_hex: 4c3a
+  text: 'L:'
+
+H4-PAIR: backdoor->g(4)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.555s
+  bucket: LEFT
+  raw_hex: 4c3a
+  text: 'L:'
+
+H5-BASE: g(5)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.494s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H5-PAIR: backdoor->g(5)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.602s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H6-BASE: g(6)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.619s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H6-PAIR: backdoor->g(6)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.722s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H7-BASE: g(7)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.618s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H7-PAIR: backdoor->g(7)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.722s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+H8-BASE: g(8)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.619s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+H8-PAIR: backdoor->g(8)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.619s
+  bucket: RIGHT_6
+  raw_hex: 523a5065726d697373696f6e2064656e696564
+  text: 'R:Permission denied'
+
+H14-BASE: g(14)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.618s
+  bucket: LEFT
+  raw_hex: 4c3a
+  text: 'L:'
+
+H14-PAIR: backdoor->g(14)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.619s
+  bucket: LEFT
+  raw_hex: 4c3a
+  text: 'L:'
+
+H42-BASE: g(42)(nil)(OBS)
+  payload_len: 171
+  elapsed: 0.517s
+  bucket: LEFT
+  raw_hex: 4c3a
+  text: 'L:'
+
+H42-PAIR: backdoor->g(42)(pair)(OBS)
+  payload_len: 249
+  elapsed: 0.621s
+  bucket: LEFT
+  raw_hex: 4c3a
+  text: 'L:'
+
+Anomalies detected on globals: [2]
+Running A/B rounds only for anomalous globals.
+
+I2-A: backdoor->g(2)(A)(OBS)
+  payload_len: 257
+  elapsed: 0.617s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+I2-B: backdoor->g(2)(B)(OBS)
+  payload_len: 257
+  elapsed: 0.618s
+  bucket: RIGHT_OTHER
+  raw_hex: 523a496e76616c696420617267756d656e74
+  text: 'R:Invalid argument'
+
+================================================================================
+SUMMARY
+================================================================================
+LABEL                        BUCKET           TIME
+--------------------------------------------------------------------------------
+H1-BASE                      RIGHT_OTHER     0.610
+H1-PAIR                      RIGHT_OTHER     0.619
+H2-BASE                      EMPTY           0.619
+H2-PAIR                      RIGHT_OTHER     0.619
+H4-BASE                      LEFT            0.517
+H4-PAIR                      LEFT            0.555
+H5-BASE                      RIGHT_OTHER     0.494
+H5-PAIR                      RIGHT_OTHER     0.602
+H6-BASE                      RIGHT_OTHER     0.619
+H6-PAIR                      RIGHT_OTHER     0.722
+H7-BASE                      RIGHT_OTHER     0.618
+H7-PAIR                      RIGHT_OTHER     0.722
+H8-BASE                      RIGHT_6         0.619
+H8-PAIR                      RIGHT_6         0.619
+H14-BASE                     LEFT            0.618
+H14-PAIR                     LEFT            0.619
+H42-BASE                     LEFT            0.517
+H42-PAIR                     LEFT            0.621
+I2-A                         RIGHT_OTHER     0.617
+I2-B                         RIGHT_OTHER     0.618

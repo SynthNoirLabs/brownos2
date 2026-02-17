@@ -1,0 +1,58 @@
+================================================================================
+TESTING SYSCALL 8 WITH BACKDOOR OUTPUTS AS KEYS
+================================================================================
+
+================================================================================
+TEST: sys8(Common (most globals))
+================================================================================
+Key hex: 000200fdfefefefefefefefefefdfefeff
+Payload hex: 08000200fdfefefefefefefefefefdfefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Payload length: 36 bytes
+
+Response (19 bytes): 00030200fdfdfefefefefefefefefefdfefeff
+✅ LEFT RESPONSE - NOT AN ERROR!
+Left payload: 030200fdfdfefefefefefefefefefdfefeff
+
+================================================================================
+TEST: sys8(Special (00 FE FE))
+================================================================================
+Key hex: 01010000fdfefefd0100fdfefefdfefefdfefeff
+Payload hex: 0801010000fdfefefd0100fdfefefdfefefdfefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Payload length: 39 bytes
+
+Response (19 bytes): 00030200fdfdfefefefefefefefefefdfefeff
+✅ LEFT RESPONSE - NOT AN ERROR!
+Left payload: 030200fdfdfefefefefefefefefefdfefeff
+
+================================================================================
+TEST: sys8(A and B pair)
+================================================================================
+Key hex: 0003020100fdfdfdfefefefefefefefefefdfefeff
+Payload hex: 080003020100fdfdfdfefefefefefefefefefdfefefd0500fd000500fd03fdfefd02fdfefdfefdff
+Payload length: 40 bytes
+
+Response (19 bytes): 00030200fdfdfefefefefefefefefefdfefeff
+✅ LEFT RESPONSE - NOT AN ERROR!
+Left payload: 030200fdfdfefefefefefefefefefdfefeff
+
+================================================================================
+TEST: sys8(backdoor(00 FE FE)) - nested call
+================================================================================
+Payload: 0800fefefdc9fdff
+Response (0 bytes): 
+
+================================================================================
+ANALYSIS
+================================================================================
+
+If sys8 still returns error 6 with backdoor outputs:
+  - The backdoor outputs are NOT directly the unlock key
+  - OR we need to combine them differently
+  - OR the backdoor is telling us WHAT to do, not giving us a key
+  
+Next steps:
+  1. Decode what the lambda terms MEAN semantically
+  2. Look for patterns in the 9 nested lambdas (Church numerals?)
+  3. Check if backdoor output encodes a FILE ID or other syscall argument
+  4. Try using backdoor output as argument to OTHER syscalls
+

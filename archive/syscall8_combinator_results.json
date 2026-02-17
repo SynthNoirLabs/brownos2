@@ -1,0 +1,232 @@
+[
+  {
+    "name": "A_applied_to_8_nil",
+    "description": "(A 8 nil) then QD - A(8) = \u03bbb.bb, so (\u03bbb.bb nil) = nil nil",
+    "payload_hex": "0000fdfefe08fd00fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "",
+    "response_ascii": "",
+    "classification": "silent",
+    "detail": "No response",
+    "interesting": false
+  },
+  {
+    "name": "B_applied_to_8_nil",
+    "description": "(B 8 nil) then QD - B(8)(nil) = 8(nil)",
+    "payload_hex": "0100fdfefe08fd00fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "A_A_nil_qd",
+    "description": "((A A) nil) QD",
+    "payload_hex": "0000fdfefe0000fdfefefd00fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "",
+    "response_ascii": "",
+    "classification": "silent",
+    "detail": "No response",
+    "interesting": false
+  },
+  {
+    "name": "A_B_nil_qd",
+    "description": "((A B) nil) QD",
+    "payload_hex": "0000fdfefe0100fdfefefd00fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "",
+    "response_ascii": "",
+    "classification": "silent",
+    "detail": "No response",
+    "interesting": false
+  },
+  {
+    "name": "B_A_nil_qd",
+    "description": "((B A) nil) QD",
+    "payload_hex": "0100fdfefe0000fdfefefd00fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "0500fd000500fd03fdfefd02fdfefdfeff",
+    "response_ascii": "\u0005\u0000\ufffd\u0000\u0005\u0000\ufffd\u0003\ufffd\ufffd\ufffd\u0002\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "non_either",
+    "detail": "Lam(body=App(f=App(f=Var(i=5), x=Var(i=0)), x=Lam(body=App(f=App(f=Var(i=0), x=Lam(body=App(f=App(f=Var(i=5), x=Var(i=0)), x=Var(i=3)))), x=Var(i=2)))))",
+    "interesting": true
+  },
+  {
+    "name": "B_B_nil_qd",
+    "description": "((B B) nil) QD",
+    "payload_hex": "0100fdfefe0100fdfefefd00fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "",
+    "response_ascii": "",
+    "classification": "silent",
+    "detail": "No response",
+    "interesting": false
+  },
+  {
+    "name": "backdoor_pair_applied_to_8",
+    "description": "Get (A,B) from backdoor, then (pair 8 nil) QD",
+    "payload_hex": "c900fefefd0009fd00fefefd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "triple_echo_v247",
+    "description": "Triple-echo V247 -> Var(253) then syscall 8",
+    "payload_hex": "0ef7fd0f00fd1000fd0b00fd0800fd000800fd06fdfefd05fdfefdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "triple_echo_v248",
+    "description": "Triple-echo V248 -> Var(254) then syscall 8",
+    "payload_hex": "0ef8fd0f00fd1000fd0b00fd0800fd000800fd06fdfefd05fdfefdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "triple_echo_v249",
+    "description": "Triple-echo V249 -> Var(255) then syscall 8",
+    "payload_hex": "0ef9fd0f00fd1000fd0b00fd0800fd000800fd06fdfefd05fdfefdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "triple_echo_v250",
+    "description": "Triple-echo V250 -> Var(256) then syscall 8",
+    "payload_hex": "0efafd0f00fd1000fd0b00fd0800fd000800fd06fdfefd05fdfefdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_alt_echo_251_252_251",
+    "description": "Echo (V251 (V252 V251)) then syscall 8",
+    "payload_hex": "0efbfcfbfdfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_alt_echo_252_251_252",
+    "description": "Echo (V252 (V251 V252)) then syscall 8",
+    "payload_hex": "0efcfbfcfdfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "3leaf_alt_echo_250_251_252",
+    "description": "Echo (V250 (V251 V252)) then syscall 8",
+    "payload_hex": "0efafbfcfdfdfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "syscall8_with_omega_A",
+    "description": "Syscall 8 with (\u03bba.\u03bbb. b b) argument",
+    "payload_hex": "080000fdfefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "syscall8_with_flip_B",
+    "description": "Syscall 8 with (\u03bba.\u03bbb. a b) argument",
+    "payload_hex": "080100fdfefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "syscall8_with_A_B",
+    "description": "Syscall 8 with (A B) argument",
+    "payload_hex": "080000fdfefe0100fdfefefdfd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "syscall8_with_B_A",
+    "description": "Syscall 8 with (B A) argument",
+    "payload_hex": "080100fdfefe0000fdfefefdfd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "echo_identity",
+    "description": "Echo (\u03bbx.x) then syscall 8",
+    "payload_hex": "0e00fefd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "backdoor_head_echoed_8",
+    "description": "Backdoor -> extract head -> echo -> syscall 8",
+    "payload_hex": "c900fefefd0f0001fefefd00fefefdfd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "backdoor_tail_echoed_8",
+    "description": "Backdoor -> extract tail -> echo -> syscall 8",
+    "payload_hex": "c900fefefd0f0000fefefd00fefefdfd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff",
+    "response_hex": "00030200fdfdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0003\u0002\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(6)",
+    "interesting": false
+  },
+  {
+    "name": "syscall3_nil",
+    "description": "Syscall 3 with nil",
+    "payload_hex": "0300fefefd0500fd000500fd03fdfefd02fdfefdfefdff",
+    "response_hex": "000100fdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0001\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(1)",
+    "interesting": true
+  },
+  {
+    "name": "syscall3_backdoor_result",
+    "description": "Syscall 3 with backdoor result",
+    "payload_hex": "c900fefefd0400fd0600fd000600fd04fdfefd03fdfefdfefdfefdff",
+    "response_hex": "000100fdfefefefefefefefefefdfefeff",
+    "response_ascii": "\u0000\u0001\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+    "classification": "either_right",
+    "detail": "Right(1)",
+    "interesting": true
+  }
+]

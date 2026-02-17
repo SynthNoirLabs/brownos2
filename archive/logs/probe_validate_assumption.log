@@ -1,0 +1,20 @@
+================================================================================
+probe_validate_assumption.py
+Validate quote(g(i)) vs forged Scott list [int(i), int(255)]
+================================================================================
+
+[g(8)]
+  payload_len: 145
+  elapsed: 0.657s
+  quote_hex: 08ff
+  forged_hex: 010400fdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefe
+  comparison: MISMATCH
+
+[g(42)] CONTROL
+  payload_len: 145
+  elapsed: 0.619s
+  quote_hex: 2aff
+  forged_hex: 0106040200fdfdfdfefefefefefefefefefd01080706050403020100fdfdfdfdfdfdfdfdfefefefefefefefefefd00fefefdfefefdfefe
+  comparison: MISMATCH
+
+COMPARISON: MISMATCH

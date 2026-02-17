@@ -1,1 +1,11 @@
 __pycache__/
+*.pyc
+.ruff_cache/
+.sisyphus/
+
+# Compiled binaries
+brute_2byte
+brute_2byte_fixed
+brute_2byte_simple
+brute4
+brute_gpu

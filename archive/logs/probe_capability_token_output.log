@@ -1,0 +1,337 @@
+========================================================================
+probe_capability_token.py — Echo→Sys8 Direct Application Patterns
+========================================================================
+
+=== CATEGORY A: echo(g(N))(sys8)(QD/nil) — direct application ===
+  echo(g(N)) returns Left(g(N)) = λl.λr.l(g(N))
+  Applied to sys8: Left(g(N))(sys8)(QD) → sys8(g(N))(QD)
+  But lazy evaluation might change behavior!
+
+  [A1:echo(g251)(sys8)(QD)] (23B, bc=0efbfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [A2:echo(g252)(sys8)(QD)] (23B, bc=0efcfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [A3:echo(g251)(sys8)(nil) [3-LEAF]] (10B, bc=0efbfd08fd00fefefdff)... EMPTY
+  [A4:echo(g252)(sys8)(nil) [3-LEAF]] (10B, bc=0efcfd08fd00fefefdff)... EMPTY
+  [A5:echo(g250)(sys8)(QD)] (23B, bc=0efafd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [A6:echo(g249)(sys8)(QD)] (23B, bc=0ef9fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [A7:echo(g248)(sys8)(QD)] (23B, bc=0ef8fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [A8:echo(nil)(sys8)(QD)] (25B, bc=0e00fefefd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+
+=== CATEGORY B: sys8(echo(g(N)))(QD) — echo result as sys8 arg ===
+
+  [B1:sys8(echo(g251))(QD)] (23B, bc=080efbfdfd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [B2:sys8(echo(g252))(QD)] (23B, bc=080efcfdfd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [B3:sys8(echo(nil))(QD)] (25B, bc=080e00fefefdfd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+
+=== CATEGORY C: sys8(nil)(echo(g(N))) — echo as continuation ===
+
+  [C1:sys8(nil)(echo(g251))] (10B, bc=0800fefefd0efbfdfdff)... EMPTY
+  [C2:sys8(nil)(echo(g252))] (10B, bc=0800fefefd0efcfdfdff)... EMPTY
+  [C3:sys8(g251)(echo(g252))] (8B, bc=08fbfd0efcfdfdff)... EMPTY
+
+=== CATEGORY D: Zero-arg and partial application of sys8 ===
+
+  [D1:sys8_alone] (2B, bc=08ff)... EMPTY
+  [D2:sys8(sys8)] (4B, bc=0808fdff)... EMPTY
+  [D3:sys8(echo)] (4B, bc=080efdff)... EMPTY
+  [D4:sys8(backdoor)] (4B, bc=08c9fdff)... EMPTY
+  [D5:sys8(sys8)(QD)] (21B, bc=0808fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [D6:sys8(echo)(QD)] (21B, bc=080efd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [D7:sys8(backdoor)(QD)] (21B, bc=08c9fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+
+=== CATEGORY E: 3-leaf minimal programs ===
+
+  [E1:echo(sys8)(nil)] (8B, bc=0e08fd00fefefdff)... EMPTY
+  [E2:echo(sys8)(QD)] (21B, bc=0e08fd0500fd000500fd03fdfefd02fdfefdfefdff)... *** INTERESTING *** hex=010afdfefeff
+    Parsed: Lam(body=Lam(body=App(f=Var(i=1), x=Var(i=10))))
+  [E3:sys8(echo)(nil)] (8B, bc=080efd00fefefdff)... EMPTY
+  [E4:echo(g251)(echo)(QD)] (23B, bc=0efbfd0efd0500fd000500fd03fdfefd02fdfefdfefdff)... *** INTERESTING *** hex=456e636f64696e67206661696c656421
+  [E5:echo(g251)(backdoor)(QD)] (23B, bc=0efbfdc9fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(2) = InvalidArg
+  [E6:echo(g251)(quote)(QD)] (23B, bc=0efbfd04fd0500fd000500fd03fdfefd02fdfefdfefdff)... *** INTERESTING *** hex=456e636f64696e67206661696c656421
+
+=== CATEGORY F: Backdoor + echo + sys8 combinations ===
+
+  [F1:backdoor(nil)(sys8)] (8B, bc=c900fefefd08fdff)... EMPTY
+  [F2:backdoor(nil)(echo)] (8B, bc=c900fefefd0efdff)... EMPTY
+  [F3:echo(bd(nil))(sys8)(QD)] (27B, bc=0ec900fefefdfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [F4:sys8(bd(nil))(QD)] (25B, bc=08c900fefefdfd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [F5:bd(nil)(λp.sys8(p)(QD))] (28B, bc=c900fefefd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff)... Right(6) = PermDenied
+  [F6:bd(nil)(λp.echo(p)(sys8)(QD))] (30B, bc=c900fefefd0f00fd09fd0600fd000600fd04fdfefd03fdfefdfefdfefdff)... Right(6) = PermDenied
+  [F7:bd(nil)(λp.p(sys8)(nil))] (15B, bc=c900fefefd0009fd00fefefdfefdff)... EMPTY
+
+=== CATEGORY G: Sweep echo(g(N))(sys8)(QD) for N=0..252 ===
+  (Testing every global through echo→sys8 pipeline)
+
+  [G:echo(g0)(sys8)(QD)] (23B, bc=0e00fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g1)(sys8)(QD)] (23B, bc=0e01fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g2)(sys8)(QD)] (23B, bc=0e02fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g3)(sys8)(QD)] (23B, bc=0e03fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g4)(sys8)(QD)] (23B, bc=0e04fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g5)(sys8)(QD)] (23B, bc=0e05fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g6)(sys8)(QD)] (23B, bc=0e06fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g7)(sys8)(QD)] (23B, bc=0e07fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g8)(sys8)(QD)] (23B, bc=0e08fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g9)(sys8)(QD)] (23B, bc=0e09fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g10)(sys8)(QD)] (23B, bc=0e0afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g11)(sys8)(QD)] (23B, bc=0e0bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g12)(sys8)(QD)] (23B, bc=0e0cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g13)(sys8)(QD)] (23B, bc=0e0dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g14)(sys8)(QD)] (23B, bc=0e0efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g15)(sys8)(QD)] (23B, bc=0e0ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g16)(sys8)(QD)] (23B, bc=0e10fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g17)(sys8)(QD)] (23B, bc=0e11fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g18)(sys8)(QD)] (23B, bc=0e12fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g19)(sys8)(QD)] (23B, bc=0e13fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g20)(sys8)(QD)] (23B, bc=0e14fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g21)(sys8)(QD)] (23B, bc=0e15fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g22)(sys8)(QD)] (23B, bc=0e16fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g23)(sys8)(QD)] (23B, bc=0e17fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g24)(sys8)(QD)] (23B, bc=0e18fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g25)(sys8)(QD)] (23B, bc=0e19fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g26)(sys8)(QD)] (23B, bc=0e1afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g27)(sys8)(QD)] (23B, bc=0e1bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g28)(sys8)(QD)] (23B, bc=0e1cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g29)(sys8)(QD)] (23B, bc=0e1dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g30)(sys8)(QD)] (23B, bc=0e1efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g31)(sys8)(QD)] (23B, bc=0e1ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g32)(sys8)(QD)] (23B, bc=0e20fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g33)(sys8)(QD)] (23B, bc=0e21fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g34)(sys8)(QD)] (23B, bc=0e22fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g35)(sys8)(QD)] (23B, bc=0e23fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g36)(sys8)(QD)] (23B, bc=0e24fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g37)(sys8)(QD)] (23B, bc=0e25fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g38)(sys8)(QD)] (23B, bc=0e26fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g39)(sys8)(QD)] (23B, bc=0e27fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g40)(sys8)(QD)] (23B, bc=0e28fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g41)(sys8)(QD)] (23B, bc=0e29fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g42)(sys8)(QD)] (23B, bc=0e2afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g43)(sys8)(QD)] (23B, bc=0e2bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g44)(sys8)(QD)] (23B, bc=0e2cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g45)(sys8)(QD)] (23B, bc=0e2dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g46)(sys8)(QD)] (23B, bc=0e2efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g47)(sys8)(QD)] (23B, bc=0e2ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g48)(sys8)(QD)] (23B, bc=0e30fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g49)(sys8)(QD)] (23B, bc=0e31fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g50)(sys8)(QD)] (23B, bc=0e32fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g51)(sys8)(QD)] (23B, bc=0e33fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g52)(sys8)(QD)] (23B, bc=0e34fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g53)(sys8)(QD)] (23B, bc=0e35fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g54)(sys8)(QD)] (23B, bc=0e36fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g55)(sys8)(QD)] (23B, bc=0e37fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g56)(sys8)(QD)] (23B, bc=0e38fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g57)(sys8)(QD)] (23B, bc=0e39fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g58)(sys8)(QD)] (23B, bc=0e3afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g59)(sys8)(QD)] (23B, bc=0e3bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g60)(sys8)(QD)] (23B, bc=0e3cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g61)(sys8)(QD)] (23B, bc=0e3dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g62)(sys8)(QD)] (23B, bc=0e3efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g63)(sys8)(QD)] (23B, bc=0e3ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g64)(sys8)(QD)] (23B, bc=0e40fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g65)(sys8)(QD)] (23B, bc=0e41fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g66)(sys8)(QD)] (23B, bc=0e42fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g67)(sys8)(QD)] (23B, bc=0e43fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g68)(sys8)(QD)] (23B, bc=0e44fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g69)(sys8)(QD)] (23B, bc=0e45fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g70)(sys8)(QD)] (23B, bc=0e46fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g71)(sys8)(QD)] (23B, bc=0e47fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g72)(sys8)(QD)] (23B, bc=0e48fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g73)(sys8)(QD)] (23B, bc=0e49fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g74)(sys8)(QD)] (23B, bc=0e4afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g75)(sys8)(QD)] (23B, bc=0e4bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g76)(sys8)(QD)] (23B, bc=0e4cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g77)(sys8)(QD)] (23B, bc=0e4dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g78)(sys8)(QD)] (23B, bc=0e4efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g79)(sys8)(QD)] (23B, bc=0e4ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g80)(sys8)(QD)] (23B, bc=0e50fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g81)(sys8)(QD)] (23B, bc=0e51fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g82)(sys8)(QD)] (23B, bc=0e52fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g83)(sys8)(QD)] (23B, bc=0e53fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g84)(sys8)(QD)] (23B, bc=0e54fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g85)(sys8)(QD)] (23B, bc=0e55fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g86)(sys8)(QD)] (23B, bc=0e56fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g87)(sys8)(QD)] (23B, bc=0e57fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g88)(sys8)(QD)] (23B, bc=0e58fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g89)(sys8)(QD)] (23B, bc=0e59fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g90)(sys8)(QD)] (23B, bc=0e5afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g91)(sys8)(QD)] (23B, bc=0e5bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g92)(sys8)(QD)] (23B, bc=0e5cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g93)(sys8)(QD)] (23B, bc=0e5dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g94)(sys8)(QD)] (23B, bc=0e5efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g95)(sys8)(QD)] (23B, bc=0e5ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g96)(sys8)(QD)] (23B, bc=0e60fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g97)(sys8)(QD)] (23B, bc=0e61fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g98)(sys8)(QD)] (23B, bc=0e62fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g99)(sys8)(QD)] (23B, bc=0e63fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g100)(sys8)(QD)] (23B, bc=0e64fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g101)(sys8)(QD)] (23B, bc=0e65fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g102)(sys8)(QD)] (23B, bc=0e66fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g103)(sys8)(QD)] (23B, bc=0e67fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g104)(sys8)(QD)] (23B, bc=0e68fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g105)(sys8)(QD)] (23B, bc=0e69fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g106)(sys8)(QD)] (23B, bc=0e6afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g107)(sys8)(QD)] (23B, bc=0e6bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g108)(sys8)(QD)] (23B, bc=0e6cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g109)(sys8)(QD)] (23B, bc=0e6dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g110)(sys8)(QD)] (23B, bc=0e6efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g111)(sys8)(QD)] (23B, bc=0e6ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g112)(sys8)(QD)] (23B, bc=0e70fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g113)(sys8)(QD)] (23B, bc=0e71fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g114)(sys8)(QD)] (23B, bc=0e72fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g115)(sys8)(QD)] (23B, bc=0e73fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g116)(sys8)(QD)] (23B, bc=0e74fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g117)(sys8)(QD)] (23B, bc=0e75fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g118)(sys8)(QD)] (23B, bc=0e76fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g119)(sys8)(QD)] (23B, bc=0e77fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g120)(sys8)(QD)] (23B, bc=0e78fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g121)(sys8)(QD)] (23B, bc=0e79fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g122)(sys8)(QD)] (23B, bc=0e7afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g123)(sys8)(QD)] (23B, bc=0e7bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g124)(sys8)(QD)] (23B, bc=0e7cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g125)(sys8)(QD)] (23B, bc=0e7dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g126)(sys8)(QD)] (23B, bc=0e7efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g127)(sys8)(QD)] (23B, bc=0e7ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g128)(sys8)(QD)] (23B, bc=0e80fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g129)(sys8)(QD)] (23B, bc=0e81fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g130)(sys8)(QD)] (23B, bc=0e82fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g131)(sys8)(QD)] (23B, bc=0e83fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g132)(sys8)(QD)] (23B, bc=0e84fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g133)(sys8)(QD)] (23B, bc=0e85fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g134)(sys8)(QD)] (23B, bc=0e86fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g135)(sys8)(QD)] (23B, bc=0e87fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g136)(sys8)(QD)] (23B, bc=0e88fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g137)(sys8)(QD)] (23B, bc=0e89fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g138)(sys8)(QD)] (23B, bc=0e8afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g139)(sys8)(QD)] (23B, bc=0e8bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g140)(sys8)(QD)] (23B, bc=0e8cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g141)(sys8)(QD)] (23B, bc=0e8dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g142)(sys8)(QD)] (23B, bc=0e8efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g143)(sys8)(QD)] (23B, bc=0e8ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g144)(sys8)(QD)] (23B, bc=0e90fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g145)(sys8)(QD)] (23B, bc=0e91fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g146)(sys8)(QD)] (23B, bc=0e92fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g147)(sys8)(QD)] (23B, bc=0e93fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g148)(sys8)(QD)] (23B, bc=0e94fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g149)(sys8)(QD)] (23B, bc=0e95fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g150)(sys8)(QD)] (23B, bc=0e96fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g151)(sys8)(QD)] (23B, bc=0e97fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g152)(sys8)(QD)] (23B, bc=0e98fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g153)(sys8)(QD)] (23B, bc=0e99fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g154)(sys8)(QD)] (23B, bc=0e9afd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g155)(sys8)(QD)] (23B, bc=0e9bfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g156)(sys8)(QD)] (23B, bc=0e9cfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g157)(sys8)(QD)] (23B, bc=0e9dfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g158)(sys8)(QD)] (23B, bc=0e9efd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g159)(sys8)(QD)] (23B, bc=0e9ffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g160)(sys8)(QD)] (23B, bc=0ea0fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g161)(sys8)(QD)] (23B, bc=0ea1fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g162)(sys8)(QD)] (23B, bc=0ea2fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g163)(sys8)(QD)] (23B, bc=0ea3fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g164)(sys8)(QD)] (23B, bc=0ea4fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g165)(sys8)(QD)] (23B, bc=0ea5fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g166)(sys8)(QD)] (23B, bc=0ea6fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g167)(sys8)(QD)] (23B, bc=0ea7fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g168)(sys8)(QD)] (23B, bc=0ea8fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g169)(sys8)(QD)] (23B, bc=0ea9fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g170)(sys8)(QD)] (23B, bc=0eaafd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g171)(sys8)(QD)] (23B, bc=0eabfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g172)(sys8)(QD)] (23B, bc=0eacfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g173)(sys8)(QD)] (23B, bc=0eadfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g174)(sys8)(QD)] (23B, bc=0eaefd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g175)(sys8)(QD)] (23B, bc=0eaffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g176)(sys8)(QD)] (23B, bc=0eb0fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g177)(sys8)(QD)] (23B, bc=0eb1fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g178)(sys8)(QD)] (23B, bc=0eb2fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g179)(sys8)(QD)] (23B, bc=0eb3fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g180)(sys8)(QD)] (23B, bc=0eb4fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g181)(sys8)(QD)] (23B, bc=0eb5fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g182)(sys8)(QD)] (23B, bc=0eb6fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g183)(sys8)(QD)] (23B, bc=0eb7fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g184)(sys8)(QD)] (23B, bc=0eb8fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g185)(sys8)(QD)] (23B, bc=0eb9fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g186)(sys8)(QD)] (23B, bc=0ebafd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g187)(sys8)(QD)] (23B, bc=0ebbfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g188)(sys8)(QD)] (23B, bc=0ebcfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g189)(sys8)(QD)] (23B, bc=0ebdfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g190)(sys8)(QD)] (23B, bc=0ebefd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g191)(sys8)(QD)] (23B, bc=0ebffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g192)(sys8)(QD)] (23B, bc=0ec0fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g193)(sys8)(QD)] (23B, bc=0ec1fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g194)(sys8)(QD)] (23B, bc=0ec2fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g195)(sys8)(QD)] (23B, bc=0ec3fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g196)(sys8)(QD)] (23B, bc=0ec4fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g197)(sys8)(QD)] (23B, bc=0ec5fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g198)(sys8)(QD)] (23B, bc=0ec6fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g199)(sys8)(QD)] (23B, bc=0ec7fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g200)(sys8)(QD)] (23B, bc=0ec8fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g201)(sys8)(QD)] (23B, bc=0ec9fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g202)(sys8)(QD)] (23B, bc=0ecafd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g203)(sys8)(QD)] (23B, bc=0ecbfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g204)(sys8)(QD)] (23B, bc=0eccfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g205)(sys8)(QD)] (23B, bc=0ecdfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g206)(sys8)(QD)] (23B, bc=0ecefd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g207)(sys8)(QD)] (23B, bc=0ecffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g208)(sys8)(QD)] (23B, bc=0ed0fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g209)(sys8)(QD)] (23B, bc=0ed1fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g210)(sys8)(QD)] (23B, bc=0ed2fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g211)(sys8)(QD)] (23B, bc=0ed3fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g212)(sys8)(QD)] (23B, bc=0ed4fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g213)(sys8)(QD)] (23B, bc=0ed5fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g214)(sys8)(QD)] (23B, bc=0ed6fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g215)(sys8)(QD)] (23B, bc=0ed7fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g216)(sys8)(QD)] (23B, bc=0ed8fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g217)(sys8)(QD)] (23B, bc=0ed9fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g218)(sys8)(QD)] (23B, bc=0edafd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g219)(sys8)(QD)] (23B, bc=0edbfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g220)(sys8)(QD)] (23B, bc=0edcfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g221)(sys8)(QD)] (23B, bc=0eddfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g222)(sys8)(QD)] (23B, bc=0edefd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g223)(sys8)(QD)] (23B, bc=0edffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g224)(sys8)(QD)] (23B, bc=0ee0fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g225)(sys8)(QD)] (23B, bc=0ee1fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g226)(sys8)(QD)] (23B, bc=0ee2fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g227)(sys8)(QD)] (23B, bc=0ee3fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g228)(sys8)(QD)] (23B, bc=0ee4fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g229)(sys8)(QD)] (23B, bc=0ee5fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g230)(sys8)(QD)] (23B, bc=0ee6fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g231)(sys8)(QD)] (23B, bc=0ee7fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g232)(sys8)(QD)] (23B, bc=0ee8fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g233)(sys8)(QD)] (23B, bc=0ee9fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g234)(sys8)(QD)] (23B, bc=0eeafd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g235)(sys8)(QD)] (23B, bc=0eebfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g236)(sys8)(QD)] (23B, bc=0eecfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g237)(sys8)(QD)] (23B, bc=0eedfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g238)(sys8)(QD)] (23B, bc=0eeefd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g239)(sys8)(QD)] (23B, bc=0eeffd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g240)(sys8)(QD)] (23B, bc=0ef0fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g241)(sys8)(QD)] (23B, bc=0ef1fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g242)(sys8)(QD)] (23B, bc=0ef2fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g243)(sys8)(QD)] (23B, bc=0ef3fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g244)(sys8)(QD)] (23B, bc=0ef4fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g245)(sys8)(QD)] (23B, bc=0ef5fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g246)(sys8)(QD)] (23B, bc=0ef6fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g247)(sys8)(QD)] (23B, bc=0ef7fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g248)(sys8)(QD)] (23B, bc=0ef8fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g249)(sys8)(QD)] (23B, bc=0ef9fd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g250)(sys8)(QD)] (23B, bc=0efafd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g251)(sys8)(QD)] (23B, bc=0efbfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+  [G:echo(g252)(sys8)(QD)] (23B, bc=0efcfd08fd0500fd000500fd03fdfefd02fdfefdfefdff)... Right(6) = PermDenied
+
+  All 253 globals: standard results only
+
+========================================================================
+SUMMARY
+========================================================================
+
+*** 3 BREAKTHROUGH(S) FOUND! ***
+  E2:echo(sys8)(QD): 010afdfefeff
+  E4:echo(g251)(echo)(QD): 456e636f64696e67206661696c656421
+  E6:echo(g251)(quote)(QD): 456e636f64696e67206661696c656421
+
+Result distribution:
+  RIGHT6: 269
+  EMPTY: 14
+  456e636f64696e67206661696c656421: 2
+  010afdfefeff: 1
+  RIGHT2: 1
+
+Total tests: 287
+========================================================================

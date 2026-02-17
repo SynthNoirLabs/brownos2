@@ -1,0 +1,87 @@
+========================================================================
+probe_echo_special_attack.py
+Testing echo-manufactured special-byte terms against sys8
+========================================================================
+
+--- CONTROL: echo(nil)(λr. sys8(r)(QD)) ---
+  [RIGHT(6)  ] CTRL: echo(nil) → sys8 (baseline) -> Right(6)
+
+--- CATEGORY S: Simplified echo→sys8 attack vectors ---
+
+  # Unwrap Left, pass Var(253) to sys8, QD shifted by 2
+  # payload: 34B  hex: 0efbfd000a00fd0700fd000700fd05fdfefd04fdfefdfefdfefd00fefefefdfefdff
+  [RIGHT(6)  ] S1  echo(g251)→unwrap→sys8(V253)(QD_s2) -> Right(6)
+
+  # Same but QD shifted by 3 (alt indexing)
+  # payload: 34B  hex: 0efbfd000b00fd0800fd000800fd06fdfefd05fdfefdfefdfefd00fefefefdfefdff
+  [EMPTY     ] S1v2 echo(g251)→unwrap→sys8(V253)(QD_s3)
+
+  # Var(254)=FE marker to sys8
+  # payload: 34B  hex: 0efcfd000a00fd0700fd000700fd05fdfefd04fdfefdfefdfefd00fefefefdfefdff
+  [RIGHT(6)  ] S2  echo(g252)→unwrap→sys8(V254)(QD_s2) -> Right(6)
+
+  # Pass entire Left(Var(253)) to sys8
+  # payload: 26B  hex: 0efbfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff
+  [RIGHT(6)  ] S3  echo(g251)→whole-Left→sys8(QD_s1) -> Right(6)
+
+  # Pass entire Left(Var(254)) to sys8
+  # payload: 26B  hex: 0efcfd0900fd0600fd000600fd04fdfefd03fdfefdfefdfefdff
+  [RIGHT(6)  ] S3b echo(g252)→whole-Left→sys8(QD_s1) -> Right(6)
+
+  # Double echo: g(249)→V(251)→V(253)
+  # payload: 47B  hex: 0ef9fd001000fd000c00fd0900fd000900fd07fdfefd06fdfefdfefdfefd00fefefefdfefdfefd00
+  [RIGHT(6)  ] S4  double-echo(g249)→unwrap²→sys8(V253) -> Right(6)
+
+  # Bare extraction, no sys8
+  # payload: 15B  hex: 0efbfd0000fefd00fefefefdfefdff
+  [EMPTY     ] S5  echo(g251)→extract-V253→return
+
+  # Write-based observer, no QD
+  # payload: 53B  hex: 0efbfd000a00fd000600fd00fefefefdfefd0500fd000800fd00fefefefdfefd00fefefefdfefdfe
+  [RIGHT(6)  ] S6  echo(g251)→sys8→errStr→write observer
+
+  # Pass echo as unevaluated thunk to sys8
+  # payload: 23B  hex: 080efbfdfd0500fd000500fd03fdfefd02fdfefdfefdff
+  [RIGHT(6)  ] S7  sys8(thunk:echo(g251))(QD) -> Right(6)
+
+  # Lambda with FE-colliding var
+  # payload: 35B  hex: 0efcfefd000a00fd0700fd000700fd05fdfefd04fdfefdfefdfefd00fefefefdfefdff
+  [RIGHT(6)  ] S8  echo(Lam(V252))→sys8 [Lam(V254) inside] -> Right(6)
+
+  # Application with FD-colliding var
+  # payload: 36B  hex: 0e00fbfdfd000a00fd0700fd000700fd05fdfefd04fdfefdfefdfefd00fefefefdfefdff
+  [RIGHT(6)  ] S9  echo(App(V0,V251))→sys8 [App w/ V253] -> Right(6)
+
+  # Minimal: echo→sys8→QD
+  # payload: 23B  hex: 0efbfd08fd0500fd000500fd03fdfefd02fdfefdfefdff
+  [RIGHT(6)  ] S10 echo(g251)(sys8)(QD) [minimal chain] -> Right(6)
+
+  # Minimal with g(252)
+  # payload: 23B  hex: 0efcfd08fd0500fd000500fd03fdfefd02fdfefdfefdff
+  [RIGHT(6)  ] S10b echo(g252)(sys8)(QD) -> Right(6)
+
+  # Echo the echo result, then sys8
+  # payload: 31B  hex: 0efbfd0f00fd0a00fd0700fd000700fd05fdfefd04fdfefdfefdfefdfefdff
+  [RIGHT(6)  ] S-chain echo(g251)→echo→sys8(double-Left) -> Right(6)
+
+
+--- RAW BYTECODE EXPERIMENTS ---
+  Testing unusual byte patterns that can't be built with the term API
+
+  [RIGHT(6)  ] RAW-1: 0E FB FD 08 FD 0500fd000500fd03fdfefd02fdfefdfe FD FF (=S10 raw) -> Right(6)
+
+  [RIGHT(6)  ] RAW-2: sys8(echo(g251))(QD) raw -> Right(6)
+
+  [ENC_FAIL  ] RAW-3: echo(sys8(g251))(QD)
+
+  [EMPTY     ] RAW-4: echo(g251)(I) [identity cont]
+
+  [EMPTY     ] RAW-5: echo(g251)(nil)
+
+
+========================================================================
+SUMMARY: 0 non-standard results
+========================================================================
+  All results were standard (RIGHT(6), EMPTY, ENC_FAIL, INVALID).
+  No breakthrough found in this batch.
+

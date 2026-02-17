@@ -1,0 +1,30 @@
+2026-02-08 06:39:11,981 - INFO - ======================================================================
+2026-02-08 06:39:11,981 - INFO - Starting 2-byte brute force (0x0000 to 0xFFFF)
+2026-02-08 06:39:11,981 - INFO - Target hash: 9252ed65ffac2aa763adb21ef72c0178f1d83286
+2026-02-08 06:39:11,981 - INFO - Total candidates: 65536
+2026-02-08 06:39:11,981 - INFO - ======================================================================
+2026-02-08 06:39:11,981 - INFO - Using 16 processes
+2026-02-08 06:39:11,981 - INFO - Chunk size: 4096 values per process
+2026-02-08 06:49:31,543 - INFO - ======================================================================
+2026-02-08 06:49:31,543 - INFO - ======================================================================
+2026-02-08 06:49:31,543 - INFO - Starting 2-byte brute force (0x0000 to 0xFFFF)
+2026-02-08 06:49:31,543 - INFO - Starting 2-byte brute force (0x0000 to 0xFFFF)
+2026-02-08 06:49:31,543 - INFO - Target hash: 9252ed65ffac2aa763adb21ef72c0178f1d83286
+2026-02-08 06:49:31,543 - INFO - Target hash: 9252ed65ffac2aa763adb21ef72c0178f1d83286
+2026-02-08 06:49:31,543 - INFO - Total candidates: 65536
+2026-02-08 06:49:31,543 - INFO - Total candidates: 65536
+2026-02-08 06:49:31,543 - INFO - ======================================================================
+2026-02-08 06:49:31,543 - INFO - ======================================================================
+2026-02-08 06:49:31,543 - INFO - Using 16 processes
+2026-02-08 06:49:31,543 - INFO - Using 16 processes
+2026-02-08 06:49:31,543 - INFO - Chunk size: 4096 values per process
+2026-02-08 06:49:31,543 - INFO - Chunk size: 4096 values per process
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/mp-zlazsh6l', '/mp-vv9cxioh', '/mp-x25s4yec', '/mp-0s60ndw4', '/mp-y9t298p7', '/mp-duufs1h_'}
+  warnings.warn(
+2026-02-08 06:54:52,206 - INFO - ======================================================================
+2026-02-08 06:54:52,206 - INFO - Starting 2-byte brute force (0x0000 to 0xFFFF)
+2026-02-08 06:54:52,206 - INFO - Target hash: 9252ed65ffac2aa763adb21ef72c0178f1d83286
+2026-02-08 06:54:52,206 - INFO - Total candidates: 65536
+2026-02-08 06:54:52,206 - INFO - ======================================================================
+2026-02-08 06:55:37,911 - INFO - Progress:  1024/65536 (  1.6%) | Rate: 22.4 cand/s | ETA: 2879s
+2026-02-08 06:56:25,278 - INFO - Progress:  2048/65536 (  3.1%) | Rate: 22.0 cand/s | ETA: 2885s

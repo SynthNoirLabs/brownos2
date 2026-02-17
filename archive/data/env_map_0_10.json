@@ -1,0 +1,123 @@
+[
+  {
+    "var": 0,
+    "status": "ok",
+    "elapsed": 0.568,
+    "raw_hex": "00ff",
+    "classification": {
+      "type": "var",
+      "index": 0,
+      "detail": "Var(0)"
+    }
+  },
+  {
+    "var": 1,
+    "status": "ok",
+    "elapsed": 0.479,
+    "raw_hex": "01ff",
+    "classification": {
+      "type": "var",
+      "index": 1,
+      "detail": "Var(1)"
+    }
+  },
+  {
+    "var": 2,
+    "status": "ok",
+    "elapsed": 0.563,
+    "raw_hex": "02ff",
+    "classification": {
+      "type": "var",
+      "index": 2,
+      "detail": "Var(2)"
+    }
+  },
+  {
+    "var": 3,
+    "status": "ok",
+    "elapsed": 0.562,
+    "raw_hex": "03ff",
+    "classification": {
+      "type": "var",
+      "index": 3,
+      "detail": "Var(3)"
+    }
+  },
+  {
+    "var": 4,
+    "status": "ok",
+    "elapsed": 0.492,
+    "raw_hex": "04ff",
+    "classification": {
+      "type": "var",
+      "index": 4,
+      "detail": "Var(4)"
+    }
+  },
+  {
+    "var": 5,
+    "status": "ok",
+    "elapsed": 0.507,
+    "raw_hex": "05ff",
+    "classification": {
+      "type": "var",
+      "index": 5,
+      "detail": "Var(5)"
+    }
+  },
+  {
+    "var": 6,
+    "status": "ok",
+    "elapsed": 0.625,
+    "raw_hex": "06ff",
+    "classification": {
+      "type": "var",
+      "index": 6,
+      "detail": "Var(6)"
+    }
+  },
+  {
+    "var": 7,
+    "status": "ok",
+    "elapsed": 0.483,
+    "raw_hex": "07ff",
+    "classification": {
+      "type": "var",
+      "index": 7,
+      "detail": "Var(7)"
+    }
+  },
+  {
+    "var": 8,
+    "status": "ok",
+    "elapsed": 0.489,
+    "raw_hex": "08ff",
+    "classification": {
+      "type": "var",
+      "index": 8,
+      "detail": "Var(8)"
+    }
+  },
+  {
+    "var": 9,
+    "status": "ok",
+    "elapsed": 0.487,
+    "raw_hex": "09ff",
+    "classification": {
+      "type": "var",
+      "index": 9,
+      "detail": "Var(9)"
+    }
+  },
+  {
+    "var": 10,
+    "status": "ok",
+    "elapsed": 0.495,
+    "raw_hex": "0aff",
+    "classification": {
+      "type": "var",
+      "index": 10,
+      "detail": "Var(10)"
+    }
+  }
+]
