@@ -166,6 +166,27 @@ Based on repo review, these may not have been submitted:
 
 ---
 
+## Additional Finding: Hidden Text in Forum Posts
+
+dloser uses **invisible/near-invisible colored text** to hide hints in forum posts:
+
+1. Post #7 (t917_p1): "Perhaps you are sending ASCII instead of bytes?" in `color: #c5c5c5` (light gray on white)
+2. Same text re-rendered in `color: #FFFFFF` (pure white on white) when quoted by l3st3r
+3. l3st3r's post #6 (t1352): "Hint: If you give it good input, you get good stuff back... Now, what is good input? ;)" in `color: #C5C5C5`
+
+**This is a metaclue**: dloser likes hiding things in plain sight. Could there be hidden content elsewhere — in error messages, in the filesystem, in the wire protocol responses, or in the challenge page HTML itself?
+
+## Additional Finding: space's Client Uses Persistent Connections
+
+In the "New syscall enabled" thread, space posted a Python client that:
+- Keeps the socket **open** across multiple commands
+- Does NOT automatically append 0xFF
+- Sends QD alone (no FF) and gets empty response after **18.26 seconds**
+
+This persistent-connection approach is different from the repo's single-shot clients. What if the solution requires **multiple interactions on one connection** where state accumulates between sends? The previous finding that "server processes ONLY first term" might only apply to FF-terminated sends. What happens if you send partial terms, then complete them later?
+
+---
+
 ## Meta-Observation
 
 The research has been extraordinarily thorough technically but may be trapped by two anchoring biases:
