@@ -242,8 +242,10 @@ Each candidate requires 56,154 SHA1 iterations — brute force is extremely expe
 - **200+ probe scripts** written
 - **10+ probes testing pair(sys8) consumer inversion** — all failed
 - **6+ probes testing Var(253) in function position** — all failed
+- **sys1(N) error table complete**: codes 0–7 are all; N≥8 returns empty string
+- **sys42 argument-independent**: always returns towel string regardless of input
 - **Zero positive signals** — every test returned Right(6), Right(3), empty, or timeout
-- **All LLM suggestions (2 rounds) tested and failed**
+- **All LLM suggestions (3 rounds) tested and failed**
 
 ## 7. The "C++ Memory Leak / ROP" Fallacy (LLM v10/v11/v12)
 Tested:
@@ -304,3 +306,50 @@ Step 2: sys201 checks: is Right(2) == nil? No → Right(2) again.
 ### Why ALL print-less payloads return EMPTY
 
 **The 3-Leaf Printing Paradox**: For ANY output to appear on the TCP socket, the program MUST call `sys2` (write) or have QD as its continuation (which internally calls `sys4` then `sys2`). None of the v12 payloads contain a printing syscall or QD. Without a write instruction, the VM evaluates to WHNF and stops. No bytes go to the socket. This is not a subtle math error — there is literally no instruction to write anything.
+
+## 10. LLM v14 Proposals: Bad QD ASCII Extractor, sys42+Backdoor, IP Auth (ALL FAILED)
+
+### 10a. IP Authentication Theory — DISPROVED
+- `sys8(nil)(QD)` run from the same machine/IP as the WeChall browser session → Right(6)
+- sys8's denial is not IP-based. It is lambda-calculus-level.
+
+### 10b. "Bad QD" ASCII Extractor — sys1(N) Sweep
+The "Bad QD" technique (continuation that passes Left payloads directly to sys2 without quoting) **works correctly** and confirmed the complete error string table:
+
+| N | sys1(N) ASCII Output |
+|---|---|
+| 0 | `Unexpected exception` |
+| 1 | `Not implemented` |
+| 2 | `Invalid argument` |
+| 3 | `No such directory or file` |
+| 4 | `Not a directory` |
+| 5 | `Not a file` |
+| 6 | `Permission denied` |
+| 7 | `Not so fast!` |
+| 8–255 | `Left("")` — empty string (not an error, just empty) |
+
+**Conclusion**: Error codes 0–7 are the complete set. `sys1(N)` for N≥8 returns `Left("")` (empty string), not Right(error). There are no hidden error strings at indices 42, 201, 253, 254, 255, or 56154.
+
+### 10c. sys42 (Decoy) with Backdoor Pair — DISPROVED
+sys42 is argument-independent, always returns `Left("Oh, go choke on a towel!")`:
+
+| Argument | Result |
+|---|---|
+| nil | towel |
+| A combinator | towel |
+| B combinator | towel |
+| pair(A,B) directly | towel |
+| backdoor result via CPS chain | towel |
+| unwrapped pair from backdoor | towel |
+
+sys42 does NOT have a hidden branch that checks for the backdoor pair.
+
+### 10d. Echo + Quote Boundary Observations
+| Test | Result |
+|---|---|
+| `echo(Var(252))(QD)` | `Encoding failed!` (raw ASCII, no FF) — Var(254) unserializable |
+| `echo(Var(250))(QD)` | `Left(Var(252))` — normal, serializable |
+| `echo(Var(0))(QD)` | `Left(Var(2))` — normal baseline |
+| `quote(Left(Var(253)))(QD)` | `Invalid term!` — Var(255)=0xFF conflicts with EOF marker |
+
+**New insight**: `echo(Var(252))` creates Var(254) which triggers "Encoding failed!" from quote. But `quote(Left(Var(253)))` = `quote(λλ.(V1 V(255)))` produces "Invalid term!" because Var(255)=0xFF byte is the EOF marker, causing a *parser*-level error, not a quote-level error. Two distinct failure modes for Var(253+).
