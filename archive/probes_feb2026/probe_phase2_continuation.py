@@ -291,7 +291,7 @@ def run_case(
     out = query_bytes(payload, timeout_s=timeout_s)
     result = classify(out)
     flag = ""
-    if is_breakthrough(result):
+    if is_breakthrough(label, result):
         flag = " *** BREAKTHROUGH ***"
         FLAGGED.append(f"{label} -> {result}")
     print(f"  {label:58s} -> {result}{flag}")
@@ -317,7 +317,7 @@ def run_raw(
     out = query_bytes(raw_payload, timeout_s=timeout_s)
     result = classify(out)
     flag = ""
-    if is_breakthrough(result):
+    if is_breakthrough(label, result):
         flag = " *** BREAKTHROUGH ***"
         FLAGGED.append(f"{label} -> {result}")
     print(f"  {label:58s} -> {result}{flag}")
@@ -348,7 +348,7 @@ def run_qd(
     result = classify_qd(out)
     flag = ""
     # Anything other than Right(6) from sys8 is a breakthrough
-    if syscall_num == 0x08 and result != "Right(6)" and is_breakthrough(result):
+    if syscall_num == 0x08 and result != "Right(6)" and is_breakthrough(label, result):
         flag = " *** BREAKTHROUGH ***"
         FLAGGED.append(f"{label} -> {result}")
     print(f"  {label:58s} -> {result}{flag}")
@@ -357,16 +357,17 @@ def run_qd(
     return result
 
 
-def is_breakthrough(result: str) -> bool:
-    """Any non-Right(6) response that isn't EMPTY/error is a breakthrough."""
-    return (
-        "Permission denied" not in result
-        and result != "Right(6)"
-        and result
-        not in ("EMPTY", "Invalid term!", "Encoding failed!", "Term too big!")
-        and not result.startswith("ERROR:")
-        and not result.startswith("SKIPPED")
-    )
+def is_breakthrough(label: str, result: str) -> bool:
+    if "sys8" not in label.lower():
+        return False
+
+    if result.startswith("Left(") or result.startswith("TEXT:LEFT"):
+        return True
+
+    if result.startswith("Right("):
+        return result != "Right(6)"
+
+    return False
 
 
 def section(title: str) -> None:

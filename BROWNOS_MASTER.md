@@ -419,6 +419,34 @@ So as far as our exploration went, BrownOS is more of a tiny functional VM + vir
 
 ---
 
+
+## 11a) WeChall answer submissions (REJECTED)
+
+The following strings were submitted directly to WeChall as answer candidates.
+**All were rejected.** Do NOT re-test these.
+
+| Candidate | Rationale | Result |
+|-----------|-----------|--------|
+| `ilikephp` | Recovered password from `.history` (id 65), validated against gizmore's crypt hash | **REJECTED** |
+| `gizmore` | Username with the cracked password | **REJECTED** |
+| `GZKc.2/VQffio` | Raw crypt(3) hash from `/etc/passwd` | **REJECTED** |
+| `dloser` | Username from mail spool / backdoor hint | **REJECTED** |
+| `42` | Syscall 0x2A = decimal 42 ("Answer to everything") | **REJECTED** |
+| `towel` | Referenced in syscall 0x2A output and mail spool | **REJECTED** |
+| `omega` | Combinator name; A(B) = \u03a9; thematic connection to backdoor pair | **REJECTED** |
+| `echo` | Syscall 0x0E name; "new syscall" from 2018 update | **REJECTED** |
+| `253` | Forbidden de Bruijn index (0xFD); boundary of encodable Var space | **REJECTED** |
+| `3leafs` | dloser's forum hint about minimal program size | **REJECTED** |
+| `FD` | Application marker byte; boundary of Var encoding space | **REJECTED** |
+| `1` | Simplest non-zero integer | **REJECTED** |
+
+**Conclusion:** The answer is NOT any obvious string derivable from the filesystem contents,
+error messages, combinator names, or protocol constants. The solution likely requires making
+syscall 0x08 actually succeed (returning `Left(...)` instead of `Right(6)`), and the answer
+is whatever sys8 returns on success.
+
+---
+
 ## 11) Open questions (what’s still missing)
 
 - What is the **actual** WeChall accepted “Answer”?
@@ -472,6 +500,23 @@ Net: the newest “fundamentally different” axes (continuation shape, unevalua
 - g(0) exception wrapping: `g(0)(sys8(nil)(OBS))` → EMPTY — g(0) catches and swallows the PermDenied error
 
 **Conclusion**: sys8's permission gate is **provenance-independent** and **protocol-independent**. The gate likely checks something orthogonal to argument value — possibly a specific structural property, or the answer may come from a different path than making sys8 succeed.
+
+### 2026-02-23 follow-up (`probe_phase2_continuation.py`, `probe_phase2_fuzzer.py`, `probe_high_index_syscall.py`)
+
+- Re-ran continuation-shape experiments with a stricter breakthrough detector:
+  - `probe_phase2_continuation.py` now reports **no breakthroughs** (32 requests).
+  - Earlier "breakthrough" labels were classifier artifacts from raw HEX/text outputs that still encoded the `Right(6)` baseline or non-sys8 side effects.
+- Continuation-space result stands:
+  - `sys8(nil)` with backdoor combinators, syscall continuations, QD variants, and CPS chain continuations all remain `Right(6)` or `EMPTY`.
+- Phase-2 lambda-term fuzzing result stands:
+  - Church numerals, combinators (`I`, `K`, `S`, omega-half), structural pairs/lists, and chained `sys8` feedback tests all remained `Permission denied`.
+  - `sys2` behavior differences (`Invalid argument` vs text write) are expected class-sensitivity and do not unlock syscall 8.
+- High-index/global boundary rerun result stands:
+  - Boundary globals `240..252` are unchanged (`Right(1)` except known syscalls).
+  - `backdoor -> sys8(result)` and all tested CPS source-to-sys8 chains remained `Right(6)`.
+  - Three-leaf sweeps in both shapes (`((8 X) Y)` and `(8 (X Y))`, 361+361 combinations) produced no hits.
+
+Net: no new positive signal. The latest reruns strengthen the conclusion that observed anomalies were measurement/classification artifacts, not syscall-8 bypasses.
 
 ### What we ruled out with a full syscall sweep
 
@@ -938,13 +983,12 @@ if __name__ == "__main__":
 
 ## 2026-02-07 — Final Synthesis: Oracle + Librarian Consultation
 
-### Oracle Analysis (High-Confidence Reasoning)
-- **Primary answer candidate**: `ilikephp` (~70% probability)
-  - Classic CTF narrative: investigate OS → find /etc/passwd → find .history → crack hash → submit password
-  - The reference solver `solve_brownos_answer.py` already outputs this string
-- **Secondary candidates**: `GZKc.2/VQffio` (raw hash, ~15%), `Omega` (combinator name from backdoor pair, ~8%)
-- **sys8 assessment**: Uniformly gated with Right(6) regardless of input — likely a deliberate rabbit hole or requires a fundamentally different approach we haven't discovered
-- **Recommendation**: Submit `ilikephp` first; if rejected, try hash and combinator name
+### Oracle Analysis (High-Confidence Reasoning — pre-submission)
+ Oracle originally estimated `ilikephp` at ~70% probability
+ **UPDATE: `ilikephp` was submitted and REJECTED by WeChall**
+ All secondary candidates (`GZKc.2/VQffio`, `omega`, `gizmore`, `dloser`, `42`, `towel`, etc.) were also submitted and REJECTED
+ See §11a above for the full list of rejected answer submissions
+ sys8 assessment: Uniformly gated with Right(6) regardless of input — requires a fundamentally different approach we haven't discovered
 
 ### Librarian Research Findings
 - **Solver list** (from `wechall.net/challenge_solvers_for/142/The+BrownOS`): 4 solvers — l3st3r, space, dloser (author), jusb3
@@ -965,6 +1009,6 @@ if __name__ == "__main__":
 | 6 | Protocol tricks | Various | Post-0xFF ignored, multi-term processes only first, non-singleton → "Invalid term!", no-continuation → EMPTY, g(0) wrapping → EMPTY |
 
 ### Overall Conclusion
-sys8's permission gate is **provenance-independent and protocol-independent**. No argument value, source transformation, or protocol trick has changed its behavior from Right(6). The most likely path to solving this challenge is submitting `ilikephp` as the WeChall answer (Track 1), which requires user credentials.
+sys8's permission gate is **provenance-independent and protocol-independent**. No argument value, source transformation, or protocol trick has changed its behavior from Right(6). All obvious answer candidates derived from filesystem exploration, combinator names, protocol constants, and error strings have been **submitted to WeChall and rejected** (see §11a). The solution requires either making sys8 succeed or discovering something fundamentally new.
 
-### Status: BLOCKED on Track 1 (WeChall submission)
+### Status: UNSOLVED — all known answer candidates rejected

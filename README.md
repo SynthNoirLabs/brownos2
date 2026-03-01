@@ -52,7 +52,7 @@ python3 solve_brownos_answer.py
 
 ## Status
 
-**UNSOLVED** — All approaches return error 6 (Permission denied) on syscall 8. Strongest answer candidate is `ilikephp` (recovered from filesystem exploration).
+**UNSOLVED** — All approaches return error 6 (Permission denied) on syscall 8. All obvious answer candidates (`ilikephp`, `gizmore`, `GZKc.2/VQffio`, `42`, `towel`, `dloser`, `omega`, `echo`, `253`, `3leafs`, `FD`, `1`) have been submitted to WeChall and **rejected**.
 
 ## Documentation
 
