@@ -258,3 +258,49 @@ Tested:
 Tested:
 - Sending mathematically valid but non-printing payloads (like the Ouroboros `sys8 sys8 sys8`) and checking WeChall score.
 **Conclusion**: WeChall uses an anonymous raw TCP socket. There is no authentication or session binding. The server *cannot* know who connected, so "silent success" auto-awarding points is architecturally impossible. The solution MUST force the VM to output the flag string to our socket. If there is no TCP write, we haven't solved it.
+
+## 9. Detailed v12 Reduction Traces (Why "Pure Math Paradoxes" Return EMPTY)
+
+The v12 payloads (`sys14 sys201 sys8`, `sys8 sys8 sys8`, `sys201 sys201 sys201`) all returned EMPTY. Here is **why** each fails:
+
+### Payload 1: `App(App(Var(14), Var(201)), Var(8))` — sys14(sys201)(sys8)
+
+```
+Step 1: Evaluator sees App(App(echo, Var(201)), Var(8)).
+  - Echo is a C++ primitive. Intercepts App(App(echo, arg), cont).
+  - arg = Var(201) — the RAW global variable, NOT the result of calling syscall 201.
+  - Echo wraps it: Left(Var(201)) = λl.λr.(l Var(203)) [Var(201) shifts to 203 under 2 lambdas]
+  - Calls cont(Left(Var(203))) = Var(8)(Left(Var(203))) = sys8(Left(Var(203)))
+Step 2: sys8 is a C++ primitive. Intercepts App(App(sys8, arg), cont).
+  - But there IS no second argument (cont). sys8(Left(Var(203))) is a partial application.
+  - VM reaches WHNF and stops → EMPTY.
+```
+
+**Critical misconception corrected**: `echo(Var(201))` wraps the raw variable reference, NOT the backdoor pair. To get the pair you must CALL `sys201(nil)` = `App(App(Var(201), nil), cont)`.
+
+### Payload 2: `App(App(Var(8), Var(8)), Var(8))` — sys8(sys8)(sys8)
+
+```
+Step 1: Evaluator sees App(App(sys8, sys8), sys8).
+  - Syscall dispatch fires: sys8(arg=sys8, cont=sys8).
+  - sys8 evaluates with arg=sys8 → returns Right(6).
+  - Calls cont(Right(6)) = sys8(Right(6)).
+Step 2: sys8 has one argument Right(6) but no continuation.
+  - Partial application → WHNF → EMPTY.
+```
+
+**Key insight**: sys8 is NOT a lambda you can beta-reduce. It's a C++ primitive. The third Var(8) serves as continuation for the first call but becomes an argless call itself.
+
+### Payload 3: `App(App(Var(201), Var(201)), Var(201))` — sys201(sys201)(sys201)
+
+```
+Step 1: sys201's C++ hook checks: is arg == nil? 
+  - arg = Var(201) which is NOT nil → Right(2) "Invalid argument."
+  - Calls cont(Right(2)) = Var(201)(Right(2)).
+Step 2: sys201 checks: is Right(2) == nil? No → Right(2) again.
+  - But now there's no continuation → partial application → WHNF → EMPTY.
+```
+
+### Why ALL print-less payloads return EMPTY
+
+**The 3-Leaf Printing Paradox**: For ANY output to appear on the TCP socket, the program MUST call `sys2` (write) or have QD as its continuation (which internally calls `sys4` then `sys2`). None of the v12 payloads contain a printing syscall or QD. Without a write instruction, the VM evaluates to WHNF and stops. No bytes go to the socket. This is not a subtle math error — there is literally no instruction to write anything.

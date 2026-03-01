@@ -20,6 +20,18 @@
 ### Mistake 6: "Guaranteed/Mathematical Proof"
 No LLM should claim any payload is "mathematically guaranteed" or "proven" to work. Every such claim has been tested and failed. The VM's internal logic is unknown — we only observe input/output behavior.
 
+### Mistake 7: "Syscalls Are Lambdas You Can Beta-Reduce"
+**Wrong.** Syscalls are opaque C++ primitives handled by native dispatch. The C++ evaluator intercepts `App(App(primitive, arg), cont)` at the native level. You CANNOT beta-reduce `sys8` as if it were `λcont. cont(Right 6)`. Partial applications without continuations just stop at WHNF → EMPTY. There is no user-space lambda body to manipulate.
+
+### Mistake 8: "Conflating Var(N) with sys_N(nil)"
+**Wrong.** `echo(Var(201))` wraps the **raw variable reference** `Var(201)` in Left. It does NOT invoke syscall 201 or return the backdoor pair. To get the pair, you must call `sys201(nil)` = `App(App(Var(201), nil), cont)`. Just referencing `Var(201)` gives you an opaque pointer to the syscall primitive, not its output.
+
+### Mistake 9: "3-Leaf Limit Mathematically Proves Strings Are Impossible"
+**Wrong.** Syscalls generate data at runtime from minimal inputs. Example: `sys7(int(11))` → `Left("root:x:0:0:root:/:/bin/false\nmailer:x:100...")` — 181 bytes of string data from a 2-leaf term. The 3-leaf limit constrains the **program**, not the **data the program manipulates**.
+
+### Mistake 10: "Silent Success — Check Your WeChall Score"
+**Wrong.** The TCP socket is anonymous — no authentication, no session, no IP binding. The server literally cannot know who connected. WeChall requires you to submit a string answer on the website. The VM MUST physically write the flag to the TCP socket so we can read it. If 0 bytes come back, nothing happened.
+
 ---
 
 ## What Is Definitively Known
@@ -75,6 +87,51 @@ We've interpreted "3 leafs" as 3 Var nodes. Other interpretations not fully expl
 - 3 tokens/units in some other counting method
 - The "3 leafs" might be about the ANSWER STRING, not the program
 - "Leafs" might mean lambda bodies, not variables
+
+---
+
+## NEW: 7 Possibility Directions (from v13 analysis)
+
+These are the most promising avenues based on accumulated evidence:
+
+### Possibility A: Flag Derivable from Known Data Without sys8 Succeeding
+We have: password `ilikephp`, hash `GZKc.2/VQffio`, combinators A and B, the backdoor pair, file ID 256 (`wtf`), all file contents. Maybe the WeChall answer is a transformation of known data we haven't computed. The `sha1^56154(answer)` target hash exists — maybe the answer is something we already have but haven't recognized.
+
+### Possibility B: Flag Printed via Non-sys8 Mechanism
+- `sys4(term)` serializing a specific term that encodes the answer
+- `sys2` writing data derived from backdoor combinators
+- `sys1(N)` for some N we haven't tried (tested 0–7, but not higher)
+- Chain: `backdoor → manipulate pair → write result`
+
+### Possibility C: sys8's Right(6) IS the Answer (or Part of It)
+- What if "Permission denied" or error code 6 is itself a clue?
+- What if applying sys1 to 6 and doing something with that string matters?
+
+### Possibility D: "3 Leafs" Involves QD as a Non-Counted Constant
+- If QD counts as "0 leaves" (it's a constant), then all 3 leaves can be syscall globals
+- But if QD's internal variables count, it has more than 3 leaves
+- The counting method matters: does the author count QD's leaves or not?
+
+### Possibility E: Echo + Quote Interaction Produces the Answer
+- `echo(Var(251))` creates `Var(253)` at runtime
+- `quote(Left(Var(253)))` produces `Encoding failed!` (ASCII text, no 0xFF)
+- What if we echo other values and quote the results?
+- What about `echo(Var(252))` → `Var(254)` → quote produces what?
+- What if the "Encoding failed!" text is part of a chain?
+
+### Possibility F: The Pre-Echo Solution Path
+- Before echo (2014–2018), 0 solvers. After echo (Sept 2018), l3st3r and space solved it.
+- Author 2016: *"figuring out the meaning of the input codes is probably the most important thing to do"*
+- "Input codes" = bytecode format. What "meaning" beyond obvious parsing semantics?
+- Maybe there's a dual interpretation of the bytecode that matters.
+
+### Possibility G: Y-Combinator Construction from A and B
+- `B = λa.λb. (a b)` = function application combinator
+- `A = λa.λb. (b b)` = self-application combinator
+- `A B = ω = λx.(x x)`, `ω ω = Ω` (diverges)
+- `B` can compose functions: `B f g x = f(g(x))`
+- A fixed-point combinator could be built from these
+- What if `Y(sys8)` or `Y(something)` produces a useful fixpoint?
 
 ---
 
