@@ -8,7 +8,7 @@ You are helping solve a hard reverse-engineering challenge (WeChall "The BrownOS
 
 ## PART 1: THE CHALLENGE
 
-**Service**: `wc3.wechall.net:61621` (raw TCP, binary protocol)
+**Service**: `wc3.wechall.net:61221` (raw TCP, binary protocol)
 **Goal**: Extract a flag string. Verify: `sha1^56154(flag) == "9252ed65ffac2aa763adb21ef72c0178f1d83286"`
 **Created**: May 2014 by user "dloser"
 **Solvers**: 4 total (dloser/author, l3st3r, space, jusb3)
